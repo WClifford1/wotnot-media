@@ -1,0 +1,27 @@
+{
+  "name": "wotnot-media",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server",
+    "dev": "concurrently /"npm
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WClifford1/wotnot-media.git"
+  },
+  "author": "Farhaan, William, Joseph",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WClifford1/wotnot-media/issues"
+  },
+  "homepage": "https://github.com/WClifford1/wotnot-media#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.4"
+  }
+}
