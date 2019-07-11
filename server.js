@@ -1,25 +1,17 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
-
-const enquiry = require('./config/keys')
-
 const app = express()
+const db = require('./config/keys').mongoURI
+const enquiries = require('./routes/api/enquiries')
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
-
-const db = require('./config/keys').mongoURI
-
-app.get('/api/hello', (req, res) => {
-    res.send({express: 'Hello from Express'})
-})
-
-mongoose.connect(db)
+app.use('/api/enquiries', enquiries)
+// mongoose.connect(db)
+mongoose.connect('mongodb://localhost/enquiries')
 .then(() => console.log('Connected to MongoDB Atlas'))
 .catch(err => console.log(err))
-
-// app.use('/api/keys')
 
 const PORT = process.env.PORT || 4000
 
