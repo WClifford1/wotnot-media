@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "client": "cd client && npm start --prefix client",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,8 @@
     "concurrently": "^4.1.1",
     "express": "^4.17.1",
     "mongoose": "^5.6.4"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
   }
 }
