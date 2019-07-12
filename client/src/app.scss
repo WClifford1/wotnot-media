@@ -1,22 +1,25 @@
-
 .nav {
     font-family: 'Montserrat', sans-serif;
 }
 .nav-items {
+    
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     display: flex;
-    border: 2px solid black;
+    // border: 2px solid black; 
     justify-content: space-evenly;
     li{
         display: flex;
-        border: 2px solid red;
+        // border: 2px solid red;
         a{
             display: flex;
-            border: 2px solid green;
+            // border: 2px solid green;
             font-size: 24px;
             text-decoration: none;
+            color: rgb(46, 45, 45);    
             
         }
     }  

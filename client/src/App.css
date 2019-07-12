@@ -6,10 +6,11 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid black;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -19,16 +20,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid red;
 }
 
 .nav-items li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 2px solid green;
   font-size: 24px;
   text-decoration: none;
+  color: #2e2d2d;
 }
 
 .logo {
