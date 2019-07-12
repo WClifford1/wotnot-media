@@ -1,5 +1,10 @@
-.nav {
+* {
   font-family: 'Montserrat', sans-serif;
+  background: #001D4A;
+}
+
+.nav {
+  background: #001D4A;
 }
 
 .nav-items {
@@ -25,14 +30,47 @@
 .nav-items li a {
   font-size: 18px;
   text-decoration: none;
-  color: #2e2d2d;
+  color: white;
 }
 
-.nav-items li a:hover {
-  color: #2983ac;
+.hero-banner {
+  background-color: #001D4A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-banner .heroimg {
+  height: 75vh;
+  width: 60vw;
+  background-color: transparent;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 3;
+  background-clip: padding-box;
+}
+
+.hero-banner .text {
+  z-index: 1;
+}
+
+.hero-banner .text .catch-phrase {
+  color: #ECA400;
+  text-align: center;
+  padding-left: 8%;
+  padding-top: 10%;
+  width: 85%;
+}
+
+.hero-banner .text .catch-para {
+  color: #ffffff;
+  text-align: center;
+  padding-left: 8%;
+  width: 85%;
 }
 
 .logo {
+  color: #ECA400;
   text-align: center;
 }
 
@@ -41,7 +79,7 @@
   display: block;
   width: 0;
   height: 2px;
-  background: #2983ac;
+  background: #fff;
   -webkit-transition: width .5s;
   transition: width .5s;
 }
