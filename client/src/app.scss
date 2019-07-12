@@ -15,11 +15,15 @@
         display: flex;
         // border: 2px solid red;
         a{
-            display: flex;
+            // display: flex;
             // border: 2px solid green;
-            font-size: 24px;
+            font-size: 18px;
             text-decoration: none;
-            color: rgb(46, 45, 45);    
+            color: rgb(46, 45, 45);
+            
+            &:hover {
+                color: rgb(41, 131, 172);
+            }
             
         }
     }  
@@ -29,7 +33,19 @@
     text-align: center;
 }
 
+.hov:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(41, 131, 172);
+    transition: width .5s
+}
 
+.hov:hover::after {
+    width: 100%;
+    transition: width .3s
+}
 
 
   

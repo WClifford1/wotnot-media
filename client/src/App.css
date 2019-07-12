@@ -23,15 +23,32 @@
 }
 
 .nav-items li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 24px;
+  font-size: 18px;
   text-decoration: none;
   color: #2e2d2d;
 }
 
+.nav-items li a:hover {
+  color: #2983ac;
+}
+
 .logo {
   text-align: center;
+}
+
+.hov:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #2983ac;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}
+
+.hov:hover::after {
+  width: 100%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
 }
 /*# sourceMappingURL=app.css.map */
