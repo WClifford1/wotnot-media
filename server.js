@@ -15,7 +15,7 @@ app.use('/api/enquiries', enquiries)
 
 // mongoose.connect(db)
 mongoose.connect('mongodb://localhost/enquiries')
-.then(() => console.log('Connected to MongoDB Atlas'))
+.then(() => console.log('Connected to Localhost'))
 .catch(err => console.log(err))
 
 

@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
+// import EnquiryForm from './components/EnquiryForm';
+import Home from './components/Home';
 
 function App() {
   return (
     <React.Fragment>
-    
+      <Home />
     </React.Fragment>
   );
 }
