@@ -1,0 +1,33 @@
+
+.nav {
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-evenly;
+    li{
+        display: flex;
+        border: 2px solid red;
+        a{
+            display: flex;
+            border: 2px solid green;
+            font-size: 24px;
+            text-decoration: none;
+            
+        }
+    }  
+}
+
+.logo {
+    text-align: center;
+}
+
+
+
+
+  
+  
