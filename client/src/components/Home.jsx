@@ -10,6 +10,8 @@ export default function Home() {
                     <li><a className="hov" href="about.asp">FAQ</a></li>
                     <li><a className="hov" href="contact.asp">Contact</a></li>
                 </ul>
+
+
             </div>    
     )
 }

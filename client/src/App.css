@@ -1,6 +1,6 @@
 * {
   font-family: 'Montserrat', sans-serif;
-  background: #001D4A;
+  margin: 0px;
 }
 
 .nav {
@@ -72,6 +72,8 @@
 .logo {
   color: #ECA400;
   text-align: center;
+  background-color: #001D4A;
+  padding-top: 20px;
 }
 
 .hov:after {
@@ -79,7 +81,7 @@
   display: block;
   width: 0;
   height: 2px;
-  background: #fff;
+  background: #ECA400;
   -webkit-transition: width .5s;
   transition: width .5s;
 }
@@ -88,5 +90,83 @@
   width: 100%;
   -webkit-transition: width .3s;
   transition: width .3s;
+}
+
+.card-header {
+  text-align: center;
+  padding: 3%;
+  color: #001D4A;
+  background-color: #ECA400;
+}
+
+#card-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #ECA400;
+}
+
+#card-services .card {
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 35px;
+  width: 23%;
+  background-color: #001D4A;
+}
+
+#card-services .card .card-cont {
+  padding: 15px 10%;
+}
+
+#card-services .card .card-cont h4 {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 10%;
+  color: white;
+}
+
+#card-services .card .card-cont p {
+  text-align: center;
+  margin-bottom: 10%;
+  color: white;
+}
+
+#card-services .card .card-cont .card-button {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+#card-services .card .card-cont .card-button button {
+  padding: 15px 50px;
+  border-radius: 25px;
+  font-size: 18px;
+  border: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.guar-container {
+  background-color: #f4f5f6;
+}
+
+.guar-container h2 {
+  text-align: center;
+  padding: 3%;
+}
+
+.guar-container .guar-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 3%;
 }
 /*# sourceMappingURL=app.css.map */

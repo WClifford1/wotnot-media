@@ -1,6 +1,8 @@
 * {
     font-family: 'Montserrat', sans-serif;
-    background: #001D4A;
+    margin: 0px;
+
+    // background: #001D4A;
 }
 
 .nav {
@@ -75,7 +77,8 @@
 .logo {
     color: #ECA400;
     text-align: center;
-    // background-color: #0E79B2;
+    background-color: #001D4A;
+    padding-top: 20px;
 }
 
 .hov:after {
@@ -83,7 +86,7 @@
     display: block;
     width: 0;
     height: 2px;
-    background: #fff;
+    background: #ECA400;
     transition: width .5s
 }
 
@@ -92,6 +95,85 @@
     transition: width .3s
 }
 
+.card-header {
+    text-align: center;
+    padding: 3%;
+    color: #001D4A;
+    background-color: #ECA400; 
+}
 
+#card-services{
+    display: flex;
+    justify-content: space-around;
+    background-color: #ECA400; 
+
+    .card {
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+        margin-bottom: 10%;
+        transition: 0.3s;
+        border-radius: 35px;
+        width: 23%;
+        
+        // margin-left: 5%;
+        // padding-top: 5%;
+        // padding-bottom: 55vh;
+        // border: 2px black solid;
+       background-color: #001D4A;
+
+
+        .card-cont {
+        padding: 15px 10%;
+        // border: 2px solid red;
+
+        h4 {
+            text-align: center;
+            font-size: 25px;
+            padding-bottom: 10%;
+            color: white;
+        }
+
+        p{
+            text-align: center;
+            margin-bottom: 10%;
+            color: white;
+        }
+
+        .card-button{
+            // align-items: center;
+            text-align: center;
+            margin-bottom: 5%;
+            
+            
+
+        button {
+            padding: 15px 50px;
+            border-radius: 25px;
+            font-size: 18px;
+            border: none;
+            background-color: #ffffff;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            
+        }
+    }
+
+      }
+    }
+}
+
+.guar-container {
+    background-color: #f4f5f6;
+
+    h2 {
+        text-align: center;
+        padding: 3%;
+
+    }
+    
+    .guar-icons {
+        display: flex;
+        justify-content: space-evenly; 
+        padding-bottom: 3%;
+    }
+}
   
   
