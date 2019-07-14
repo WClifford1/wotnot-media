@@ -12,9 +12,10 @@ function App() {
     <React.Fragment>
       <Home />
       <HeroImage />
+      <Service1 />
+
       <Guarantee />
 
-      <Service1 />
       {/* <Services /> */}
 
     </React.Fragment>

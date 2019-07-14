@@ -43,6 +43,7 @@
 .hero-banner {
     background-color: #001D4A;
     display: flex;
+    height: 83vh;
 
     .heroimg {
         height: 75vh;
@@ -56,6 +57,7 @@
 
     .text {
         z-index: 1;
+        padding-top: 40px;
         // border: 2px solid red;
 
         .catch-phrase {
@@ -72,6 +74,7 @@
             text-align: center;
             padding-left: 8%;
             width: 85%;
+            padding-top: 20px;
         }
     }
 
@@ -253,22 +256,46 @@
       padding-top: 20px;
       color: #001D4A;
   }
+
+.serv-comp {
+    padding-bottom: 40px;
+    background-color: #f4f5f6;
+    height: 100vh;
+
+    h1 {
+        text-align: center;
+        padding: 40px;
+    }
+}
 .serv-cont {
-    border: 2px solid red;
+    // border: 2px solid red;
     
     .row {
-        border: 2px solid green;
+        // border: 2px solid green;
         display: flex;  
         justify-content: space-evenly
     }
+
+    .serv-icon {
+        display: flex;
+        justify-content: center;
+        // border: 2px solid blue;
+        text-align: center;
+    }
     .card {
-        border: 2px red solid;
+        // border: 2px solid green;
         max-width: 300px;
         height: auto;
         border-radius: 15px;
         margin: 0 auto;
         box-shadow: 0 10px 15px rgba(0,0,0,.5);
         transition: .5s;
+        padding: 30px;
+        text-align: center;
+
+        &:hover {
+            transform: scale(1.1)
+        }
     }
 
     .card:nth-child(1),
@@ -296,28 +323,45 @@
         background: rgba(255, 255, 255,.1)
     }
 
-    .serv-title .fa-file-upload .fa-copy .fa-book-open {
+ 
+
+    .serv-title, .fa-file-upload, .fa-copy, .fa-book-open {
         color: #fff;
         font-size: 60px;
         width: 100px;
+        text-align: center;
         height: 100px;
         border-radius: 50%;
-        text-align: center;
+        // text-align: center;
+        
         line-height: 100px;
         box-shadow: 0 10px 10px rgba(0,0,0,.5);
     }
 
+    // .fa-file-upload {
+    //     color: #fff;
+    //     font-size: 60px;
+    //     width: 100px;
+    //     height: 100px;
+    //     border-radius: 50%;
+    //     text-align: center;
+    //     line-height: 100px;
+    //     box-shadow: 0 10px 10px rgba(0,0,0,.5);
+    // }
+
     .serv-title h2 {
         position: relative;
-        margin: 20px 0 0;
+        border: 2px solid red;
+        margin: 10px 0 0;
         color: #fff;
         font-size: 28px;
         z-index: 2;
     }
 
     .price {
-        position: relative;
+        // position: relative;
         z-index: 2;
+        border: 2px solid green;
     }
 
     .price h4 {
@@ -360,6 +404,13 @@
         font-size: 16px;
         cursor: pointer;
         text-decoration: none;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    }
+
+    .card a:hover {
+        text-decoration: none;
+        background: linear-gradient(-45deg, #5F4BB6, #EF2917);
+        color: white;
 
     }
 }
