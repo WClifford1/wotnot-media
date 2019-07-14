@@ -3,8 +3,9 @@ import './App.css';
 // import EnquiryForm from './components/EnquiryForm';
 import Home from './components/Home';
 import HeroImage from './components/HeroImage';
-import Card from './components/Card';
 import Guarantee from './components/Guarantee';
+import Services from './components/Services';
+import Service1 from './components/Service1';
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
       <Home />
       <HeroImage />
       <Guarantee />
-      <Card />
+
+      <Service1 />
+      {/* <Services /> */}
 
     </React.Fragment>
   );
