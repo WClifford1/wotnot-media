@@ -378,22 +378,7 @@ html {
 }
 
 .serv-cont .card a {
-  position: relative;
-  z-index: 2;
-  background: #fff;
-  color: #001D4A;
-  width: 150px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: 40px;
-  display: block;
-  text-align: center;
-  margin: 20px auto 0;
-  font-size: 16px;
-  cursor: pointer;
-  text-decoration: none;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid red;
 }
 
 .serv-cont .card a:hover {
@@ -465,7 +450,7 @@ html {
   padding: 10px;
 }
 
-.enq-cont .form-group {
+.enq-cont .form-input {
   padding: 10px;
   width: 100%;
 }
@@ -481,6 +466,111 @@ html {
 }
 
 .enq-cont .form-btn .enq-btn {
+  border-radius: 5px;
+  border: none;
+  height: 2.5em;
+  font-weight: bold;
+  width: 80vw;
+  text-align: center;
+  background-color: #001D4A;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.book-cont {
+  padding: 40px;
+  border: 2px solid red;
+}
+
+.book-cont .book-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  color: #001D4A;
+}
+
+.book-cont .book-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.book-cont .book-form .book-input {
+  padding: 10px;
+  width: 100%;
+}
+
+.book-cont .book-form .book-control {
+  border-radius: 5px;
+  height: 35px;
+  border: 1px solid #999999;
+  width: 80vw;
+}
+
+.book-cont .book-form .book-control::-webkit-input-placeholder {
+  color: #525253;
+  font-size: 1.0em;
+  line-height: 1em;
+  padding: 10px;
+}
+
+.book-cont .book-form .book-control:-ms-input-placeholder {
+  color: #525253;
+  font-size: 1.0em;
+  line-height: 1em;
+  padding: 10px;
+}
+
+.book-cont .book-form .book-control::-ms-input-placeholder {
+  color: #525253;
+  font-size: 1.0em;
+  line-height: 1em;
+  padding: 10px;
+}
+
+.book-cont .book-form .book-control::placeholder {
+  color: #525253;
+  font-size: 1.0em;
+  line-height: 1em;
+  padding: 10px;
+}
+
+.book-cont .book-form .book-text {
+  padding-left: 10px;
+}
+
+.book-cont .book-form .book-select {
+  width: 80vw;
+  padding-left: 10px;
+}
+
+.book-cont .book-form .book-select select {
+  padding: 10px;
+  border-radius: 5px;
+  height: 35px;
+  border: 1px solid #999999;
+  width: 80vw;
+}
+
+.book-cont .book-form .book-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+}
+
+.book-cont .book-form .book-btn .book-sub {
   border-radius: 5px;
   border: none;
   height: 2.5em;

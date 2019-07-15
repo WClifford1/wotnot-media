@@ -5,6 +5,48 @@
     // background: #001D4A;
 }
 
+@mixin form-title {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #001D4A;
+}
+
+@mixin input-form {
+    padding: 10px;
+    width: 100%;
+}
+
+@mixin input-box-size {
+    border-radius: 5px;
+    height: 35px;
+    border: 1px solid rgb(153, 153, 153);
+    width: 80vw;
+}
+
+@mixin btn-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+}
+
+@mixin inner-btn {
+    border-radius: 5px;
+    border: none;
+    height: 2.5em;
+    font-weight: bold;
+    width: 80vw;
+    text-align: center;
+    background-color: #001D4A;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -407,21 +449,7 @@ html {
     }
 
     .card a {
-        position: relative;
-        z-index: 2;
-        background: #fff;
-        color: #001D4A;
-        width: 150px;
-        height: 50px;
-        line-height: 50px;
-        border-radius: 40px;
-        display: block;
-        text-align: center;
-        margin: 20px auto 0;
-        font-size: 16px;
-        cursor: pointer;
-        text-decoration: none;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        border: 2px solid red;
     }
 
     .card a:hover {
@@ -437,31 +465,19 @@ html {
     // border: 2px solid red;
 
     .enq-title {
-        // border: 2px solid red;
-        display: flex;
-        justify-content: center;
-        font-size: 30px;
-        color: #001D4A;
+     @include form-title;
     }
 
     .enq-form {
         display: flex;
         justify-content: center;
-        // padding: 40px;
-        // border: 2px solid red;  
-        // width: 80vw;    
 
         .form-text {
             padding-left: 10px;
         }
 
         .form-control {
-            border-radius: 5px;
-            height: 35px;
-            // display: flex;
-            // justify-content: center;
-            border: 1px solid rgb(153, 153, 153);
-            width: 80vw;
+            @include input-box-size;
 
             &::placeholder {
                 color: rgb(82, 82, 83);
@@ -473,31 +489,77 @@ html {
         
     }
 
-    .form-group {
-        padding: 10px;
-        width: 100%;
+    .form-input {
+        @include input-form;
         // border: 2px solid red;
     }
 
     .form-btn {
-        display: flex;
-        justify-content: center;
-        padding-top: 20px;
+        @include btn-container;
         
         .enq-btn {
-            border-radius: 5px;
-            border: none;
-            height: 2.5em;
-            font-weight: bold;
-            width: 80vw;
-            // padding: 10px;
-            text-align: center;
-            background-color: #001D4A;
-            color: #fff;
-            font-size: 20px;
-            cursor: pointer;
+            @include inner-btn;
         }
     }
 
 }
+
+
+.book-cont {
+    padding: 40px; 
+    border: 2px solid red;
+
+.book-title {
+    @include form-title;
+}
+
+.book-form {
+    display: flex;
+    justify-content: center;
+
+.book-input {
+    @include input-form;
+}
+
+.book-control {
+    @include input-box-size;
+
+    &::placeholder {
+        color: rgb(82, 82, 83);
+        font-size: 1.0em;
+        line-height: 1em;
+        padding: 10px;
+      }
+}
+
+.book-text {
+    padding-left: 10px;
+}
+
+.book-select {
+    // border: 2px solid red;
+    width: 80vw;
+    padding-left: 10px;
+    
+    select {
+        // width: 80vw;
+        padding: 10px;
+        // border-radius: 5px;
+        @include input-box-size;
+    }
+}
+
+
+.book-btn {
+    @include btn-container;
+
+    .book-sub {
+        @include inner-btn;
+    }
+}
+}
+
+
+}
+
 
