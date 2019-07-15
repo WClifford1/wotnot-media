@@ -93,7 +93,7 @@ export default class BookingForm extends Component {
 
 
                         <div className="book-text">
-                            <label>Email</label>
+                            <label><strong>Email :</strong></label>
                         </div>
                         <div className="book-input">
                             <input type="text" className="book-control"
@@ -102,7 +102,7 @@ export default class BookingForm extends Component {
                         </div>
 
                         <div className="book-text">
-                            <label>Phone</label>
+                            <label><strong>Phone :</strong></label>
                         </div>
                         <div className="book-input">
                             <input type="text" className="book-control"
@@ -111,7 +111,7 @@ export default class BookingForm extends Component {
                         </div>
 
                         <div className="book-text">
-                            <label>Time</label>
+                            <label><strong>Time :</strong></label>
                         </div>
                         <div className="book-select">
                             <select>

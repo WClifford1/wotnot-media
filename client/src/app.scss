@@ -507,7 +507,6 @@ html {
 
 .book-cont {
     padding: 40px; 
-    border: 2px solid red;
 
 .book-title {
     @include form-title;
@@ -537,14 +536,12 @@ html {
 }
 
 .book-select {
-    // border: 2px solid red;
     width: 80vw;
-    padding-left: 10px;
+    padding: 10px;
+    width: 100%;
     
     select {
-        // width: 80vw;
         padding: 10px;
-        // border-radius: 5px;
         @include input-box-size;
     }
 }
