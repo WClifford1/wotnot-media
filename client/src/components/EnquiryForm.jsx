@@ -84,7 +84,7 @@ export default class EnquiryForm extends Component {
                 <div className="enq-form">
                 <form onSubmit={this.onSubmit}>
                     <div className="form-text">
-                        <label><strong>Name: </strong></label>
+                        <label><strong>Name <span style={{color:"red"}}>*</span> : </strong></label>
                     </div>
                     <div className="form-group">
                         <input type="text" className="form-control" placeholder="Insert your name here"
@@ -93,7 +93,7 @@ export default class EnquiryForm extends Component {
                     </div>
                     
                     <div className="form-text">
-                    <label><strong>Email: </strong></label>
+                    <label><strong>Email <span style={{color: "red"}}>*</span> : </strong></label>
                     </div>
                     <div className="form-group">
                         <input type="text" className="form-control" placeholder="Insert your email here"
@@ -102,7 +102,7 @@ export default class EnquiryForm extends Component {
                     </div>
 
                     <div className="form-text">
-                        <label><strong>Phone: </strong></label>
+                        <label><strong>Phone : </strong></label>
                     </div>
                     <div className="form-group">
                         <input type="text" className="form-control" placeholder="Insert your phone number here"
@@ -110,7 +110,7 @@ export default class EnquiryForm extends Component {
                         onChange={this.onChangePhone} />
                     </div>
                     <div className="form-text">
-                        <label><strong>Enquiry: </strong></label>
+                        <label><strong>Enquiry <span style={{color:"red"}}>*</span> : </strong></label>
                     </div>
                     <div className="form-group">
                         <textarea type="text" className="form-control" placeholder="Insert your query here"
