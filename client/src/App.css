@@ -354,7 +354,8 @@
 
 .serv-cont .price {
   z-index: 2;
-  border: 2px solid green;
+  color: white;
+  padding: 20px;
 }
 
 .serv-cont .price h4 {
