@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Service1() {
     return (
-        <div className="serv-comp">
+        <div id="serv-comp" className="serv-comp">
             <h1>Services</h1>
             <div className="serv-cont">
                 <div className="row">
