@@ -1,5 +1,6 @@
 import React from 'react';
-import './App.css';
+import './App.css'
+import BookingForm from './components/BookingForm';
 // import EnquiryForm from './components/EnquiryForm';
 import Home from './components/Home';
 import HeroImage from './components/HeroImage';
@@ -13,6 +14,9 @@ import EnquiryForm from './components/EnquiryForm';
 function App() {
   return (
     <React.Fragment>
+
+      <BookingForm />
+
       <Home />
       <HeroImage />
       <Service1 />
