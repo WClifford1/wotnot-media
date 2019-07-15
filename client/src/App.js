@@ -6,6 +6,8 @@ import HeroImage from './components/HeroImage';
 import Guarantee from './components/Guarantee';
 import Services from './components/Services';
 import Service1 from './components/Service1';
+import Card1 from './components/Card1'; 
+import EnquiryForm from './components/EnquiryForm';
 
 function App() {
   return (
@@ -15,7 +17,8 @@ function App() {
       <Service1 />
 
       <Guarantee />
-
+      <EnquiryForm />
+      {/* <Card1 /> */}
       {/* <Services /> */}
 
     </React.Fragment>
