@@ -333,11 +333,11 @@
 
 
     .serv-title,
-    .fa-file-upload,
-    .fa-copy,
-    .fa-book-open {
+    .fa-internet-explorer,
+    .fa-video,
+    .fa-camera {
         color: #fff;
-        font-size: 60px;
+        font-size: 50px;
         width: 100px;
         text-align: center;
         height: 100px;
@@ -406,10 +406,10 @@
         position: relative;
         z-index: 2;
         background: #fff;
-        color: #262426;
+        color: #001D4A;
         width: 150px;
-        height: 40px;
-        line-height: 40px;
+        height: 50px;
+        line-height: 50px;
         border-radius: 40px;
         display: block;
         text-align: center;
@@ -447,6 +447,10 @@
         // border: 2px solid red;  
         // width: 80vw;    
 
+        .form-text {
+            padding-left: 10px;
+        }
+
         .form-control {
             border-radius: 5px;
             height: 35px;
@@ -468,6 +472,7 @@
     .form-group {
         padding: 10px;
         width: 100%;
+        // border: 2px solid red;
     }
 
     .form-btn {

@@ -9,7 +9,7 @@ export default function Service1() {
                     <div className="card">
                         <div className="serv-icon">
                         <div className="serv-title">
-                        <i class="fas fa-book-open fa-5x" aria-hidden="true"></i>
+                        <i class="fas fa-camera fa-5x" aria-hidden="true"></i>
                         </div>
                         </div>
                         <div className="price">
@@ -30,7 +30,7 @@ export default function Service1() {
                     <div className="card">
                     <div className="serv-icon">
                         <div className="serv-title">
-                        <i class="fas fa-copy fa-5x"  aria-hidden="true"></i>
+                        <i class="fas fa-video fa-5x"  aria-hidden="true"></i>
                         </div>
                         </div>
                         <div className="price">
@@ -51,7 +51,7 @@ export default function Service1() {
                     <div className="card">
                     <div className="serv-icon">
                         <div className="serv-title">
-                        <i class="fas fa-file-upload fa-5x" aria-hidden="true"></i>
+                        <i class="fab fa-internet-explorer fa-4x" aria-hidden="true"></i>
                         </div>
                         </div>
                         <div className="price">
