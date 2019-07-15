@@ -1,23 +1,23 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-export default class EnquiryForm extends Component {
-
-    constructor(props) {
+export default class BookingForm extends Component {
+    constructor(props){
         super(props)
 
         this.onChangeName = this.onChangeName.bind(this)
         this.onChangeEmail = this.onChangeEmail.bind(this)
         this.onChangePhone = this.onChangePhone.bind(this)
-        this.onChangeEnquiry = this.onChangeEnquiry.bind(this)
+        this.onChangeTime = this.onChangeTime.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
+        // this.onCancel = this.onCancel.bind(this)
 
-        
+
         this.state = {
             name: '',
             email: '',
             phone: '',
-            enquiry: ''
+            time: ''
         }
     }
 
@@ -40,87 +40,84 @@ export default class EnquiryForm extends Component {
         })
     }
 
-    onChangeEnquiry(e) {
+    onChangeTime(e) {
         this.setState({
-            enquiry: e.target.value
+            time: e.target.value
         })
     }
 
     onSubmit(e) {
         e.preventDefault()
 
-        console.log(`Form submitted:`)
+        console.log(`Booking submitted: `)
         console.log(`Name: ${this.state.name}`)
         console.log(`Email: ${this.state.email}`)
         console.log(`Phone: ${this.state.phone}`)
-        console.log(`Enquiry: ${this.state.enquiry}`)
+        console.log(`Time: ${this.state.time}`)
 
-        const newEnquiry = {
+        const newBooking = {
             name: this.state.name,
             email: this.state.email,
             phone: this.state.phone,
-            enquiry: this.state.enquiry
+            time: this.state.time
+
         }
-        
-        axios.post('http://localhost:4000/api/enquiries', newEnquiry)
-            .then(res => console.log(res.data))
+        axios.post('http://localhost:4000/api/bookings', newBooking)
+        .then(res => console.log(res.data))
 
         this.setState({
             name: '',
             email: '',
             phone: '',
-            enquiry: ''
+            time:''
         })
     }
 
-
-    render() {
+    render(){
         return (
-            <div className="enq-cont">
-                <div className="enq-title">
-                <h3>Enquiry Form</h3>
-                </div>
-                
-                <div className="enq-form">
+            <div style={{marginTop: 20}} >
+                <h3>Booking Form</h3>
+
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
-                        {/* <label><strong>Name: </strong></label> */}
-                        <input type="text" className="form-control" placeholder="Name"
-                        value={this.state.name} 
+                        <label>NAme</label>
+                        <input type="text" className="form-control"
+                        value={this.state.name}
                         onChange={this.onChangeName} />
                     </div>
 
                     <div className="form-group">
-                        {/* <label><strong>Email: </strong></label> */}
-                        <input type="text" className="form-control" placeholder="Email"
-                        value={this.state.email} 
+                        <label>Email</label>
+                        <input type="text" className="form-control"
+                        value={this.state.email}
                         onChange={this.onChangeEmail} />
                     </div>
 
                     <div className="form-group">
-                        {/* <label><strong>Phone: </strong></label> */}
-                        <input type="text" className="form-control" placeholder="Phone"
-                        value={this.state.phone} 
+                        <label>Phone</label>
+                        <input type="text" className="form-control"
+                        value={this.state.phone}
                         onChange={this.onChangePhone} />
                     </div>
 
                     <div className="form-group">
-                        {/* <label><strong>Enquiry: </strong></label> */}
-                        <textarea type="text" className="form-control" placeholder="Enquiry"
-                        value={this.state.enquiry} 
-                        onChange={this.onChangeEnquiry} />
+                        <label>Time</label>
+                        <select>
+                            <option value="time" className="form-control"
+                            value={this.state.time}
+                            onChange={this.onChangeTime}>12:45</option>
+                        </select>
                     </div>
 
                     <div className="form-group">
-                        <input type="submit" 
-                        value="Send Enquiry" 
-                        className="btn btn-primary" />
+                        <input type="submit"
+                        value="Send Booking"
+                        ClassName="btn btn-primary" />
                     </div>
+
                 </form>
-                </div>
+
             </div>
         )
     }
 }
-
-
