@@ -302,19 +302,9 @@
           transform: scale(1.1);
 }
 
-.serv-cont .card:nth-child(1),
+.serv-cont .card,
 .serv-cont .card:nth-child(1) .fa-file-upload .fa-copy .fa-book-open {
   background: linear-gradient(-45deg, #f403d1, #645bf6);
-}
-
-.serv-cont .card:nth-child(2),
-.serv-cont .card:nth-child(2) .fa-file-upload .fa-copy .fa-book-open {
-  background: linear-gradient(-45deg, #ffec61, #f321d7);
-}
-
-.serv-cont .card:nth-child(3),
-.serv-cont .card:nth-child(3) .fa-file-upload .fa-copy .fa-book-open {
-  background: linear-gradient(-45deg, #24ff72, #9a4eff);
 }
 
 .serv-cont .card:before {
@@ -404,17 +394,15 @@
 
 .serv-cont .card a:hover {
   text-decoration: none;
-  background: linear-gradient(-45deg, #5F4BB6, #EF2917);
+  background: linear-gradient(-45deg, #f403d1, #645bf6);
   color: white;
 }
 
 .enq-cont {
   padding: 40px;
-  border: 2px solid red;
 }
 
 .enq-cont .enq-title {
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,7 +420,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 2px solid red;
 }
 
 .enq-cont .enq-form .form-control {
@@ -442,8 +429,59 @@
   width: 80vw;
 }
 
+.enq-cont .enq-form .form-control::-webkit-input-placeholder {
+  color: #525253;
+  font-size: 1.0em;
+  line-height: 1em;
+  padding: 10px;
+}
+
+.enq-cont .enq-form .form-control:-ms-input-placeholder {
+  color: #525253;
+  font-size: 1.0em;
+  line-height: 1em;
+  padding: 10px;
+}
+
+.enq-cont .enq-form .form-control::-ms-input-placeholder {
+  color: #525253;
+  font-size: 1.0em;
+  line-height: 1em;
+  padding: 10px;
+}
+
+.enq-cont .enq-form .form-control::placeholder {
+  color: #525253;
+  font-size: 1.0em;
+  line-height: 1em;
+  padding: 10px;
+}
+
 .enq-cont .form-group {
   padding: 10px;
   width: 100%;
+}
+
+.enq-cont .form-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+}
+
+.enq-cont .form-btn .enq-btn {
+  border-radius: 5px;
+  border: none;
+  height: 2.5em;
+  font-weight: bold;
+  width: 80vw;
+  text-align: center;
+  background-color: #001D4A;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=app.css.map */

@@ -83,38 +83,45 @@ export default class EnquiryForm extends Component {
                 
                 <div className="enq-form">
                 <form onSubmit={this.onSubmit}>
+                    <div className="form-text">
+                        <label><strong>Name: </strong></label>
+                    </div>
                     <div className="form-group">
-                        {/* <label><strong>Name: </strong></label> */}
-                        <input type="text" className="form-control" placeholder="Name"
+                        <input type="text" className="form-control" placeholder="Insert your name here"
                         value={this.state.name} 
                         onChange={this.onChangeName} />
                     </div>
-
+                    
+                    <div className="form-text">
+                    <label><strong>Email: </strong></label>
+                    </div>
                     <div className="form-group">
-                        {/* <label><strong>Email: </strong></label> */}
-                        <input type="text" className="form-control" placeholder="Email"
+                        <input type="text" className="form-control" placeholder="Insert your email here"
                         value={this.state.email} 
                         onChange={this.onChangeEmail} />
                     </div>
 
+                    <div className="form-text">
+                        <label><strong>Phone: </strong></label>
+                    </div>
                     <div className="form-group">
-                        {/* <label><strong>Phone: </strong></label> */}
-                        <input type="text" className="form-control" placeholder="Phone"
+                        <input type="text" className="form-control" placeholder="Insert your phone number here"
                         value={this.state.phone} 
                         onChange={this.onChangePhone} />
                     </div>
-
+                    <div className="form-text">
+                        <label><strong>Enquiry: </strong></label>
+                    </div>
                     <div className="form-group">
-                        {/* <label><strong>Enquiry: </strong></label> */}
-                        <textarea type="text" className="form-control" placeholder="Enquiry"
+                        <textarea type="text" className="form-control" placeholder="Insert your query here"
                         value={this.state.enquiry} 
                         onChange={this.onChangeEnquiry} />
                     </div>
 
-                    <div className="form-group">
+                    <div className="form-btn">
                         <input type="submit" 
                         value="Send Enquiry" 
-                        className="btn btn-primary" />
+                        className="enq-btn" />
                     </div>
                 </form>
                 </div>

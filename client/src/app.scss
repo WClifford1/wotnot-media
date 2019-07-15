@@ -305,20 +305,20 @@
         }
     }
 
-    .card:nth-child(1),
+    .card,
     .card:nth-child(1) .fa-file-upload .fa-copy .fa-book-open {
         background: linear-gradient(-45deg, #f403d1, #645bf6);
     }
 
-    .card:nth-child(2),
-    .card:nth-child(2) .fa-file-upload .fa-copy .fa-book-open {
-        background: linear-gradient(-45deg, #ffec61, #f321d7);
-    }
+    // .card:nth-child(2),
+    // .card:nth-child(2) .fa-file-upload .fa-copy .fa-book-open {
+    //     background: linear-gradient(-45deg, #ffec61, #f321d7);
+    // }
 
-    .card:nth-child(3),
-    .card:nth-child(3) .fa-file-upload .fa-copy .fa-book-open {
-        background: linear-gradient(-45deg, #24ff72, #9a4eff);
-    }
+    // .card:nth-child(3),
+    // .card:nth-child(3) .fa-file-upload .fa-copy .fa-book-open {
+    //     background: linear-gradient(-45deg, #24ff72, #9a4eff);
+    // }
 
     .card:before {
         content: '';
@@ -422,7 +422,7 @@
 
     .card a:hover {
         text-decoration: none;
-        background: linear-gradient(-45deg, #5F4BB6, #EF2917);
+        background: linear-gradient(-45deg, #f403d1, #645bf6);
         color: white;
 
     }
@@ -430,10 +430,10 @@
 
 .enq-cont {
     padding: 40px;
-    border: 2px solid red;
+    // border: 2px solid red;
 
     .enq-title {
-        border: 2px solid red;
+        // border: 2px solid red;
         display: flex;
         justify-content: center;
         font-size: 30px;
@@ -444,7 +444,7 @@
         display: flex;
         justify-content: center;
         // padding: 40px;
-        border: 2px solid red;  
+        // border: 2px solid red;  
         // width: 80vw;    
 
         .form-control {
@@ -454,6 +454,13 @@
             // justify-content: center;
             border: 1px solid rgb(153, 153, 153);
             width: 80vw;
+
+            &::placeholder {
+                color: rgb(82, 82, 83);
+                font-size: 1.0em;
+                line-height: 1em;
+                padding: 10px;
+              }
         }
         
     }
@@ -463,5 +470,24 @@
         width: 100%;
     }
 
+    .form-btn {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        
+        .enq-btn {
+            border-radius: 5px;
+            border: none;
+            height: 2.5em;
+            font-weight: bold;
+            width: 80vw;
+            // padding: 10px;
+            text-align: center;
+            background-color: #001D4A;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
 
 }
