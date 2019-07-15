@@ -76,34 +76,37 @@ export default class EnquiryForm extends Component {
 
     render() {
         return (
-            <div style={{marginTop: 20}}>
+            <div className="enq-cont">
+                <div className="enq-title">
                 <h3>Enquiry Form</h3>
+                </div>
                 
+                <div className="enq-form">
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
-                        <label>Name</label>
-                        <input type="text" className="form-control"
+                        {/* <label><strong>Name: </strong></label> */}
+                        <input type="text" className="form-control" placeholder="Name"
                         value={this.state.name} 
                         onChange={this.onChangeName} />
                     </div>
 
                     <div className="form-group">
-                        <label>Email</label>
-                        <input type="text" className="form-control"
+                        {/* <label><strong>Email: </strong></label> */}
+                        <input type="text" className="form-control" placeholder="Email"
                         value={this.state.email} 
                         onChange={this.onChangeEmail} />
                     </div>
 
                     <div className="form-group">
-                        <label>Phone</label>
-                        <input type="text" className="form-control"
+                        {/* <label><strong>Phone: </strong></label> */}
+                        <input type="text" className="form-control" placeholder="Phone"
                         value={this.state.phone} 
                         onChange={this.onChangePhone} />
                     </div>
 
                     <div className="form-group">
-                        <label>Enquiry</label>
-                        <textarea type="text" className="form-control"
+                        {/* <label><strong>Enquiry: </strong></label> */}
+                        <textarea type="text" className="form-control" placeholder="Enquiry"
                         value={this.state.enquiry} 
                         onChange={this.onChangeEnquiry} />
                     </div>
@@ -114,6 +117,7 @@ export default class EnquiryForm extends Component {
                         className="btn btn-primary" />
                     </div>
                 </form>
+                </div>
             </div>
         )
     }

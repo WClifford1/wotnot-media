@@ -10,12 +10,11 @@ export default function Service1() {
                         <div className="serv-icon">
                         <div className="serv-title">
                         <i class="fas fa-book-open fa-5x" aria-hidden="true"></i>
-                            <h2>Brochure</h2>
                         </div>
                         </div>
-                        {/* <div className="price">
-                            <h4><sup>$</sup>25</h4>
-                        </div> */}
+                        <div className="price">
+                        <h2>Brochure</h2>
+                        </div>
                         <div className="option">
                             <ul>
                             <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>

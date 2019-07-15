@@ -167,95 +167,98 @@
     background-color: #ECA400;
     padding: 40px;
 }
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
     width: 24%;
     height: 300px;
     border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
     overflow: hidden;
     border-radius: 50px;
     border: none;
     box-shadow: 5px 5px 10px;
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
     background-color: #bbb;
     color: black;
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
+}
+
+/* Style the back side */
+.flip-card-back {
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
-  }
+}
 
-  .services-cont {
-      display: flex;
+.services-cont {
+    display: flex;
     //   border: 2px solid red;
-      padding: 20px;
+    padding: 20px;
 
-      .service {
-          padding: 20px;
+    .service {
+        padding: 20px;
 
-          h2 {
+        h2 {
             padding: 10px;
             color: #001D4A;
             // text-align: center;
 
-          }
+        }
 
-          p {
+        p {
             padding: 10px;
             padding-bottom: 30px;
             // text-align: center;
 
-          }
+        }
 
-          a{
-              padding: 10px;
-              text-decoration: none;
-              color: #ECA400;
+        a {
+            padding: 10px;
+            text-decoration: none;
+            color: #ECA400;
             //   text-align: left; 
-          }
+        }
 
-          .fa-grip-lines-vertical {
+        .fa-grip-lines-vertical {
             color: blue;
-          }
-      }
-  }
+        }
+    }
+}
 
-  .service-title {
-      text-align: center;
-      padding-top: 20px;
-      color: #001D4A;
-  }
+.service-title {
+    text-align: center;
+    padding-top: 20px;
+    color: #001D4A;
+}
 
 .serv-comp {
     padding-bottom: 40px;
@@ -267,12 +270,13 @@
         padding: 40px;
     }
 }
+
 .serv-cont {
     // border: 2px solid red;
-    
+
     .row {
         // border: 2px solid green;
-        display: flex;  
+        display: flex;
         justify-content: space-evenly
     }
 
@@ -282,16 +286,19 @@
         // border: 2px solid blue;
         text-align: center;
     }
+    
     .card {
         // border: 2px solid green;
         max-width: 300px;
         height: auto;
         border-radius: 15px;
         margin: 0 auto;
-        box-shadow: 0 10px 15px rgba(0,0,0,.5);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, .5);
         transition: .5s;
         padding: 30px;
         text-align: center;
+        // display: flex;
+        // flex-direction: column;
 
         &:hover {
             transform: scale(1.1)
@@ -320,12 +327,15 @@
         left: 0;
         width: 100%;
         height: 40%;
-        background: rgba(255, 255, 255,.1)
+        background: rgba(255, 255, 255, .1)
     }
 
- 
 
-    .serv-title, .fa-file-upload, .fa-copy, .fa-book-open {
+
+    .serv-title,
+    .fa-file-upload,
+    .fa-copy,
+    .fa-book-open {
         color: #fff;
         font-size: 60px;
         width: 100px;
@@ -333,9 +343,9 @@
         height: 100px;
         border-radius: 50%;
         // text-align: center;
-        
+
         line-height: 100px;
-        box-shadow: 0 10px 10px rgba(0,0,0,.5);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
     }
 
     // .fa-file-upload {
@@ -350,7 +360,8 @@
     // }
 
     .serv-title h2 {
-        position: relative;
+        // position: relative;
+        display: flex;
         border: 2px solid red;
         margin: 10px 0 0;
         color: #fff;
@@ -375,7 +386,7 @@
         position: relative;
         z-index: 2;
     }
-    
+
     .option ul {
         margin: 0;
         padding: 0;
@@ -404,7 +415,7 @@
         font-size: 16px;
         cursor: pointer;
         text-decoration: none;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     }
 
     .card a:hover {
@@ -413,4 +424,42 @@
         color: white;
 
     }
+}
+
+.enq-cont {
+    padding: 40px;
+    border: 2px solid red;
+
+    .enq-title {
+        border: 2px solid red;
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        color: #001D4A;
+    }
+
+    .enq-form {
+        display: flex;
+        justify-content: center;
+        // padding: 40px;
+        border: 2px solid red;  
+        // width: 80vw;    
+
+        .form-control {
+            border-radius: 5px;
+            height: 35px;
+            // display: flex;
+            // justify-content: center;
+            border: 1px solid rgb(153, 153, 153);
+            width: 80vw;
+        }
+        
+    }
+
+    .form-group {
+        padding: 10px;
+        width: 100%;
+    }
+
+
 }
