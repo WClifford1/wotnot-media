@@ -15,14 +15,13 @@ function App() {
   return (
     <React.Fragment>
 
-      <BookingForm />
 
       <Home />
       <HeroImage />
       <Service1 />
-
       <Guarantee />
-      <EnquiryForm />
+      <BookingForm />
+
       {/* <Card1 /> */}
       {/* <Services /> */}
 

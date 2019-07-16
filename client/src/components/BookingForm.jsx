@@ -123,7 +123,7 @@ export default class BookingForm extends Component {
 
                         <div className="book-btn">
                             <input type="submit"
-                                value="Send Booking"
+                                value="Confirm Booking"
                                 className="book-sub" />
                         </div>
                     </form>
