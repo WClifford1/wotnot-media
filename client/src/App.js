@@ -9,6 +9,8 @@ import Services from './components/Services';
 import Service1 from './components/Service1';
 import Card1 from './components/Card1'; 
 import EnquiryForm from './components/EnquiryForm';
+import Login from './components/Login'
+import ValidatedLoginForm from './components/ValidatedLoginForm';
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
 
       <Guarantee />
       <EnquiryForm />
+      <ValidatedLoginForm />
       {/* <Card1 /> */}
       {/* <Services /> */}
 
