@@ -7,12 +7,18 @@
     "chai": "^4.2.0",
     "chai-enzyme": "^1.0.0-beta.1",
     "enzyme": "^3.10.0",
+    "classnames": "^2.2.6",
+    "jwt-decode": "^2.2.0",
     "lodash": "latest",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.0.1",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
   },
-  "proxy": "http://localhost:4000/",
+  "proxy": "http://localhost:3000/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

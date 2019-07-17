@@ -9,7 +9,7 @@ const Enquiry = mongoose.model('Enquiry', new mongoose.Schema({
     },
     email: {
         type: String,
-        require: true,
+        required: true,
     },
     phoneNumber: {
         type: Number
