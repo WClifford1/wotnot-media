@@ -21,19 +21,26 @@ describe('<Service1 />', () => {
     expect(wrapper.contains(welcome)).to.equal(true);
   });
   
-  it('renders a `.serv-title`', () => {
+  it('Has a service offered title', () => {
     const wrapper = mount(<Service1 />);
-    expect(wrapper.find('.serv-title')).to.equal(true);
+    const welcome1 = <h2>Photography</h2>
+    expect(wrapper.contains(welcome1)).to.equal(true);
   });
 
-  it('renders children when passed in', () => {
-    const wrapper = mount((
-      <Service1>
-        <div className="serv-cont" />
-      </Service1>
-    ));
-    expect(wrapper.contains(<div className="serv-cont" />)).to.equal(true);
+  it('Has a list of services', () => {
+    const wrapper = mount(<Service1 />);
+    const welcome2 = <li><i className="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+    expect(wrapper.contains(welcome2)).to.equal(true);
   });
+
+  // it('renders children when passed in', () => {
+  //   const wrapper = mount((
+  //     <Service1>
+  //       <div className="serv-cont" />
+  //     </Service1>
+  //   ));
+  //   expect(wrapper.contains(<div className="serv-cont" />)).to.equal(true);
+  // });
 });
 
 // Home 
@@ -43,11 +50,23 @@ describe('<Home />', () => {
     const welcome = <h1 className="logo">WotNot Media</h1>
     expect(wrapper.contains(welcome)).to.equal(true);
   });
-  
-  it('renders a `.logo`', () => {
-    const wrapper = mount(<Home />);
-    expect(wrapper.find('.logo')).to.have.lengthOf(1);
+
+  it('renders a ul', () => {
+    const wrapper = shallow(<Home />);
+    expect(wrapper.find('.nav-items')).to.have.lengthOf(1);
   });
+
+  it('Has a Home heading', () => {
+    const wrapper = mount(<Home />);
+    const navbar = <li><a className="hov" href="default.asp">Projects</a></li>
+    expect(wrapper.contains(navbar)).to.equal(true);
+  });
+
+  // it('Has a Home heading', () => {
+  //   const wrapper = mount(<Home />);
+  //   const navbar = <ul className="nav-items">
+  //   expect(wrapper.contains(navbar)).to.equal(true);
+  // });
 
  
 });
@@ -81,7 +100,7 @@ describe('<Guarantee />', () => {
   it('Has a Guarantee heading', () => {
     const wrapper = shallow(<Guarantee />);
     const welcome = <h2>Delivering tailor made, custom design oriented graphics to your liking</h2>
-    expect(wrapper.contains(welcome)).toEqual(true);
+    expect(wrapper.contains(welcome)).to.equal(true);
   });
   
   it('renders a `.guar-icons`', () => {
@@ -104,7 +123,7 @@ describe('<EnquiryForm />', () => {
   it('Has a EnquiryForm heading', () => {
     const wrapper = shallow(<EnquiryForm />);
     const welcome = <h3>Enquiry Form</h3>
-    expect(wrapper.contains(welcome)).toEqual(true);
+    expect(wrapper.contains(welcome)).to.equal(true);
   });
   
   it('renders a `.form-text`', () => {
@@ -127,7 +146,7 @@ describe('<BookingForm />', () => {
   it('Has a BookingForm heading', () => {
     const wrapper = shallow(<BookingForm />);
     const welcome = <h3>Booking Form</h3>
-    expect(wrapper.contains(welcome)).toEqual(true);
+    expect(wrapper.contains(welcome)).to.equal(true);
   });
   
   it('renders a `.book-form`', () => {

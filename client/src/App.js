@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+// import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css'
 
-import BookingForm from './components/BookingForm';
+// import BookingForm from './components/BookingForm';
 // import EnquiryForm from './components/EnquiryForm';
 import Home from './components/Home';
 import HeroImage from './components/HeroImage';
@@ -16,42 +16,42 @@ import Landing from './components/layout/Landing'
 import Register from './components/auth/Register'
 import Login from './components/auth/Login'
 
-class App extends Component {
-  render() {
-    return(
-      <Router>
-        <div className="App">
-          <Navbar />
-          <Route exact path="/" component={Landing} />
-          <Route exact path="/register" component={Register} />
-          <Route exact path="/login" component={Login} />
-        </div>
-      </Router>
-    )
-  }
-}
-
-
-// function App() {
-//   return (
-//     <React.Fragment>
+// class App extends Component {
+//   render() {
+//     return(
 //       <Router>
-//       <Navbar />
-//       <Landing />
+//         <div className="App">
+//           <Navbar />
+//           <Route exact path="/" component={Landing} />
+//           <Route exact path="/register" component={Register} />
+//           <Route exact path="/login" component={Login} />
+//         </div>
 //       </Router>
-//       <BookingForm />
-
-//       <Home />
-//       <HeroImage />
-//       <Service1 />
-
-//       <Guarantee />
-//       <EnquiryForm />
-//       {/* <Card1 /> */}
-//       {/* <Services /> */}
-
-//     </React.Fragment>
-//   );
+//     )
+//   }
 // }
+
+
+function App() {
+  return (
+    <React.Fragment>
+      {/* <Router> */}
+      {/* <Navbar /> */}
+      {/* <Landing /> */}
+      {/* </Router> */}
+      {/* <BookingForm /> */}
+
+      <Home />
+      <HeroImage />
+      <Service1 />
+
+      <Guarantee />
+      <EnquiryForm />
+      {/* <Card1 /> */}
+      {/* <Services /> */}
+
+    </React.Fragment>
+  );
+}
 
 export default App;
