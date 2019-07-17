@@ -108,14 +108,19 @@ describe('<Guarantee />', () => {
     expect(wrapper.find('.guar-icons')).to.have.lengthOf(1);
   });
 
-  it('renders children when passed in', () => {
-    const wrapper = shallow((
-      <Guarantee>
-        <div className="guar-container" />
-      </Guarantee>
-    ));
-    expect(wrapper.contains(<div className="guar-container" />)).to.equal(true);
+  it('Rendering icons', () => {
+    const wrapper = shallow(<Guarantee />);
+    const icon = <i class="fas fa-thumbs-up fa-3x"></i>
+    expect(wrapper.contains(icon)).to.equal(true);
   });
+  // it('renders children when passed in', () => {
+  //   const wrapper = shallow((
+  //     <Guarantee>
+  //       <div className="guar-container" />
+  //     </Guarantee>
+  //   ));
+  //   expect(wrapper.contains(<div className="guar-container" />)).to.equal(true);
+  // });
 });
 
 // Enquiry  
