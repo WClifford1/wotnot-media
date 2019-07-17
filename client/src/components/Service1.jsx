@@ -9,7 +9,7 @@ export default function Service1() {
                     <div className="card">
                         <div className="serv-icon">
                         <div className="serv-title">
-                        <i class="fas fa-camera fa-5x" aria-hidden="true"></i>
+                        <i className="fas fa-camera fa-5x" aria-hidden="true"></i>
                         </div>
                         </div>
                         <div className="price">
@@ -17,11 +17,11 @@ export default function Service1() {
                         </div>
                         <div className="option">
                             <ul>
-                            <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>
-                            <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>
-                            <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>
-                            <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>
-                            <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+                            <li><i className="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+                            <li><i className="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+                            <li><i className="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+                            <li><i className="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+                            <li><i className="fas fa-check"></i>Lorem ipsum dolor sit.</li>
                             </ul>
                         </div>
                         <a href="#">Enquire now</a>
@@ -30,7 +30,7 @@ export default function Service1() {
                     <div className="card">
                     <div className="serv-icon">
                         <div className="serv-title">
-                        <i class="fas fa-video fa-5x"  aria-hidden="true"></i>
+                        <i className="fas fa-video fa-5x"  aria-hidden="true"></i>
                         </div>
                         </div>
                         <div className="price">
@@ -38,11 +38,11 @@ export default function Service1() {
                         </div>
                         <div className="option">
                             <ul>
-                            <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>
-                            <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>
-                            <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>
-                            <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>
-                            <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+                            <li><i className="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+                            <li><i className="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+                            <li><i className="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+                            <li><i className="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+                            <li><i className="fas fa-check"></i>Lorem ipsum dolor sit.</li>
                             </ul>
                         </div>
                         <a href="#">Enquire now</a>
@@ -51,7 +51,7 @@ export default function Service1() {
                     <div className="card">
                     <div className="serv-icon">
                         <div className="serv-title">
-                        <i class="fab fa-internet-explorer fa-4x" aria-hidden="true"></i>
+                        <i className="fab fa-internet-explorer fa-4x" aria-hidden="true"></i>
                         </div>
                         </div>
                         <div className="price">
@@ -60,11 +60,11 @@ export default function Service1() {
                         </div>
                         <div className="option">
                             <ul>
-                            <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>
-                            <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>
-                            <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>
-                            <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>
-                            <li><i class="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+                            <li><i className="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+                            <li><i className="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+                            <li><i className="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+                            <li><i className="fas fa-check"></i>Lorem ipsum dolor sit.</li>
+                            <li><i className="fas fa-check"></i>Lorem ipsum dolor sit.</li>
                             </ul>
                         </div>
                         <a href="#">Enquire now</a>
