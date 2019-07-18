@@ -1,5 +1,6 @@
 @import './Styles/Enquiry';
 @import './Styles/Booking';
+@import './Styles/Home'
 
 $off-white: #fcf7f8;
 $dark-blue: #211c4f;
@@ -54,47 +55,8 @@ $off-black: #322645;
     cursor: pointer;
 }
 
-
-
-
-
 html {
     scroll-behavior: smooth;
-}
-
-.nav {
-    background: #001D4A;
-}
-
-.nav-items {
-
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    display: flex;
-    // border: 2px solid black; 
-    justify-content: space-evenly;
-
-    li {
-        display: flex;
-
-        // border: 2px solid red;
-        a {
-            // display: flex;
-            // border: 2px solid green;
-            font-size: 18px;
-            text-decoration: none;
-            // color: rgb(46, 45, 45);
-            color: white;
-
-            // &:hover {
-            //     color: rgb(3, 22, 31);
-            // }
-
-        }
-    }
 }
 
 .hero-banner {
@@ -138,26 +100,9 @@ html {
 }
 
 
-.logo {
-    color: #ECA400;
-    text-align: center;
-    background-color: #001D4A;
-    padding-top: 20px;
-}
 
-.hov:after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #ECA400;
-    transition: width .5s
-}
 
-.hov:hover::after {
-    width: 100%;
-    transition: width .3s
-}
+
 
 .guar-container {
     background-color: #f4f5f6;

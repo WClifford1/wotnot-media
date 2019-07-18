@@ -37,13 +37,13 @@ function App() {
   return (
     <React.Fragment>
       <Home />
+      <HeroImage />
 
       {/* <Router> */}
       {/* <Navbar /> */}
       {/* <Landing /> */}
       {/* </Router> */}
       {/* <BookingForm /> */}
-      {/* <HeroImage /> */}
       {/* <Service1 /> */}
       {/* <Guarantee /> */}
       {/* <EnquiryForm /> */}
