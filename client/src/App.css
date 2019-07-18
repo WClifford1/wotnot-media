@@ -273,6 +273,7 @@ html {
 
 .nav-cont {
   height: 100vh;
+  background-color: #fcf7f8;
 }
 
 .nav-cont .hero-image {
@@ -350,6 +351,22 @@ html {
   color: white;
 }
 
+.serves-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 40px;
+  color: #7d7ebe;
+  font-weight: 100;
+  padding: 60px;
+  background-color: #fcf7f8;
+}
+
 .serves-cont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -357,40 +374,142 @@ html {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 60px;
+  background-color: #fcf7f8;
 }
 
 .serves-cont .serves1 {
-  color: #d98d91;
+  color: #f0ac39;
   text-align: center;
   padding: 10px;
 }
 
 .serves-cont .serves1 .serves1-text {
-  padding: 10px;
+  padding: 15px;
   color: #7d7ebe;
 }
 
+.serves-cont .serves1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
 .serves-cont .serves2 {
-  color: #d98d91;
+  color: #f0ac39;
   text-align: center;
   padding: 10px;
 }
 
 .serves-cont .serves2 .serves2-text {
-  padding: 10px;
+  padding: 15px;
   color: #7d7ebe;
 }
 
+.serves-cont .serves2:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
 .serves-cont .serves3 {
-  color: #d98d91;
+  color: #f0ac39;
   text-align: center;
   padding: 10px;
 }
 
 .serves-cont .serves3 .serves3-text {
-  padding: 10px;
+  padding: 15px;
   color: #7d7ebe;
+}
+
+.serves-cont .serves3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.help-cont {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fcf7f8;
+}
+
+.help-cont .help-blob {
+  position: relative;
+  left: -200px;
+}
+
+.help-cont .help-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20px;
+}
+
+.help-cont .help-text h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-weight: 100;
+  color: #7d7ebe;
+}
+
+.help-cont .help-text p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  line-height: 1.5em;
+}
+
+.help-cont .help-text .helpbtn-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px;
+}
+
+.help-cont .help-text .helpbtn-cont .help-btn {
+  border-radius: 40px;
+  background-color: #f0ac39;
+  font-size: 17px;
+  padding: 15px 40px 15px 40px;
+  border: 1px solid #f0ac39;
+  cursor: pointer;
+  color: white;
+}
+
+.help-cont .help-text .helpbtn-cont .help-btn:hover {
+  color: #f0ac39;
+  background-color: white;
 }
 
 .guar-container {

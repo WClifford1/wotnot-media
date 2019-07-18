@@ -16,6 +16,7 @@ $title-pad: 40px;
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
+    
 }
 
 @mixin form-title {
@@ -63,6 +64,7 @@ html {
 // Part of home 
 .nav-cont {
     height: 100vh;
+    background-color: $off-white;
     // border: 2px solid red;
 
     .hero-image {
@@ -130,49 +132,149 @@ html {
 // End of home 
 
 // Services Container 
+
+.serves-title {
+    display: flex;
+    // border:2px solid blue;
+    justify-content: center;
+    align-content: center;
+    padding: $title-pad;
+    color: $material-purple;
+    font-weight: 100;
+    padding: 60px;
+    background-color: $off-white;
+
+}
+
 .serves-cont {
     display: flex;
     justify-content: space-evenly;
-    padding: 60px;
+    // border: 2px solid red;
+    background-color: $off-white;
+
+
 
     .serves1{
-        color: $material-pink;
+        color: $material-yellow;
         // border: 2px solid red;
         text-align: center;
         padding: 10px;
 
         .serves1-text {
-            padding: 10px;
+            padding: 15px;
             color: $material-purple;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
         }
     }
 
     .serves2{
-        color: $material-pink;
+        color: $material-yellow;
         // border: 2px solid red;
         text-align: center;
         padding: 10px;
 
         .serves2-text {
-            padding: 10px;
+            padding: 15px;
             color: $material-purple;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
         }
     }
 
     .serves3{
-        color: $material-pink;
+        color: $material-yellow;
         // border: 2px solid red;
         text-align: center;
         padding: 10px;
 
         .serves3-text {
-            padding: 10px;
+            padding: 15px;
             color: $material-purple;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
         }
     }
 
 }
 
+.help-cont {
+    // border: 2px solid red;
+    // padding-right: 1000px;
+    padding-top: 20px;
+    // border: 2px solid red;
+    display: flex;
+    background-color: $off-white;
+
+ .help-blob {
+        position: relative;
+        left: -200px;
+    }
+
+.help-text {
+    // border:2px solid red;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-right: 20px;
+
+    
+   h1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    // padding: $title-pad;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: 100;
+    color: $material-purple;
+    // text-align: center;
+   }
+   p {
+       display: flex;
+       text-align: center;
+       justify-content: center;
+       align-content: center;
+       width: 100%;
+       line-height: 1.5em;
+    //    border:2px solid red;
+   }
+
+   .helpbtn-cont {
+       display: flex;
+    //    border: 2px solid red;
+       justify-content: center;
+       padding: $title-pad;
+
+       .help-btn {
+        border-radius: 40px;
+        background-color: $material-yellow;
+        font-size: 17px;
+        padding: 15px 40px 15px 40px;
+        border: 1px solid $material-yellow;
+        cursor: pointer;
+        color: white;
+
+        &:hover {
+            color: $material-yellow;
+            background-color: white;
+        }
+       }
+   }
+   
+}
+}
 
 
 

@@ -2,6 +2,9 @@ import React from 'react'
 
 export default function Service2() {
     return (
+        <React.Fragment>
+        <h1 className="serves-title">Services</h1>
+
         <div className="serves-cont">
             <div className="serves1">
                 <i className="fas fa-camera fa-5x" aria-hidden="true"></i>
@@ -22,5 +25,6 @@ export default function Service2() {
                 </div>
             </div>
         </div>
+        </React.Fragment>
     )
 }
