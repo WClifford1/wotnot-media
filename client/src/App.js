@@ -16,6 +16,7 @@ import Landing from './components/layout/Landing'
 import Register from './components/auth/Register'
 import Login from './components/auth/Login'
 import BookingForm from './components/BookingForm';
+import Service2 from './components/Service2';
 
 // class App extends Component {
 //   render() {
@@ -37,7 +38,8 @@ function App() {
   return (
     <React.Fragment>
       <Home />
-      
+      <Service2 />
+
       {/* <HeroImage /> */}
 
       {/* <Router> */}

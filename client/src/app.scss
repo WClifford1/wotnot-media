@@ -62,7 +62,8 @@ html {
 
 // Part of home 
 .nav-cont {
-    height: 100vw;
+    height: 100vh;
+    // border: 2px solid red;
 
     .hero-image {
         display: flex;
@@ -71,6 +72,8 @@ html {
         .blob {
             // border: 2px solid green;
             height: 100%;
+            // border: 2px solid red;
+            // padding-bottom: 20px;
         }
     }
 
@@ -126,6 +129,49 @@ html {
 }
 // End of home 
 
+// Services Container 
+.serves-cont {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px;
+
+    .serves1{
+        color: $material-pink;
+        // border: 2px solid red;
+        text-align: center;
+        padding: 10px;
+
+        .serves1-text {
+            padding: 10px;
+            color: $material-purple;
+        }
+    }
+
+    .serves2{
+        color: $material-pink;
+        // border: 2px solid red;
+        text-align: center;
+        padding: 10px;
+
+        .serves2-text {
+            padding: 10px;
+            color: $material-purple;
+        }
+    }
+
+    .serves3{
+        color: $material-pink;
+        // border: 2px solid red;
+        text-align: center;
+        padding: 10px;
+
+        .serves3-text {
+            padding: 10px;
+            color: $material-purple;
+        }
+    }
+
+}
 
 
 

@@ -209,6 +209,7 @@
   display: -ms-flexbox;
   display: flex;
   width: 60%;
+  padding-top: 10px;
 }
 
 .nav .logo {
@@ -271,7 +272,7 @@ html {
 }
 
 .nav-cont {
-  height: 100vw;
+  height: 100vh;
 }
 
 .nav-cont .hero-image {
@@ -347,6 +348,49 @@ html {
 .nav-cont .hero-text .hbtn-cont .hero-btn:hover {
   background-color: #f0ac39;
   color: white;
+}
+
+.serves-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 60px;
+}
+
+.serves-cont .serves1 {
+  color: #d98d91;
+  text-align: center;
+  padding: 10px;
+}
+
+.serves-cont .serves1 .serves1-text {
+  padding: 10px;
+  color: #7d7ebe;
+}
+
+.serves-cont .serves2 {
+  color: #d98d91;
+  text-align: center;
+  padding: 10px;
+}
+
+.serves-cont .serves2 .serves2-text {
+  padding: 10px;
+  color: #7d7ebe;
+}
+
+.serves-cont .serves3 {
+  color: #d98d91;
+  text-align: center;
+  padding: 10px;
+}
+
+.serves-cont .serves3 .serves3-text {
+  padding: 10px;
+  color: #7d7ebe;
 }
 
 .guar-container {
