@@ -6,6 +6,9 @@ import * as serviceWorker from './serviceWorker';
 <<<<<<< HEAD
 =======
 import 'bootstrap/dist/css/bootstrap.min.css';
+<<<<<<< HEAD
+>>>>>>> 6b71172813f36b841f05bf4098b2fa87a550402c
+=======
 >>>>>>> 6b71172813f36b841f05bf4098b2fa87a550402c
 
 ReactDOM.render(<div><App /></div>, document.getElementById('root'));
