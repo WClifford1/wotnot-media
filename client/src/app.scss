@@ -1,8 +1,19 @@
+@import './Styles/Enquiry';
+@import './Styles/Booking';
+
+$off-white: #fcf7f8;
+$dark-blue: #211c4f;
+$material-grey: #bab0ba;
+$material-pink: #d98d91;
+$material-purple: #7d7ebe;
+$material-red: #eb561a;
+$material-yellow: #f0ac39;
+$off-black: #322645;
+
+
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
-
-    // background: #001D4A;
 }
 
 @mixin form-title {
@@ -394,17 +405,6 @@ html {
         box-shadow: 0 10px 10px rgba(0, 0, 0, .5);
     }
 
-    // .fa-file-upload {
-    //     color: #fff;
-    //     font-size: 60px;
-    //     width: 100px;
-    //     height: 100px;
-    //     border-radius: 50%;
-    //     text-align: center;
-    //     line-height: 100px;
-    //     box-shadow: 0 10px 10px rgba(0,0,0,.5);
-    // }
-
     .serv-title h2 {
         // position: relative;
         display: flex;
@@ -458,105 +458,11 @@ html {
         color: white;
 
     }
-}
 
-.enq-cont {
-    padding: 40px;
-    // border: 2px solid red;
-
-    .enq-title {
-     @include form-title;
-    }
-
-    .enq-form {
-        display: flex;
-        justify-content: center;
-
-        .form-text {
-            padding-left: 10px;
-        }
-
-        .form-control {
-            @include input-box-size;
-
-            &::placeholder {
-                color: rgb(82, 82, 83);
-                font-size: 1.0em;
-                line-height: 1em;
-                padding: 10px;
-              }
-        }
-        
-    }
-
-    .form-input {
-        @include input-form;
-        // border: 2px solid red;
-    }
-
-    .form-btn {
-        @include btn-container;
-        
-        .enq-btn {
-            @include inner-btn;
-        }
-    }
-
-}
-
-
-.book-cont {
-    padding: 40px; 
-
-.book-title {
-    @include form-title;
-}
-
-.book-form {
-    display: flex;
-    justify-content: center;
-
-.book-input {
-    @include input-form;
-}
-
-.book-control {
-    @include input-box-size;
-
-    &::placeholder {
-        color: rgb(82, 82, 83);
-        font-size: 1.0em;
-        line-height: 1em;
-        padding: 10px;
-      }
-}
-
-.book-text {
-    padding-left: 10px;
-}
-
-.book-select {
-    width: 80vw;
-    padding: 10px;
-    width: 100%;
     
-    select {
-        padding: 10px;
-        @include input-box-size;
-    }
 }
 
 
-.book-btn {
-    @include btn-container;
 
-    .book-sub {
-        @include inner-btn;
-    }
-}
-}
-
-
-}
 
 

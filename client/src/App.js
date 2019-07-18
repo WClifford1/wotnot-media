@@ -15,6 +15,7 @@ import Navbar from './components/layout/Navbar'
 import Landing from './components/layout/Landing'
 import Register from './components/auth/Register'
 import Login from './components/auth/Login'
+import BookingForm from './components/BookingForm';
 
 // class App extends Component {
 //   render() {
@@ -35,18 +36,17 @@ import Login from './components/auth/Login'
 function App() {
   return (
     <React.Fragment>
+      <Home />
+
       {/* <Router> */}
       {/* <Navbar /> */}
       {/* <Landing /> */}
       {/* </Router> */}
       {/* <BookingForm /> */}
-
-      <Home />
-      <HeroImage />
-      <Service1 />
-
-      <Guarantee />
-      <EnquiryForm />
+      {/* <HeroImage /> */}
+      {/* <Service1 /> */}
+      {/* <Guarantee /> */}
+      {/* <EnquiryForm /> */}
       {/* <Card1 /> */}
       {/* <Services /> */}
 

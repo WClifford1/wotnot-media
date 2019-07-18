@@ -131,20 +131,28 @@ describe('<EnquiryForm />', () => {
     expect(wrapper.contains(welcome)).to.equal(true);
   });
   
-  it('renders a `.form-text`', () => {
+  it('renders an `.enq-form`', () => {
     const wrapper = shallow(<EnquiryForm />);
-    expect(wrapper.find('.form-text')).to.have.lengthOf(1);
+    expect(wrapper.find('.enq-form')).to.have.lengthOf(1);
   });
 
-  it('renders children when passed in', () => {
-    const wrapper = shallow((
-      <EnquiryForm>
-        <div className="enq-cont" />
-      </EnquiryForm>
-    ));
-    expect(wrapper.contains(<div className="enq-cont" />)).to.equal(true);
+  it('Has enquiry form labels', () => {
+    const wrapper = shallow(<EnquiryForm />);
+    const label = <label><strong>Phone : </strong></label>
+    expect(wrapper.contains(label)).to.equal(true);
   });
+
 });
+
+//   it('renders children when passed in', () => {
+//     const wrapper = shallow((
+//       <EnquiryForm>
+//         <div className="enq-cont" />
+//       </EnquiryForm>
+//     ));
+//     expect(wrapper.contains(<div className="enq-cont" />)).to.equal(true);
+//   });
+// });
 
 // BookingForm  
 describe('<BookingForm />', () => {
@@ -159,14 +167,36 @@ describe('<BookingForm />', () => {
     expect(wrapper.find('.book-form')).to.have.lengthOf(1);
   });
 
-  it('renders children when passed in', () => {
-    const wrapper = shallow((
-      <BookingForm>
-        <div className="book-cont" />
-      </BookingForm>
-    ));
-    expect(wrapper.contains(<div className="book-cont" />)).to.equal(true);
+  it('Has a booking label', () => {
+    const wrapper = shallow(<BookingForm />);
+    const label = <label>Name :</label>
+    expect(wrapper.contains(label)).to.equal(true);
   });
+
+  it('incrementCounter: should increment state.count by 1', () => {
+    onChangeName(e) {
+      this.setState({
+          name: e.target.value
+      })
+  }
+    const wrapper = shallow(<BookingForm onChange={this.onChangeName}/>);
+    const instance = wrapper.instance();
+    expect(instance.state.onChangeName).to.equal(true);
+  });
+  // it('Logs bookings to the console', () => {
+  //   const wrapper = shallow(<BookingForm />);
+  //   const label = console.log(`Booking submitted: `)
+  //   expect(wrapper.contains(label)).to.equal(true);
+  // });
+
+  // it('Has an input', () => {
+  //   const wrapper = shallow(<BookingForm />);
+  //   const input = <input type="text" className="book-control"
+  //                               value={this.state.name}
+  //                               onChange={this.onChangeName} />
+  //   expect(wrapper.contains(input)).to.equal(true);
+  // });
+
 });
 
 

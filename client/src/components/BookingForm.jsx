@@ -22,7 +22,6 @@ export default class BookingForm extends Component {
     }
 
     onChangeName(e) {
-
         this.setState({
             name: e.target.value
         })

@@ -3,6 +3,212 @@
   margin: 0px;
 }
 
+.enq-cont {
+  padding: 40px;
+}
+
+.enq-cont .enq-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #001D4A;
+}
+
+.enq-cont .enq-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.enq-cont .enq-form .form-text {
+  padding-left: 10px;
+}
+
+.enq-cont .enq-form .form-control {
+  border-radius: 5px;
+  height: 35px;
+  border: 1px solid #999999;
+  width: 80vw;
+}
+
+.enq-cont .enq-form .form-control::-webkit-input-placeholder {
+  color: #525253;
+  font-size: 1.0em;
+  line-height: 1em;
+  padding: 10px;
+}
+
+.enq-cont .enq-form .form-control:-ms-input-placeholder {
+  color: #525253;
+  font-size: 1.0em;
+  line-height: 1em;
+  padding: 10px;
+}
+
+.enq-cont .enq-form .form-control::-ms-input-placeholder {
+  color: #525253;
+  font-size: 1.0em;
+  line-height: 1em;
+  padding: 10px;
+}
+
+.enq-cont .enq-form .form-control::placeholder {
+  color: #525253;
+  font-size: 1.0em;
+  line-height: 1em;
+  padding: 10px;
+}
+
+.enq-cont .form-input {
+  padding: 10px;
+  width: 100%;
+}
+
+.enq-cont .form-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.enq-cont .form-btn .enq-btn {
+  border-radius: 5px;
+  border: none;
+  height: 2.5em;
+  font-weight: bold;
+  width: 80vw;
+  text-align: center;
+  background-color: #001D4A;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+}
+
+.book-cont {
+  padding: 40px;
+}
+
+.book-cont .book-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  color: #001D4A;
+}
+
+.book-cont .book-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.book-cont .book-form .book-input {
+  padding: 10px;
+  width: 100%;
+}
+
+.book-cont .book-form .book-control {
+  border-radius: 5px;
+  height: 35px;
+  border: 1px solid #999999;
+  width: 80vw;
+}
+
+.book-cont .book-form .book-control::-webkit-input-placeholder {
+  color: #525253;
+  font-size: 1.0em;
+  line-height: 1em;
+  padding: 10px;
+}
+
+.book-cont .book-form .book-control:-ms-input-placeholder {
+  color: #525253;
+  font-size: 1.0em;
+  line-height: 1em;
+  padding: 10px;
+}
+
+.book-cont .book-form .book-control::-ms-input-placeholder {
+  color: #525253;
+  font-size: 1.0em;
+  line-height: 1em;
+  padding: 10px;
+}
+
+.book-cont .book-form .book-control::placeholder {
+  color: #525253;
+  font-size: 1.0em;
+  line-height: 1em;
+  padding: 10px;
+}
+
+.book-cont .book-form .book-text {
+  padding-left: 10px;
+}
+
+.book-cont .book-form .book-select {
+  width: 80vw;
+  padding: 10px;
+  width: 100%;
+}
+
+.book-cont .book-form .book-select select {
+  padding: 10px;
+  border-radius: 5px;
+  height: 35px;
+  border: 1px solid #999999;
+  width: 80vw;
+}
+
+.book-cont .book-form .book-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+}
+
+.book-cont .book-form .book-btn .book-sub {
+  border-radius: 5px;
+  border: none;
+  height: 2.5em;
+  font-weight: bold;
+  width: 80vw;
+  text-align: center;
+  background-color: #001D4A;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -385,201 +591,5 @@ html {
   text-decoration: none;
   background: linear-gradient(-45deg, #f403d1, #645bf6);
   color: white;
-}
-
-.enq-cont {
-  padding: 40px;
-}
-
-.enq-cont .enq-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 30px;
-  color: #001D4A;
-}
-
-.enq-cont .enq-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.enq-cont .enq-form .form-text {
-  padding-left: 10px;
-}
-
-.enq-cont .enq-form .form-control {
-  border-radius: 5px;
-  height: 35px;
-  border: 1px solid #999999;
-  width: 80vw;
-}
-
-.enq-cont .enq-form .form-control::-webkit-input-placeholder {
-  color: #525253;
-  font-size: 1.0em;
-  line-height: 1em;
-  padding: 10px;
-}
-
-.enq-cont .enq-form .form-control:-ms-input-placeholder {
-  color: #525253;
-  font-size: 1.0em;
-  line-height: 1em;
-  padding: 10px;
-}
-
-.enq-cont .enq-form .form-control::-ms-input-placeholder {
-  color: #525253;
-  font-size: 1.0em;
-  line-height: 1em;
-  padding: 10px;
-}
-
-.enq-cont .enq-form .form-control::placeholder {
-  color: #525253;
-  font-size: 1.0em;
-  line-height: 1em;
-  padding: 10px;
-}
-
-.enq-cont .form-input {
-  padding: 10px;
-  width: 100%;
-}
-
-.enq-cont .form-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 20px;
-}
-
-.enq-cont .form-btn .enq-btn {
-  border-radius: 5px;
-  border: none;
-  height: 2.5em;
-  font-weight: bold;
-  width: 80vw;
-  text-align: center;
-  background-color: #001D4A;
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.book-cont {
-  padding: 40px;
-}
-
-.book-cont .book-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 30px;
-  color: #001D4A;
-}
-
-.book-cont .book-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.book-cont .book-form .book-input {
-  padding: 10px;
-  width: 100%;
-}
-
-.book-cont .book-form .book-control {
-  border-radius: 5px;
-  height: 35px;
-  border: 1px solid #999999;
-  width: 80vw;
-}
-
-.book-cont .book-form .book-control::-webkit-input-placeholder {
-  color: #525253;
-  font-size: 1.0em;
-  line-height: 1em;
-  padding: 10px;
-}
-
-.book-cont .book-form .book-control:-ms-input-placeholder {
-  color: #525253;
-  font-size: 1.0em;
-  line-height: 1em;
-  padding: 10px;
-}
-
-.book-cont .book-form .book-control::-ms-input-placeholder {
-  color: #525253;
-  font-size: 1.0em;
-  line-height: 1em;
-  padding: 10px;
-}
-
-.book-cont .book-form .book-control::placeholder {
-  color: #525253;
-  font-size: 1.0em;
-  line-height: 1em;
-  padding: 10px;
-}
-
-.book-cont .book-form .book-text {
-  padding-left: 10px;
-}
-
-.book-cont .book-form .book-select {
-  width: 80vw;
-  padding: 10px;
-  width: 100%;
-}
-
-.book-cont .book-form .book-select select {
-  padding: 10px;
-  border-radius: 5px;
-  height: 35px;
-  border: 1px solid #999999;
-  width: 80vw;
-}
-
-.book-cont .book-form .book-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 20px;
-}
-
-.book-cont .book-form .book-btn .book-sub {
-  border-radius: 5px;
-  border: none;
-  height: 2.5em;
-  font-weight: bold;
-  width: 80vw;
-  text-align: center;
-  background-color: #001D4A;
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
 }
 /*# sourceMappingURL=app.css.map */
