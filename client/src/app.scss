@@ -38,9 +38,9 @@ $title-pad: 40px;
 }
 
 @mixin btn-container {
-        display: flex;
-        justify-content: center;
-        padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
 }
 
 @mixin inner-btn {
@@ -60,69 +60,72 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
+// Part of home 
 .nav-cont {
     height: 100vw;
-.hero-image {
-    display: flex;
-    // border: 2px solid red;
 
-    .blob {
-        // border: 2px solid green;
-        height: 100%;
-    }
-}
-
-.hero-text {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 100px;      
-    h1 { 
-    display: flex;
-    // border:2px solid blue;
-    width: 95%;
-    justify-content: center;
-    align-content: center;
-    padding: $title-pad;
-    color: $material-purple;
-    font-weight: 100;
-    }
-
-    p {
+    .hero-image {
         display: flex;
-        // border: 2px solid green;
-        width: 95%;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-        line-height: 1.5em;
-    }
+        // border: 2px solid red;
 
-    .hbtn-cont {
-        padding: $title-pad;
-
-    .hero-btn {
-        border-radius: 40px;
-        background-color: white;
-        font-size: 17px;
-        padding: 15px;
-        border: 1px solid $material-yellow;
-        cursor: pointer;
-        color: $material-yellow;
-
-        &:hover {
-        background-color: $material-yellow;
-        color: white;
+        .blob {
+            // border: 2px solid green;
+            height: 100%;
         }
     }
-}
-}
+
+    .hero-text {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 80px;
+
+        h1 {
+            display: flex;
+            // border:2px solid blue;
+            width: 95%;
+            justify-content: center;
+            align-content: center;
+            padding: $title-pad;
+            color: $material-purple;
+            font-weight: 100;
+        }
+
+        p {
+            display: flex;
+            // border: 2px solid green;
+            width: 95%;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            line-height: 1.5em;
+        }
+
+        .hbtn-cont {
+            padding: $title-pad;
+
+            .hero-btn {
+                border-radius: 40px;
+                background-color: white;
+                font-size: 17px;
+                padding: 15px;
+                border: 1px solid $material-yellow;
+                cursor: pointer;
+                color: $material-yellow;
+
+                &:hover {
+                    background-color: $material-yellow;
+                    color: white;
+                }
+            }
+        }
+    }
 
 }
+// End of home 
+
 
 
 
@@ -313,7 +316,7 @@ html {
         // border: 2px solid blue;
         text-align: center;
     }
-    
+
     .card {
         // border: 2px solid green;
         max-width: 300px;
@@ -389,7 +392,7 @@ html {
         // position: relative;
         z-index: 2;
         // border: 2px solid green;
-        color: white; 
+        color: white;
         padding: 20px;
     }
 
@@ -429,10 +432,5 @@ html {
 
     }
 
-    
+
 }
-
-
-
-
-

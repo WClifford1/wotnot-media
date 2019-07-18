@@ -37,6 +37,7 @@ function App() {
   return (
     <React.Fragment>
       <Home />
+      
       {/* <HeroImage /> */}
 
       {/* <Router> */}
