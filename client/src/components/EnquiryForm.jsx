@@ -73,7 +73,6 @@ export default class EnquiryForm extends Component {
         })
     }
 
-
     render() {
         return (
             <div style={{marginTop: 20}}>
@@ -82,29 +81,33 @@ export default class EnquiryForm extends Component {
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label>Name</label>
-                        <input type="text" className="form-control"
-                        value={this.state.name} 
+                        <input type="text" 
+                        className="form-control"
+                        value={this.state.name}
                         onChange={this.onChangeName} />
                     </div>
 
                     <div className="form-group">
                         <label>Email</label>
-                        <input type="text" className="form-control"
-                        value={this.state.email} 
+                        <input type="text" 
+                        className="form-control"
+                        value={this.state.email}
                         onChange={this.onChangeEmail} />
                     </div>
 
                     <div className="form-group">
                         <label>Phone</label>
-                        <input type="text" className="form-control"
-                        value={this.state.phone} 
+                        <input type="text"
+                        value={this.state.phone}
+                        className="form-control"
                         onChange={this.onChangePhone} />
                     </div>
 
                     <div className="form-group">
                         <label>Enquiry</label>
-                        <textarea type="text" className="form-control"
-                        value={this.state.enquiry} 
+                        <textarea type="text"
+                        className="form-control"
+                        value={this.state.enquiry}
                         onChange={this.onChangeEnquiry} />
                     </div>
 
