@@ -3,13 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-<<<<<<< HEAD
-=======
-import 'bootstrap/dist/css/bootstrap.min.css';
-<<<<<<< HEAD
->>>>>>> 6b71172813f36b841f05bf4098b2fa87a550402c
-=======
->>>>>>> 6b71172813f36b841f05bf4098b2fa87a550402c
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 ReactDOM.render(<div><App /></div>, document.getElementById('root'));
 
