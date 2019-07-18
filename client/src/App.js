@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import jwt_decode from 'jwt-decode'
@@ -65,6 +66,20 @@ class App extends Component {
       </Provider>
     )
   }
+=======
+import React from 'react';
+import './App.css';
+import EnquiryForm from './components/EnquiryForm';
+import ShowEnquiries from './components/ShowEnquiries';
+
+function App() {
+  return (
+    <React.Fragment>
+      <EnquiryForm />
+      <ShowEnquiries />
+    </React.Fragment>
+  );
+>>>>>>> 6b71172813f36b841f05bf4098b2fa87a550402c
 }
 
 

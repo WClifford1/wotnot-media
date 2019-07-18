@@ -73,7 +73,6 @@ export default class EnquiryForm extends Component {
         })
     }
 
-
     render() {
         return (
             <div className="enq-cont">
@@ -84,30 +83,58 @@ export default class EnquiryForm extends Component {
                 <div className="enq-form">
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
+<<<<<<< HEAD
                         {/* <label><strong>Name: </strong></label> */}
                         <input type="text" className="form-control" placeholder="Name"
                         value={this.state.name} 
+=======
+                        <label>Name</label>
+                        <input type="text" 
+                        className="form-control"
+                        value={this.state.name}
+>>>>>>> 6b71172813f36b841f05bf4098b2fa87a550402c
                         onChange={this.onChangeName} />
                     </div>
 
                     <div className="form-group">
+<<<<<<< HEAD
                         {/* <label><strong>Email: </strong></label> */}
                         <input type="text" className="form-control" placeholder="Email"
                         value={this.state.email} 
+=======
+                        <label>Email</label>
+                        <input type="text" 
+                        className="form-control"
+                        value={this.state.email}
+>>>>>>> 6b71172813f36b841f05bf4098b2fa87a550402c
                         onChange={this.onChangeEmail} />
                     </div>
 
                     <div className="form-group">
+<<<<<<< HEAD
                         {/* <label><strong>Phone: </strong></label> */}
                         <input type="text" className="form-control" placeholder="Phone"
                         value={this.state.phone} 
+=======
+                        <label>Phone</label>
+                        <input type="text"
+                        value={this.state.phone}
+                        className="form-control"
+>>>>>>> 6b71172813f36b841f05bf4098b2fa87a550402c
                         onChange={this.onChangePhone} />
                     </div>
 
                     <div className="form-group">
+<<<<<<< HEAD
                         {/* <label><strong>Enquiry: </strong></label> */}
                         <textarea type="text" className="form-control" placeholder="Enquiry"
                         value={this.state.enquiry} 
+=======
+                        <label>Enquiry</label>
+                        <textarea type="text"
+                        className="form-control"
+                        value={this.state.enquiry}
+>>>>>>> 6b71172813f36b841f05bf4098b2fa87a550402c
                         onChange={this.onChangeEnquiry} />
                     </div>
 
