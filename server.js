@@ -6,7 +6,7 @@ const db = require('./config/keys').mongoURI
 const enquiries = require('./routes/api/enquiries')
 const bookings = require('./routes/api/bookings')
 const cors = require('cors')
-const passport = require('passport')
+
 
 const users = require('./routes/api/users')
 
@@ -20,11 +20,8 @@ mongoose.connect('mongodb://localhost/wotnotmedia')
 .then(() => console.log('Connected to Localhost'))
 .catch(err => console.log(err))
 
-//passport middleware
-app.use(passport.initialize())
 
-//passport config
-require('./config/passport')(passport)
+
 
 app.use('/api/enquiries', enquiries)
 app.use('/api/bookings', bookings)
