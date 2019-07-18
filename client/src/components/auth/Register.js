@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+import { registerUser } from '../../actions/authActions'
+import classnames from 'classnames'
+import { withRouter} from 'react-router'
 
 class Register extends Component {
     constructor() {
@@ -11,6 +16,21 @@ class Register extends Component {
             errors: {}
         }
     }
+    
+    componentDidMount() {
+        //if logged in and user navigates to Register page, should redirect to dashboard
+        if (this.props.auth && this.props.auth.isAuthenticated) {
+            this.props.history.push("/dashboard")
+        }
+    }
+
+    componentWillReceiveProps(nextProps){
+        if (nextProps.errors) {
+            this.setState({
+                errors: nextProps.errors
+            })
+        }
+    }
 
     onChange = e => {
         this.setState({ [e.target.id]: e.target.value })
@@ -18,6 +38,7 @@ class Register extends Component {
 
     onSubmit = e => {
         e.preventDefault()
+        console.log(e)
 
         const newUser = {
             name: this.state.name,
@@ -25,8 +46,11 @@ class Register extends Component {
             password: this.state.password
         }
 
-        console.log(newUser)
+        // console.log(newUser)
+
+        this.props.registerUser(newUser, this.props.history)
     }
+    
     render() {
         const { errors } = this.state
         return (
@@ -54,8 +78,12 @@ class Register extends Component {
                                 value={this.state.name}
                                 error={errors.name}
                                 id="name"
-                                type="text" />
+                                type="text"
+                                className={classnames("", {
+
+                                })} />
                                 <label htmlFor="name">Name</label>
+                                <span className="red-text">{errors.name}</span>
                             </div>
                             <div className="input-field col s12">
                                 <input 
@@ -63,8 +91,11 @@ class Register extends Component {
                                 value={this.state.username}
                                 error={errors.username}
                                 id="username"
-                                type="username" />
+                                type="text"
+                                className={classnames("", {
+                                })} />
                                 <label htmlFor="username">Username</label>
+                                <span className="red-text">{errors.username}</span>
                         </div>
                         <div className="input-field col s12">
                            <input
@@ -73,8 +104,11 @@ class Register extends Component {
                            error={errors.password}
                            id="password"
                            type="password"
+                           className={classnames("", {
+                           })}
                            />
                            <label htmlFor="password">Password</label>
+                           <span className="red-text">{errors.password}</span>
                             </div> 
                             <div className="col s12" style={{ paddingLeft: 
                             "11.250px" }}>
@@ -84,6 +118,7 @@ class Register extends Component {
                                     borderRadius: "3px",
                                     letterSpacing: "1.5px",
                                     marginTop: "1rem"
+
                                 }}
                                 type="submit"
                                 className="btn btn-large waves-effect waves-
@@ -100,4 +135,18 @@ class Register extends Component {
     }
 }
 
-export default Register
+
+Register.propTypes = {
+    registerUser: PropTypes.func,
+    auth: PropTypes.object,
+    errors: PropTypes.object
+}
+
+const mapStateToProps = state => ({
+    auth: state.auth,
+    errors: state.errors
+})
+
+export default connect(
+    mapStateToProps, { registerUser }
+)(withRouter(Register))

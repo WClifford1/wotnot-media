@@ -10,16 +10,9 @@ const passport = require('passport')
 
 const users = require('./routes/api/users')
 
-
-
-
 app.use(cors())
 app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended: false}))
-app.use('/api/enquiries', enquiries)
-app.use('/api/bookings', bookings)
-//routes
-app.use('/api/users', users)
+// app.use(bodyParser.urlencoded({extended: false}))
 
 
 // mongoose.connect(db)
@@ -33,6 +26,10 @@ app.use(passport.initialize())
 //passport config
 require('./config/passport')(passport)
 
+app.use('/api/enquiries', enquiries)
+app.use('/api/bookings', bookings)
+//routes
+app.use('/api/users', users)
 
 
 const PORT = process.env.PORT || 4000

@@ -1,13 +1,36 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+import { loginUser } from '../../actions/authActions'
+import classnames from 'classnames'
 
 class Login extends Component {
     constructor() {
         super()
         this.state = {
             name: "",
+            username: "",
             password: "",
             errors: {}
+        }
+    }
+
+    componentDidMount() {
+        //if logged in and user navigates to login page, should redirect to dashboard
+        if (localStorage.getItem("jwt")) {
+            this.props.history.push("/dashboard")
+        }
+    }
+
+    componentWillReceiveProps(nextProps){
+        if (localStorage.getItem("jwt")) {
+            this.props.history.push('/dashboard') //push user to dashboard when they login
+        }
+        if (nextProps.errors) {
+            this.setState({
+                    errors: nextProps.errors
+            })
         }
     }
 
@@ -23,12 +46,14 @@ class Login extends Component {
             username: this.state.username,
             password: this.state.password
         }
+        loginUser(userData)//handle redirect within the component, dont need to pass in this.props.history as a parameter
 
         console.log(userData)
     }
 
     render() {
         const { errors } = this.state
+        console.log('render login')
         
         return(
             <div className="container">
@@ -46,7 +71,7 @@ class Login extends Component {
                             </h4>
                             <p className="grey-text text-darken-1">
                                 Dont have an account? <Link
-                                to="/register"></Link>
+                                to="/register">hello</Link>
                             </p>
                         </div>
                         <form noValidate onSubmit={this.onSubmit}>
@@ -56,8 +81,16 @@ class Login extends Component {
                                 value={this.state.name}
                                 error={errors.name}
                                 id="name"
-                                type="text" />
+                                type="name"
+                                className={classnames("", {
+                                    invalid: errors.name ||
+                                    errors.namenotfound
+                                })} />
                                 <label htmlFor="name">Name</label>
+                                <span className="red-text">
+                                    {errors.name}
+                                    {errors.namenotfound}
+                                </span>
                                 </div>
                                 <div className="input-field col s12">
                                     <input
@@ -65,8 +98,16 @@ class Login extends Component {
                                     value={this.state.username}
                                     error={errors.username}
                                     id="username"
-                                    type="username" />
+                                    type="text"
+                                    className={classnames("", {
+                                        invalid: errors.username ||
+                                        errors.usernameincorrect
+                                    })} />
                                     <label htmlFor="username">Username</label>
+                                    <span className="red-text">
+                                        {errors.username}
+                                        {errors.usernameincorrect}
+                                    </span>
                                 </div>
                                 <div className="input-field col s12">
                                     <input
@@ -74,8 +115,15 @@ class Login extends Component {
                                     value={this.state.password}
                                     error={errors.password}
                                     id="password"
-                                    type="password" />
+                                    type="password" 
+                                    className={classnames("", {
+                                        invalid: errors.password || 
+                                        errors.passwordincorrect})}/>
                                     <label htmlFor="password">Password`</label>
+                                    <span className="red-text">
+                                        {errors.password}
+                                        {errors.passwordincorrect}
+                                    </span>
                                 </div>
                                 <div className="col s12" style={{ paddingLeft:
                                  "11.250px" }}>
@@ -101,4 +149,18 @@ class Login extends Component {
     }
 }
 
-export default Login
+Login.propTypes = {
+    loginUser: PropTypes.func,
+    auth: PropTypes.object,
+    errors: PropTypes.object
+}
+
+const mapStateToProps = state => ({
+    auth: state.auth,
+    errors: state.errors
+})
+
+export default connect(
+    mapStateToProps,
+    { loginUser}
+)(Login)
