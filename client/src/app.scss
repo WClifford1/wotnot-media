@@ -11,6 +11,8 @@ $material-red: #eb561a;
 $material-yellow: #f0ac39;
 $off-black: #322645;
 
+$title-pad: 40px;
+
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
@@ -61,9 +63,10 @@ html {
 
 
 .nav-cont {
+    height: 100vw;
 .hero-image {
     display: flex;
-    border: 2px solid red;
+    // border: 2px solid red;
 
     .blob {
         // border: 2px solid green;
@@ -73,21 +76,50 @@ html {
 
 .hero-text {
 
-    h2 { 
     display: flex;
-    border:2px solid blue;
-    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;      
+    h1 { 
+    display: flex;
+    // border:2px solid blue;
+    width: 95%;
     justify-content: center;
     align-content: center;
+    padding: $title-pad;
+    color: $material-purple;
+    font-weight: 100;
     }
 
     p {
         display: flex;
-        width: 100%;
+        // border: 2px solid green;
+        width: 95%;
         justify-content: center;
         align-content: center;
+        text-align: center;
+        line-height: 1.5em;
     }
-    // display: block;
+
+    .hbtn-cont {
+        padding: $title-pad;
+
+    .hero-btn {
+        border-radius: 40px;
+        background-color: white;
+        font-size: 17px;
+        padding: 15px;
+        border: 1px solid $material-yellow;
+        cursor: pointer;
+        color: $material-yellow;
+
+        &:hover {
+        background-color: $material-yellow;
+        color: white;
+        }
+    }
+}
 }
 
 }
