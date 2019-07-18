@@ -1,6 +1,6 @@
 @import './Styles/Enquiry';
 @import './Styles/Booking';
-@import './Styles/Home'
+@import './Styles/Home';
 
 $off-white: #fcf7f8;
 $dark-blue: #211c4f;
@@ -10,7 +10,6 @@ $material-purple: #7d7ebe;
 $material-red: #eb561a;
 $material-yellow: #f0ac39;
 $off-black: #322645;
-
 
 * {
     font-family: 'Montserrat', sans-serif;
@@ -59,43 +58,37 @@ html {
     scroll-behavior: smooth;
 }
 
-.hero-banner {
-    background-color: #001D4A;
+
+
+.nav-cont {
+.hero-image {
     display: flex;
-    height: 83vh;
+    border: 2px solid red;
 
-    .heroimg {
-        height: 75vh;
-        width: 60vw;
-        background-color: transparent;
-        object-fit: cover;
-        z-index: 3;
-        background-clip: padding-box;
-        // background-size: cover;
+    .blob {
+        // border: 2px solid green;
+        height: 100%;
+    }
+}
+
+.hero-text {
+
+    h2 { 
+    display: flex;
+    border:2px solid blue;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
     }
 
-    .text {
-        z-index: 1;
-        padding-top: 40px;
-        // border: 2px solid red;
-
-        .catch-phrase {
-            color: #ECA400;
-            text-align: center;
-            padding-left: 8%;
-            padding-top: 10%;
-            width: 85%;
-
-        }
-
-        .catch-para {
-            color: #ffffff;
-            text-align: center;
-            padding-left: 8%;
-            width: 85%;
-            padding-top: 20px;
-        }
+    p {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
     }
+    // display: block;
+}
 
 }
 

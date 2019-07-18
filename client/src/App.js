@@ -37,7 +37,7 @@ function App() {
   return (
     <React.Fragment>
       <Home />
-      <HeroImage />
+      {/* <HeroImage /> */}
 
       {/* <Router> */}
       {/* <Navbar /> */}

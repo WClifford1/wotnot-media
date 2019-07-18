@@ -1,11 +1,21 @@
+$off-white: #fcf7f8;
+$dark-blue: #211c4f;
+$material-grey: #bab0ba;
+$material-pink: #d98d91;
+$material-purple: #7d7ebe;
+$material-red: #eb561a;
+$material-yellow: #f0ac39;
+$off-black: #322645;
+
 .nav {
     display: flex;
     // border: 2px solid green;
+    width: 60%;
 
     .logo {
         color: black;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 11px;
         width: 50%;    
     }
 

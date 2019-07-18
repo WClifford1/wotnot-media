@@ -204,25 +204,17 @@
   cursor: pointer;
 }
 
-* {
-  font-family: 'Montserrat', sans-serif;
-  margin: 0px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 60%;
 }
 
 .nav .logo {
   color: black;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 11px;
   width: 50%;
 }
 
@@ -268,43 +260,49 @@ html {
   transition: width .3s;
 }
 
-.hero-banner {
-  background-color: #001D4A;
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-cont .hero-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 83vh;
+  border: 2px solid red;
 }
 
-.hero-banner .heroimg {
-  height: 75vh;
-  width: 60vw;
-  background-color: transparent;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: 3;
-  background-clip: padding-box;
+.nav-cont .hero-image .blob {
+  height: 100%;
 }
 
-.hero-banner .text {
-  z-index: 1;
-  padding-top: 40px;
+.nav-cont .hero-text h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid blue;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-.hero-banner .text .catch-phrase {
-  color: #ECA400;
-  text-align: center;
-  padding-left: 8%;
-  padding-top: 10%;
-  width: 85%;
-}
-
-.hero-banner .text .catch-para {
-  color: #ffffff;
-  text-align: center;
-  padding-left: 8%;
-  width: 85%;
-  padding-top: 20px;
+.nav-cont .hero-text p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .guar-container {
