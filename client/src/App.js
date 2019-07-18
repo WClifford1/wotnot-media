@@ -19,6 +19,7 @@ import BookingForm from './components/BookingForm';
 import Service2 from './components/Service2';
 import HowWeHelp from './components/HowWeHelp';
 import WhyUs from './components/WhyUs';
+import Footer from './components/Footer';
 
 // class App extends Component {
 //   render() {
@@ -43,6 +44,7 @@ function App() {
       <Service2 />
       <HowWeHelp />
       <WhyUs /> 
+      <Footer />
 
       {/* <HeroImage /> */}
 

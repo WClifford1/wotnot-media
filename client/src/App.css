@@ -375,6 +375,7 @@ html {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   background-color: #fcf7f8;
+  padding-bottom: 60px;
 }
 
 .serves-cont .serves1 {
@@ -557,6 +558,21 @@ html {
 
 .whyus-cont .wu-text h3 {
   padding: 10px;
+}
+
+.footer-cont {
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 250px;
+}
+
+.footer-cont .foot-res1 {
+  border: 2px solid green;
 }
 
 .guar-container {

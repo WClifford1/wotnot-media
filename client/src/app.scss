@@ -152,6 +152,7 @@ html {
     justify-content: space-evenly;
     // border: 2px solid red;
     background-color: $off-white;
+    padding-bottom: 60px;
 
 
 
@@ -318,6 +319,29 @@ html {
         }
     }
 }
+
+.footer-cont {
+        border: 2px solid red;
+        display: flex;
+        justify-content: space-evenly;
+        height: 250px;
+
+        .foot-res1{
+            border: 2px solid green;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+// ------------------------------------------------------------------------------------------------------
 
 
 
