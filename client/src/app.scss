@@ -16,7 +16,7 @@ $title-pad: 40px;
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
-    
+
 }
 
 @mixin form-title {
@@ -129,6 +129,7 @@ html {
     }
 
 }
+
 // End of home 
 
 // Services Container 
@@ -154,7 +155,7 @@ html {
 
 
 
-    .serves1{
+    .serves1 {
         color: $material-yellow;
         // border: 2px solid red;
         text-align: center;
@@ -171,7 +172,7 @@ html {
         }
     }
 
-    .serves2{
+    .serves2 {
         color: $material-yellow;
         // border: 2px solid red;
         text-align: center;
@@ -188,7 +189,7 @@ html {
         }
     }
 
-    .serves3{
+    .serves3 {
         color: $material-yellow;
         // border: 2px solid red;
         text-align: center;
@@ -214,66 +215,108 @@ html {
     // border: 2px solid red;
     display: flex;
     background-color: $off-white;
+    padding-bottom: 30px;
 
- .help-blob {
+    .help-blob {
         position: relative;
         left: -200px;
     }
 
-.help-text {
-    // border:2px solid red;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    margin-right: 20px;
+    .help-text {
+        // border:2px solid red;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        margin-right: 20px;
 
-    
-   h1 {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    // padding: $title-pad;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    font-weight: 100;
-    color: $material-purple;
-    // text-align: center;
-   }
-   p {
-       display: flex;
-       text-align: center;
-       justify-content: center;
-       align-content: center;
-       width: 100%;
-       line-height: 1.5em;
-    //    border:2px solid red;
-   }
 
-   .helpbtn-cont {
-       display: flex;
-    //    border: 2px solid red;
-       justify-content: center;
-       padding: $title-pad;
-
-       .help-btn {
-        border-radius: 40px;
-        background-color: $material-yellow;
-        font-size: 17px;
-        padding: 15px 40px 15px 40px;
-        border: 1px solid $material-yellow;
-        cursor: pointer;
-        color: white;
-
-        &:hover {
-            color: $material-yellow;
-            background-color: white;
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            width: 100%;
+            // padding: $title-pad;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            font-weight: 100;
+            color: $material-purple;
+            // text-align: center;
         }
-       }
-   }
-   
+
+        p {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            width: 100%;
+            line-height: 1.5em;
+            //    border:2px solid red;
+        }
+
+        .helpbtn-cont {
+            display: flex;
+            //    border: 2px solid red;
+            justify-content: center;
+            padding: $title-pad;
+
+            .help-btn {
+                border-radius: 40px;
+                background-color: $material-yellow;
+                font-size: 17px;
+                padding: 15px 40px 15px 40px;
+                border: 1px solid $material-yellow;
+                cursor: pointer;
+                color: white;
+
+                &:hover {
+                    color: $material-yellow;
+                    background-color: white;
+                }
+            }
+        }
+
+    }
 }
+
+.whyus-outer {
+    // border: 2px solid blue;
+    height: 375px;
+    background-color: rgb(214, 233, 250);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    // margin-top: 30px;
+}
+
+.whyus-cont {
+    // border: 2px solid red;
+    display: flex;
+    // align-content: center;
+    // justify-content: center;
+    padding: 10px;
+    height: 200px;
+
+    .wu-icons {
+        // border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .wu-text {
+        text-align: center;
+        line-height: 1.5rem;
+        padding-top: 20px;
+        
+
+        h3 {
+            padding: 10px;
+        }
+    }
 }
 
 

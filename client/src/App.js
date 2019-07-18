@@ -18,6 +18,7 @@ import Login from './components/auth/Login'
 import BookingForm from './components/BookingForm';
 import Service2 from './components/Service2';
 import HowWeHelp from './components/HowWeHelp';
+import WhyUs from './components/WhyUs';
 
 // class App extends Component {
 //   render() {
@@ -41,6 +42,7 @@ function App() {
       <Home />
       <Service2 />
       <HowWeHelp />
+      <WhyUs /> 
 
       {/* <HeroImage /> */}
 

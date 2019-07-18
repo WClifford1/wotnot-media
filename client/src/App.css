@@ -434,6 +434,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   background-color: #fcf7f8;
+  padding-bottom: 30px;
 }
 
 .help-cont .help-blob {
@@ -510,6 +511,52 @@ html {
 .help-cont .help-text .helpbtn-cont .help-btn:hover {
   color: #f0ac39;
   background-color: white;
+}
+
+.whyus-outer {
+  height: 375px;
+  background-color: #d6e9fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.whyus-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  height: 200px;
+}
+
+.whyus-cont .wu-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.whyus-cont .wu-text {
+  text-align: center;
+  line-height: 1.5rem;
+  padding-top: 20px;
+}
+
+.whyus-cont .wu-text h3 {
+  padding: 10px;
 }
 
 .guar-container {
