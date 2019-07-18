@@ -8,7 +8,7 @@ export default class EnquiryForm extends Component {
 
         this.onChangeName = this.onChangeName.bind(this)
         this.onChangeEmail = this.onChangeEmail.bind(this)
-        this.onChangePhone = this.onChangePhone.bind(this)
+        this.onChangePhoneNumber = this.onChangePhoneNumber.bind(this)
         this.onChangeEnquiry = this.onChangeEnquiry.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
 
@@ -16,10 +16,24 @@ export default class EnquiryForm extends Component {
         this.state = {
             name: '',
             email: '',
-            phone: '',
-            enquiry: ''
+            phoneNumber: '',
+            enquiry: '',
+            errors : ''
         }
     }
+
+
+
+    validate = () => {
+        const errors = {}
+
+        if (this.state.name.trim() === "")
+        errors.name = "Name is required"
+
+        return Object.keys(errors).length === 0 ? null : errors
+    }
+
+    
 
     onChangeName(e) {
         
@@ -34,10 +48,12 @@ export default class EnquiryForm extends Component {
         })
     }
 
-    onChangePhone(e) {
-        this.setState({
-            phone: e.target.value
-        })
+    onChangePhoneNumber(e) {
+        if (!isNaN(e.target.value)){
+            this.setState({
+                phoneNumber: e.target.value
+            })
+        }
     }
 
     onChangeEnquiry(e) {
@@ -49,16 +65,21 @@ export default class EnquiryForm extends Component {
     onSubmit(e) {
         e.preventDefault()
 
+        const errors = this.validate()
+        console.log(errors)
+        this.setState( { errors })
+        if (errors) return
+
         console.log(`Form submitted:`)
         console.log(`Name: ${this.state.name}`)
         console.log(`Email: ${this.state.email}`)
-        console.log(`Phone: ${this.state.phone}`)
+        console.log(`Phone: ${this.state.phoneNumber}`)
         console.log(`Enquiry: ${this.state.enquiry}`)
 
         const newEnquiry = {
             name: this.state.name,
             email: this.state.email,
-            phone: this.state.phone,
+            phoneNumber: this.state.phoneNumber,
             enquiry: this.state.enquiry
         }
         
@@ -68,7 +89,7 @@ export default class EnquiryForm extends Component {
         this.setState({
             name: '',
             email: '',
-            phone: '',
+            phoneNumber: '',
             enquiry: ''
         })
     }
@@ -84,7 +105,10 @@ export default class EnquiryForm extends Component {
                         <input type="text" 
                         className="form-control"
                         value={this.state.name}
-                        onChange={this.onChangeName} />
+                        onChange={this.onChangeName}
+                        errors={this.state.errors}
+                        />
+                        {this.state.errors && <div><p style={{color:"red"}}>*NAME IS REQUIRED!</p></div>}
                     </div>
 
                     <div className="form-group">
@@ -98,9 +122,9 @@ export default class EnquiryForm extends Component {
                     <div className="form-group">
                         <label>Phone</label>
                         <input type="text"
-                        value={this.state.phone}
+                        value={this.state.phoneNumber}
                         className="form-control"
-                        onChange={this.onChangePhone} />
+                        onChange={this.onChangePhoneNumber} />
                     </div>
 
                     <div className="form-group">
