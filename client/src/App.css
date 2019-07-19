@@ -384,6 +384,10 @@ html {
   padding: 10px;
 }
 
+.serves-cont .serves1 .blob {
+  height: 100px;
+}
+
 .serves-cont .serves1 .serves1-text {
   padding: 15px;
   color: #7d7ebe;
@@ -401,6 +405,10 @@ html {
   padding: 10px;
 }
 
+.serves-cont .serves2 .blob {
+  height: 100px;
+}
+
 .serves-cont .serves2 .serves2-text {
   padding: 15px;
   color: #7d7ebe;
@@ -416,6 +424,10 @@ html {
   color: #f0ac39;
   text-align: center;
   padding: 10px;
+}
+
+.serves-cont .serves3 .blob {
+  height: 100px;
 }
 
 .serves-cont .serves3 .serves3-text {

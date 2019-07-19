@@ -159,8 +159,15 @@ html {
     .serves1 {
         color: $material-yellow;
         // border: 2px solid red;
+        // display: flex;
         text-align: center;
         padding: 10px;
+
+        .blob {
+            // border: 2px solid green;
+            height: 100px;
+        }
+
 
         .serves1-text {
             padding: 15px;
@@ -179,6 +186,10 @@ html {
         text-align: center;
         padding: 10px;
 
+        .blob {
+            height: 100px;
+        }
+
         .serves2-text {
             padding: 15px;
             color: $material-purple;
@@ -195,6 +206,10 @@ html {
         // border: 2px solid red;
         text-align: center;
         padding: 10px;
+
+        .blob {
+            height: 100px;
+        }
 
         .serves3-text {
             padding: 15px;
