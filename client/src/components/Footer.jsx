@@ -8,7 +8,7 @@ export default function Footer() {
                 <h1>Wotnot-Media</h1>
                 </div>
                 <div className="footer-res1">
-                    <div className="footer-title">
+                    <div className="footer-title1">
                         <h3>Services</h3>
                     </div>
                     <div className="footer-links1">
@@ -19,7 +19,7 @@ export default function Footer() {
                 </div>
 
                 <div className="footer-res2">
-                    <div className="footer-title">
+                    <div className="footer-title2">
                         <h3>One</h3>
                     </div>
                     <div className="footer-links2">
@@ -32,7 +32,7 @@ export default function Footer() {
                 </div>
 
                 <div className="footer-res3">
-                    <div className="footer-title">
+                    <div className="footer-title3">
                         <h3>One</h3>
                     </div>
                     <div className="footer-links3">

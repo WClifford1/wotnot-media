@@ -577,13 +577,48 @@ html {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 250px;
+  background-color: #211c4f;
 }
 
-.footer-cont .footer
-.foot-res1 {
+.footer-cont .footer-logo {
+  padding-top: 20px;
+  color: #fff;
+}
+
+.footer-res1 {
   border: 2px solid green;
   list-style: none;
+  color: #fff;
+  width: 30%;
+}
+
+.footer-res1 .footer-title1 {
   padding: 20px;
+  border: 2px solid purple;
+}
+
+.footer-res2 {
+  border: 2px solid green;
+  list-style: none;
+  color: #fff;
+  width: 30%;
+}
+
+.footer-res2 .footer-title2 {
+  padding: 20px;
+  border: 2px solid purple;
+}
+
+.footer-res3 {
+  border: 2px solid green;
+  list-style: none;
+  color: #fff;
+  width: 30%;
+}
+
+.footer-res3 .footer-title3 {
+  padding: 20px;
+  border: 2px solid purple;
 }
 
 .guar-container {

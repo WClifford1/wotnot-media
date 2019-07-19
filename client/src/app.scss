@@ -337,15 +337,63 @@ html {
         display: flex;
         justify-content: space-evenly;
         height: 250px;
+        background-color: $dark-blue;
 
-        .footer
+        .footer-logo {
+            // padding-top: 20px;
+            // border: 2px solid green;
+            // margin-left: -150px;
+            padding-top: 20px;
+            color: #fff;
+        
+        }
+    }
 
-        .foot-res1{
+        .footer-res1{
             border: 2px solid green;
             list-style: none;
-            padding: 20px;
+            // padding: 20px;
+            color: #fff;   
+            width: 30%;
+            
+
+    
+                .footer-title1 {
+                    padding: 20px;
+                    border: 2px solid purple;
+                }
         }
-}
+        
+        .footer-res2{
+            border: 2px solid green;
+            list-style: none;
+            // padding: 20px;
+            color: #fff;   
+            width: 30%;
+            
+
+    
+                .footer-title2 {
+                    padding: 20px;
+                    border: 2px solid purple;
+                }
+        }
+
+        .footer-res3{
+            border: 2px solid green;
+            list-style: none;
+            // padding: 20px;
+            color: #fff;   
+            width: 30%;
+            
+
+    
+                .footer-title3 {
+                    padding: 20px;
+                    border: 2px solid purple;
+                }
+        }
+
 
 
 
