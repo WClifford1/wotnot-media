@@ -9,6 +9,7 @@ export default class ShowBooking extends Component {
     componentDidMount() {
         api.get('/bookings')
         .then(res => {
+            
             this.setState({ bookings: res.data})
         })
        
@@ -24,7 +25,7 @@ export default class ShowBooking extends Component {
                         {this.state.bookings.map(booking => <li key={booking._id}>{booking.email}</li>)}
                     </ul>
                     <ul>
-                        {this.state.bookings.map(booking => <li key={booking._id}>{booking.phone}</li>)}
+                        {this.state.bookings.map(booking => <li key={booking._id}>{booking.phoneNumber}</li>)}
                     </ul>
                     <ul>
                         {this.state.bookings.map(booking => <li key={booking._id}>{booking.timeOfBooking}</li>)}
