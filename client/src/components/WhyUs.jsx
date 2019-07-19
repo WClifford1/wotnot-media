@@ -5,8 +5,12 @@ import color from '../images/color.svg'
 
 export default function WhyUs() {
     return (
-        <div className="wu">
+        // <div className="wu">
         <div className="whyus-outer">
+        <div className="outer-text">
+            <p>You might be asking yourself</p>
+            <h1>WHY US?</h1>
+            </div>
             <div className="whyus-cont">
                 <div className="wu-icons">
                     <img src={prog} className="blob" alt="hoohaa" />                    
@@ -35,6 +39,6 @@ export default function WhyUs() {
                 </div>
             </div>
         </div>
-        </div>  
+        // </div>  
     )
 }

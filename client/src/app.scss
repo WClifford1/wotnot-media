@@ -296,20 +296,39 @@ html {
 }
 
 
-.wu {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    // border-radius: 50%;
-    // border: 2px solid red;
-}
+// .wu {
+//     display: flex;
+//     align-content: center;
+//     justify-content: center;
+//     // border-radius: 50%;
+//     // border: 2px solid red;
+// }
 
 .whyus-outer {
     // border: 2px solid blue;
     // height: 200px;
     background-color: #ECF6FB;
     display: flex;
-    padding: 100px;
+    padding: 60px;
+    flex-direction: column;
+    text-align: center;
+    
+    .outer-text {
+        // border: 2px solid red;
+        
+        padding-bottom: 40px;
+
+        p {
+        color: $material-yellow;
+        line-height: 1.5em;
+
+        }
+        h1 {
+            color: $material-purple;
+            // font-size: 30px;
+            font-weight: 100;
+        }
+    }
 
     // align-content: center;
     // justify-content: center;
@@ -333,6 +352,10 @@ html {
         text-align: center;
         padding: 20px;
         color: #000;
+
+        img {
+            height: 100px;
+        }
     }
 
     .wu-text {

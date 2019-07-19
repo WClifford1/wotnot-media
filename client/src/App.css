@@ -526,23 +526,31 @@ html {
   background-color: white;
 }
 
-.wu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .whyus-outer {
   background-color: #ECF6FB;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 100px;
+  padding: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.whyus-outer .outer-text {
+  padding-bottom: 40px;
+}
+
+.whyus-outer .outer-text p {
+  color: #f0ac39;
+  line-height: 1.5em;
+}
+
+.whyus-outer .outer-text h1 {
+  color: #7d7ebe;
+  font-weight: 100;
 }
 
 .whyus-cont {
@@ -567,6 +575,10 @@ html {
   text-align: center;
   padding: 20px;
   color: #000;
+}
+
+.whyus-cont .wu-icons img {
+  height: 100px;
 }
 
 .whyus-cont .wu-text {
