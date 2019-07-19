@@ -514,9 +514,7 @@ html {
   background-color: white;
 }
 
-.whyus-outer {
-  height: 375px;
-  background-color: #d6e9fa;
+.wu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,6 +523,14 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.whyus-outer {
+  background-color: #ECF6FB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px;
 }
 
 .whyus-cont {
@@ -548,12 +554,14 @@ html {
           justify-content: center;
   text-align: center;
   padding: 20px;
+  color: #322645;
 }
 
 .whyus-cont .wu-text {
   text-align: center;
   line-height: 1.5rem;
   padding-top: 20px;
+  color: #7d7ebe;
 }
 
 .whyus-cont .wu-text h3 {
@@ -571,8 +579,11 @@ html {
   height: 250px;
 }
 
-.footer-cont .foot-res1 {
+.footer-cont .footer
+.foot-res1 {
   border: 2px solid green;
+  list-style: none;
+  padding: 20px;
 }
 
 .guar-container {

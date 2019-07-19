@@ -280,13 +280,23 @@ html {
     }
 }
 
-.whyus-outer {
-    // border: 2px solid blue;
-    height: 375px;
-    background-color: rgb(214, 233, 250);
+
+.wu {
     display: flex;
     align-content: center;
     justify-content: center;
+    // border-radius: 50%;
+    // border: 2px solid red;
+}
+.whyus-outer {
+    // border: 2px solid blue;
+    // height: 200px;
+    background-color: #ECF6FB;
+    display: flex;
+    padding: 100px;
+    
+    // align-content: center;
+    // justify-content: center;
     // margin-top: 30px;
 }
 
@@ -306,12 +316,14 @@ html {
         // align-content: center;
         text-align: center;
         padding: 20px;
+        color: $off-black;
     }
 
     .wu-text {
         text-align: center;
         line-height: 1.5rem;
         padding-top: 20px;
+        color: $material-purple;
         
 
         h3 {
@@ -326,8 +338,12 @@ html {
         justify-content: space-evenly;
         height: 250px;
 
+        .footer
+
         .foot-res1{
             border: 2px solid green;
+            list-style: none;
+            padding: 20px;
         }
 }
 

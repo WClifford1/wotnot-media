@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function WhyUs() {
     return (
+        <div className="wu">
         <div className="whyus-outer">
             <div className="whyus-cont">
                 <div className="wu-icons">
@@ -29,5 +30,6 @@ export default function WhyUs() {
                 </div>
             </div>
         </div>
+        </div>  
     )
 }

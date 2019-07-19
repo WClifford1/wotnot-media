@@ -4,11 +4,25 @@ export default function Footer() {
     return (
         <div>
             <div className="footer-cont">
-                <div className="foot-res1">
-                    <div className="foot-title">
+                <div className="footer-logo">
+                <h1>Wotnot-Media</h1>
+                </div>
+                <div className="footer-res1">
+                    <div className="footer-title">
+                        <h3>Services</h3>
+                    </div>
+                    <div className="footer-links1">
+                        <li>Video Content</li>
+                        <li>Web Design</li>
+                        <li>Photography</li>
+                    </div>
+                </div>
+
+                <div className="footer-res2">
+                    <div className="footer-title">
                         <h3>One</h3>
                     </div>
-                    <div className="foot-links1">
+                    <div className="footer-links2">
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
@@ -17,24 +31,11 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="foot-res2">
-                    <div className="foot-title">
+                <div className="footer-res3">
+                    <div className="footer-title">
                         <h3>One</h3>
                     </div>
-                    <div className="foot-links2">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
-                    </div>
-                </div>
-
-                <div className="foot-res3">
-                    <div className="foot-title">
-                        <h3>One</h3>
-                    </div>
-                    <div className="foot-links3">
+                    <div className="footer-links3">
                         <li>1</li>
                         <li>2</li>
                         <li>3</li>
