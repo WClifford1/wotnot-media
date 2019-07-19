@@ -209,7 +209,17 @@
   display: -ms-flexbox;
   display: flex;
   width: 60%;
-  padding-top: 10px;
+  padding-top: 20px;
+}
+
+.nav .back-img {
+  position: absolute;
+  z-index: 1;
+}
+
+.nav .back-img img {
+  width: 98vw;
+  height: 100vh;
 }
 
 .nav .logo {
@@ -218,6 +228,7 @@
   padding-top: 11px;
   width: 50%;
   padding-right: 100px;
+  z-index: 2;
 }
 
 .nav .nav-items {
@@ -232,6 +243,7 @@
   padding: 0;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  z-index: 2;
 }
 
 .nav .nav-items li {
@@ -301,6 +313,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 80px;
+  z-index: 2;
 }
 
 .nav-cont .hero-text h1 {

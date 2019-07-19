@@ -1,11 +1,14 @@
 import React from 'react'
 import heroimg from '../images/blob-shape.svg'
-
+import test from '../images/test.png'
 
 export default function Home() {
     return (
         <div className="nav-cont">
             <div className="nav">
+                {/* <div className="back-img">
+                <img src={test} alt=""/>
+                </div> */}
                 <h2 className="logo">WotNot Media</h2>
                 <ul className="nav-items">
                     <li><a className="hov" href="default.asp">Projects</a></li>

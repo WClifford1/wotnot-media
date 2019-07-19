@@ -11,7 +11,19 @@ $off-black: #322645;
     display: flex;
     // border: 2px solid green;
     width: 60%;
-    padding-top: 10px;
+    padding-top: 20px;
+
+    .back-img {
+        position: absolute;
+        // object-fit: contain;
+
+        z-index: 1;
+
+        img {
+            width: 98vw;
+            height: 100vh;  
+        }
+    }
 
     .logo {
         color: $material-purple ;
@@ -19,6 +31,7 @@ $off-black: #322645;
         padding-top: 11px;
         width: 50%;
         padding-right: 100px;    
+        z-index: 2;
     }
 
     .nav-items {
@@ -32,6 +45,7 @@ $off-black: #322645;
         padding-top: 1rem;
         padding-bottom: 1rem;
         // border: 2px solid black; 
+        z-index: 2;
     
         li {
             display: flex;
