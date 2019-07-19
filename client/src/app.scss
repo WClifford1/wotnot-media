@@ -64,7 +64,7 @@ html {
 // Part of home 
 .nav-cont {
     height: 100vh;
-    background-color: $off-white;
+    background-color: #fff;
     // border: 2px solid red;
 
     .hero-image {
@@ -143,7 +143,7 @@ html {
     color: $material-purple;
     font-weight: 100;
     padding: 60px;
-    background-color: $off-white;
+    background-color: #fff;
 
 }
 
@@ -151,7 +151,7 @@ html {
     display: flex;
     justify-content: space-evenly;
     // border: 2px solid red;
-    background-color: $off-white;
+    background-color: #fff;
     padding-bottom: 60px;
 
 
@@ -215,7 +215,7 @@ html {
     padding-top: 20px;
     // border: 2px solid red;
     display: flex;
-    background-color: $off-white;
+    background-color: #fff;
     padding-bottom: 30px;
 
     .help-blob {
@@ -288,13 +288,14 @@ html {
     // border-radius: 50%;
     // border: 2px solid red;
 }
+
 .whyus-outer {
     // border: 2px solid blue;
     // height: 200px;
     background-color: #ECF6FB;
     display: flex;
     padding: 100px;
-    
+
     // align-content: center;
     // justify-content: center;
     // margin-top: 30px;
@@ -324,7 +325,7 @@ html {
         line-height: 1.5rem;
         padding-top: 20px;
         color: $material-purple;
-        
+
 
         h3 {
             padding: 10px;
@@ -333,66 +334,102 @@ html {
 }
 
 .footer-cont {
-        border: 2px solid red;
-        display: flex;
-        justify-content: space-evenly;
-        height: 250px;
-        background-color: $dark-blue;
+    // border: 2px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    height: 250px;
+    background-color: $dark-blue;
+    // justify-content: flex-end;
 
-        .footer-logo {
-            // padding-top: 20px;
-            // border: 2px solid green;
-            // margin-left: -150px;
-            padding-top: 20px;
-            color: #fff;
-        
+
+    .footer-logo {
+        // padding-top: 20px;
+        // border: 2px solid green;
+        // margin-left: -150px;
+        padding-top: 20px;
+        color: #fff;
+
+        h2 {
+        font-weight: 200;
         }
     }
+}
 
-        .footer-res1{
-            border: 2px solid green;
-            list-style: none;
-            // padding: 20px;
-            color: #fff;   
-            width: 30%;
-            
+.footer-res1 {
+    // border: 2px solid green;
+    list-style: none;
+    // padding: 20px;
+    color: $material-yellow;
+    width: 27%;
 
-    
-                .footer-title1 {
-                    padding: 20px;
-                    border: 2px solid purple;
-                }
+    .footer-title1 {
+        padding: 20px;
+        // border: 2px solid purple;
+        text-align: center;
+    }
+
+    .footer-links1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        li {
+            padding: 5px;
         }
-        
-        .footer-res2{
-            border: 2px solid green;
-            list-style: none;
-            // padding: 20px;
-            color: #fff;   
-            width: 30%;
-            
+    }
+}
 
-    
-                .footer-title2 {
-                    padding: 20px;
-                    border: 2px solid purple;
-                }
+.footer-res2 {
+    // border: 2px solid green;
+    list-style: none;
+    // padding: 20px;
+    color: #fff;
+    width: 27%;
+
+    .footer-title2 {
+        padding: 20px;
+        // border: 2px solid purple;
+        text-align: center;
+    }
+
+    .footer-links2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        li {
+            padding: 5px;
         }
+    }
+}
 
-        .footer-res3{
-            border: 2px solid green;
-            list-style: none;
-            // padding: 20px;
-            color: #fff;   
-            width: 30%;
-            
+.footer-res3 {
+    // border: 2px solid green;
+    list-style: none;
+    // padding: 20px;
+    color: #fff;
+    width: 27%;
+    // display: flex;
 
-    
-                .footer-title3 {
-                    padding: 20px;
-                    border: 2px solid purple;
-                }
+    .footer-title3 {
+        padding: 20px;
+        // border: 2px solid purple;
+        text-align: center;
+    }
+
+    .footer-links3 {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        text-align: center;
+
+        li {
+            padding: 5px;
         }
+    }
+}
 
 
 

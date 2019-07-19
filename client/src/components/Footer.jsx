@@ -5,7 +5,7 @@ export default function Footer() {
         <div>
             <div className="footer-cont">
                 <div className="footer-logo">
-                <h1>Wotnot-Media</h1>
+                <h2>Wotnot-Media</h2>
                 </div>
                 <div className="footer-res1">
                     <div className="footer-title1">
