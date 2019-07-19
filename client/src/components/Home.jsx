@@ -1,17 +1,22 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { Link, Router } from 'react-router-dom'
 
 export default function Home() {
     return (
+        
+        
             <div className="nav">
                 <h1 className="logo">WotNot Media</h1>
                 <ul className="nav-items">
-                    <li><a className="hov" href="default.asp">Projects</a></li>
-                    <li><a className="hov" href="news.asp">Services</a></li>
-                    <li><a className="hov" href="about.asp">FAQ</a></li>
-                    <li><a className="hov" href="contact.asp">Contact</a></li>
+                    
+                    <li><Link to="/projects" className="hov">Projects</Link></li> 
+                    <li><Link to="/services" className="hov">Services</Link></li>
+                    <li><Link to="/faq" className="hov">FAQ</Link></li>
+                    <li><Link to="/contact" className="hov">Contact</Link></li>
                 </ul>
 
-
-            </div>    
+                
+            </div>   
+           
     )
 }

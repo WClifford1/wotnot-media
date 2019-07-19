@@ -1,18 +1,23 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom'
 import EnquiryForm from './components/EnquiryForm';
 import ShowEnquiries from './components/ShowEnquiries';
 import ShowBooking from './components/ShowBooking'
 import BookingForm from './components/BookingForm'
+import Home from './components/Home'
 
 function App() {
   return (
-    <React.Fragment>
+    <Router>
+  {/* <p>foo</p>       */}
       {/* <EnquiryForm /> */}
       {/* <ShowEnquiries /> */}
-      <BookingForm />
-      <ShowBooking />
-    </React.Fragment>
+      {/* <BookingForm />
+      <ShowBooking /> */}
+      <Route path="/" component={Home} />
+    
+    </Router>
   );
 }
 
