@@ -18,7 +18,7 @@ $off-black: #322645;
     display: flex;
     justify-content: center;
     font-size: 30px;
-    color: #001D4A;
+    color: $material-purple;
 }
 
 @mixin input-form {
@@ -46,7 +46,7 @@ $off-black: #322645;
     font-weight: bold;
     width: 80vw;
     text-align: center;
-    background-color: #001D4A;
+    background-color: $material-yellow;
     color: #fff;
     font-size: 20px;
     cursor: pointer;
@@ -54,7 +54,7 @@ $off-black: #322645;
 
 
 .book-cont {
-    padding: 40px; 
+    padding: 60px; 
 
 .book-title {
     @include form-title;

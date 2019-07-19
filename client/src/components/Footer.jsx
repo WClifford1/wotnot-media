@@ -20,27 +20,23 @@ export default function Footer() {
 
                 <div className="footer-res2">
                     <div className="footer-title2">
-                        <h3>One</h3>
+                        <h3>Information</h3>
                     </div>
                     <div className="footer-links2">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
+                        <li>FAQ</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Contact Information</li>
                     </div>
                 </div>
 
                 <div className="footer-res3">
                     <div className="footer-title3">
-                        <h3>One</h3>
+                        <h3>Get Started</h3>
                     </div>
                     <div className="footer-links3">
-                        <li>1</li>
-                        <li>2</li>
-                        <li>3</li>
-                        <li>4</li>
-                        <li>5</li>
+                        <li>Enquiry</li>
+                        <li>Booking</li>
                     </div>
                 </div>
 

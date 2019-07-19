@@ -100,7 +100,7 @@
 }
 
 .book-cont {
-  padding: 40px;
+  padding: 60px;
 }
 
 .book-cont .book-title {
@@ -111,7 +111,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 30px;
-  color: #001D4A;
+  color: #7d7ebe;
 }
 
 .book-cont .book-form {
@@ -198,7 +198,7 @@
   font-weight: bold;
   width: 80vw;
   text-align: center;
-  background-color: #001D4A;
+  background-color: #f0ac39;
   color: #fff;
   font-size: 20px;
   cursor: pointer;
@@ -554,7 +554,7 @@ html {
           justify-content: center;
   text-align: center;
   padding: 20px;
-  color: #322645;
+  color: #000;
 }
 
 .whyus-cont .wu-text {
@@ -568,6 +568,10 @@ html {
   padding: 10px;
 }
 
+.whyus-cont .wu-text p {
+  color: #bab0ba;
+}
+
 .footer-cont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -576,12 +580,14 @@ html {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   height: 250px;
-  background-color: #211c4f;
+  background-color: #ECF6FB;
 }
 
 .footer-cont .footer-logo {
   padding-top: 20px;
-  color: #fff;
+  color: #7d7ebe;
+  padding-left: 20px;
+  width: 40%;
 }
 
 .footer-cont .footer-logo h2 {
@@ -590,13 +596,12 @@ html {
 
 .footer-res1 {
   list-style: none;
-  color: #f0ac39;
-  width: 27%;
+  width: 20%;
 }
 
 .footer-res1 .footer-title1 {
-  padding: 20px;
-  text-align: center;
+  padding: 20px 0 20px 0;
+  color: #7d7ebe;
 }
 
 .footer-res1 .footer-links1 {
@@ -610,22 +615,26 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
 }
 
 .footer-res1 .footer-links1 li {
+  color: #bab0ba;
   padding: 5px;
+  cursor: pointer;
+}
+
+.footer-res1 .footer-links1 li:hover {
+  color: #f0ac39;
 }
 
 .footer-res2 {
   list-style: none;
-  color: #fff;
-  width: 27%;
+  width: 20%;
 }
 
 .footer-res2 .footer-title2 {
-  padding: 20px;
-  text-align: center;
+  padding: 20px 0 20px 0;
+  color: #7d7ebe;
 }
 
 .footer-res2 .footer-links2 {
@@ -639,22 +648,26 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
 }
 
 .footer-res2 .footer-links2 li {
+  color: #bab0ba;
   padding: 5px;
+  cursor: pointer;
+}
+
+.footer-res2 .footer-links2 li:hover {
+  color: #f0ac39;
 }
 
 .footer-res3 {
   list-style: none;
-  color: #fff;
-  width: 27%;
+  width: 20%;
 }
 
 .footer-res3 .footer-title3 {
-  padding: 20px;
-  text-align: center;
+  padding: 20px 0 20px 0;
+  color: #7d7ebe;
 }
 
 .footer-res3 .footer-links3 {
@@ -668,11 +681,16 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
 }
 
 .footer-res3 .footer-links3 li {
   padding: 5px;
+  color: #bab0ba;
+  cursor: pointer;
+}
+
+.footer-res3 .footer-links3 li:hover {
+  color: #f0ac39;
 }
 
 .guar-container {

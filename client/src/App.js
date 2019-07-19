@@ -44,6 +44,7 @@ function App() {
       <Service2 />
       <HowWeHelp />
       <WhyUs /> 
+      <BookingForm />
       <Footer />
 
       {/* <HeroImage /> */}
@@ -52,7 +53,6 @@ function App() {
       {/* <Navbar /> */}
       {/* <Landing /> */}
       {/* </Router> */}
-      {/* <BookingForm /> */}
       {/* <Service1 /> */}
       {/* <Guarantee /> */}
       {/* <EnquiryForm /> */}

@@ -82,7 +82,7 @@ export default class BookingForm extends Component {
                 <div className="book-form">
                     <form onSubmit={this.onSubmit}>
                         <div className="book-text">
-                            <label>Name :</label>
+                            <label><strong>Name :</strong></label>
                         </div>
                         <div className="book-input">
                             <input type="text" className="book-control"

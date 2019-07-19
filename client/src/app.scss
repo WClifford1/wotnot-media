@@ -317,7 +317,7 @@ html {
         // align-content: center;
         text-align: center;
         padding: 20px;
-        color: $off-black;
+        color: #000;
     }
 
     .wu-text {
@@ -330,6 +330,10 @@ html {
         h3 {
             padding: 10px;
         }
+
+        p {
+            color: $material-grey;
+        }
     }
 }
 
@@ -338,7 +342,7 @@ html {
     display: flex;
     justify-content: space-evenly;
     height: 250px;
-    background-color: $dark-blue;
+    background-color: #ECF6FB;
     // justify-content: flex-end;
 
 
@@ -347,7 +351,10 @@ html {
         // border: 2px solid green;
         // margin-left: -150px;
         padding-top: 20px;
-        color: #fff;
+        color: $material-purple;
+        padding-left: 20px;
+        width: 40%; 
+
 
         h2 {
         font-weight: 200;
@@ -359,23 +366,30 @@ html {
     // border: 2px solid green;
     list-style: none;
     // padding: 20px;
-    color: $material-yellow;
-    width: 27%;
+    // color: $material-yellow;
+    width: 20%;
 
     .footer-title1 {
-        padding: 20px;
+        padding: 20px 0 20px 0;
         // border: 2px solid purple;
-        text-align: center;
+        // text-align: center;
+        color: $material-purple;
     }
 
     .footer-links1 {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        text-align: center;
+        // text-align: center;
 
         li {
+            color: $material-grey;
             padding: 5px;
+            cursor: pointer;
+
+            &:hover {
+                color: $material-yellow;
+            }
         }
     }
 }
@@ -384,23 +398,29 @@ html {
     // border: 2px solid green;
     list-style: none;
     // padding: 20px;
-    color: #fff;
-    width: 27%;
+    width: 20%;
 
     .footer-title2 {
-        padding: 20px;
+        padding: 20px 0 20px 0;
         // border: 2px solid purple;
-        text-align: center;
+        // text-align: center;
+        color: $material-purple;
     }
 
     .footer-links2 {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        text-align: center;
+        // text-align: center;
 
         li {
+            color: $material-grey;
             padding: 5px;
+            cursor: pointer;
+
+            &:hover {
+                color: $material-yellow;
+            }
         }
     }
 }
@@ -409,25 +429,33 @@ html {
     // border: 2px solid green;
     list-style: none;
     // padding: 20px;
-    color: #fff;
-    width: 27%;
+    width: 20%;
     // display: flex;
 
     .footer-title3 {
-        padding: 20px;
+        padding: 20px 0 20px 0;
         // border: 2px solid purple;
-        text-align: center;
+        // text-align: center;
+        color: $material-purple;
     }
 
     .footer-links3 {
         display: flex;
         justify-content: flex-end;
         flex-direction: column;
-        text-align: center;
+        // text-align: center;
+        
 
         li {
             padding: 5px;
+            color: $material-grey;
+            cursor: pointer;
+
+            &:hover {
+                color: $material-yellow;
+            }
         }
+
     }
 }
 
