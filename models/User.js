@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Joi = require('joi')
+// const Joi = require('joi')
 const jwt = require('jsonwebtoken')
 const config = require('config')
 
@@ -22,13 +22,13 @@ userSchema.methods.generateAuthToken = function() {
 
 const User = mongoose.model('User', userSchema)
 
-function validateUser(user) {
-    const schema = ({
-        name: Joi.string().min(3).required(),
-        password: Joi.string().min(3).required()
-    })
-    return Joi.validate(user, schema)
-}
+// function validateUser(user) {
+//     const schema = ({
+//         name: Joi.string().min(3).required(),
+//         password: Joi.string().min(3).required()
+//     })
+//     return Joi.validate(user, schema)
+// }
 
 exports.User = User
-exports.validateUser = validateUser
+// exports.validateUser = validateUser

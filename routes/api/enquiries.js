@@ -1,10 +1,10 @@
 const auth = require('../../middleware/auth')
 const express = require('express')
-const { Enquiry, validateEnquiry } = require('../../models/Enquiry')
+const { Enquiry } = require('../../models/Enquiry')
 const router = express.Router()
 
 
-router.get('/', async (req, res) => {
+router.get('/', auth, async (req, res) => {
     const enquiries = await Enquiry.find()
     res.send(enquiries)
 });
