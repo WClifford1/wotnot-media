@@ -274,6 +274,33 @@
   transition: width .3s;
 }
 
+.contact-cont {
+  border: 2px solid red;
+}
+
+.contact-cont .contact-header {
+  border: 2px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact-cont .contact-header h1 {
+  padding: 10px;
+  color: #7d7ebe;
+}
+
+.contact-cont .contact-header h2 {
+  padding: 10px;
+  color: #f0ac39;
+}
+
 * {
   font-family: 'Montserrat', sans-serif;
   margin: 0px;

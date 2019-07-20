@@ -15,8 +15,8 @@ export default function Navbar1() {
                     Projects
                     </Link></li>
                     <li><a className="hov" href="sad"><Link to="/projects">Services</Link></a></li>
-                    <li><a className="hov" href="about.asp"><Link to="/faq">FAQ</Link></a></li>
-                    <li><a className="hov" href="contact.asp">Contact</a></li>
+                    <li><a className="hov" href="sad"><Link to="/faq">FAQ</Link></a></li>
+                    <li><a className="hov" href="sad"><Link to="/contact">Contact</Link></a></li>
                 </ul>
             </div>
         </div>

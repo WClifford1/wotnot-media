@@ -22,6 +22,7 @@ import Footer from './components/Footer';
 import Navbar1 from './components/Navbar1';
 import { Switch, Route } from 'react-router-dom';
 import Faq from './components/Faq';
+import Contact from './components/Contact';
 
 // class App extends Component {
 //   render() {
@@ -51,6 +52,7 @@ function App() {
         <Route path="/services" component={Service1} />
         <Route path="/projects" component={Card1} />
         <Route path="/FAQ" component={Faq} />
+        <Route path="/contact" component={Contact} />
       </Switch>
       <Footer />
 
