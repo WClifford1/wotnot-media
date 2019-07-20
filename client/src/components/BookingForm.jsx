@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import api from '../utils/api'
 
 export default class BookingForm extends Component {
-    constructor(props){
+    constructor(props) {
         super(props)
 
         this.onChangeName = this.onChangeName.bind(this)
@@ -22,7 +22,6 @@ export default class BookingForm extends Component {
     }
 
     onChangeName(e) {
-        
         this.setState({
             name: e.target.value
         })
@@ -77,54 +76,61 @@ export default class BookingForm extends Component {
         })
     }
 
-    render(){
+    render() {
         return (
-            <div style={{marginTop: 20}} >
-                <h3>Booking Form</h3>
+            <div className="book-cont">
+                <div className="book-title">
+                    <h3>Booking Form</h3>
+                </div>
 
-                <form onSubmit={this.onSubmit}>
-                    <div className="form-group">
-                        <label>Name</label>
-                        <input type="text" className="form-control"
-                        value={this.state.name}
-                        onChange={this.onChangeName} />
-                    </div>
+                <div className="book-form">
+                    <form onSubmit={this.onSubmit}>
+                        <div className="book-text">
+                            <label><strong>Name :</strong></label>
+                        </div>
+                        <div className="book-input">
+                            <input type="text" className="book-control"
+                                value={this.state.name}
+                                onChange={this.onChangeName} />
+                        </div>
 
-                    <div className="form-group">
-                        <label>Email</label>
-                        <input type="text" className="form-control"
-                        value={this.state.email}
-                        onChange={this.onChangeEmail} />
-                    </div>
 
-                    <div className="form-group">
-                        <label>Phone</label>
-                        <input type="text" className="form-control"
-                        value={this.state.phoneNumber}
-                        onChange={this.onChangePhoneNumber} />
-                    </div>
+                        <div className="book-text">
+                            <label><strong>Email :</strong></label>
+                        </div>
+                        <div className="book-input">
+                            <input type="text" className="book-control"
+                                value={this.state.email}
+                                onChange={this.onChangeEmail} />
+                        </div>
 
-                    <div className="form-group">
-                        <label>timeOfBooking</label>
-                        
-                        <input type="text" className="form-control"
-                         
-                            value={this.state.timeOfBooking}
-                            onChange={this.onChangetimeOfBooking}
-                            
-                             />
-                             
-                            
-                    </div>
-                    <br />
-                    <div className="form-group">
-                        <input type="submit"
-                        value="Send Booking"
-                        className="btn btn-primary" />
-                    </div>
+                        <div className="book-text">
+                            <label><strong>Phone :</strong></label>
+                        </div>
+                        <div className="book-input">
+                            <input type="text" className="book-control"
+                                value={this.state.phone}
+                                onChange={this.onChangePhone} />
+                        </div>
 
-                </form>
+                        <div className="book-text">
+                            <label><strong>Time :</strong></label>
+                        </div>
+                        <div className="book-select">
+                            <select>
+                                <option value="time" className="book-control"
+                                    value={this.state.time}
+                                    onChange={this.onChangeTime}>12:45</option>
+                            </select>
+                        </div>
 
+                        <div className="book-btn">
+                            <input type="submit"
+                                value="Confirm Booking"
+                                className="book-sub" />
+                        </div>
+                    </form>
+                </div>
             </div>
         )
     }

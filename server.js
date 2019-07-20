@@ -8,7 +8,7 @@ const bookings = require('./routes/api/bookings')
 const cors = require('cors')
 
 
-const users = require('./routes/api/users')
+// const users = require('./routes/api/users')
 
 app.use(cors())
 app.use(bodyParser.json())
@@ -26,7 +26,7 @@ mongoose.connect('mongodb://localhost/wotnotmedia')
 app.use('/api/enquiries', enquiries)
 app.use('/api/bookings', bookings)
 //routes
-app.use('/api/users', users)
+// app.use('/api/users', users)
 
 
 const PORT = process.env.PORT || 4000

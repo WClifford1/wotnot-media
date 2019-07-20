@@ -12,7 +12,7 @@ export default class EnquiryForm extends Component {
         this.onChangeEnquiry = this.onChangeEnquiry.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
 
-        
+
         this.state = {
             name: '',
             email: '',
@@ -22,7 +22,7 @@ export default class EnquiryForm extends Component {
     }
 
     onChangeName(e) {
-        
+
         this.setState({
             name: e.target.value
         })
@@ -61,7 +61,7 @@ export default class EnquiryForm extends Component {
             phone: this.state.phone,
             enquiry: this.state.enquiry
         }
-        
+
         axios.post('http://localhost:4000/api/enquiries', newEnquiry)
             .then(res => console.log(res.data))
 
@@ -77,9 +77,9 @@ export default class EnquiryForm extends Component {
         return (
             <div className="enq-cont">
                 <div className="enq-title">
-                <h3>Enquiry Form</h3>
+                    <h3>Enquiry Form</h3>
                 </div>
-                
+
                 <div className="enq-form">
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
