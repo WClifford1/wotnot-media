@@ -21,6 +21,7 @@ import WhyUs from './components/WhyUs';
 import Footer from './components/Footer';
 import Navbar1 from './components/Navbar1';
 import { Switch, Route } from 'react-router-dom';
+import Faq from './components/Faq';
 
 // class App extends Component {
 //   render() {
@@ -48,6 +49,8 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/services" component={Service1} />
+        <Route path="/projects" component={Card1} />
+        <Route path="/FAQ" component={Faq} />
       </Switch>
       <Footer />
 
