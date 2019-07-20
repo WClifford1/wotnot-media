@@ -16,10 +16,11 @@ import Landing from './components/layout/Landing'
 import Register from './components/auth/Register'
 import Login from './components/auth/Login'
 import BookingForm from './components/BookingForm';
-import Service2 from './components/Service2';
 import HowWeHelp from './components/HowWeHelp';
 import WhyUs from './components/WhyUs';
 import Footer from './components/Footer';
+import Navbar1 from './components/Navbar1';
+import { Switch, Route } from 'react-router-dom';
 
 // class App extends Component {
 //   render() {
@@ -40,24 +41,19 @@ import Footer from './components/Footer';
 function App() {
   return (
     <React.Fragment>
-      <Home />
-      <Service2 />
-      <HowWeHelp />
-      <WhyUs /> 
-      <BookingForm />
+      {/* <div> */}
+      {/* <Home /> */}
+      <Navbar1 />
+      {/* <Home /> */}
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/services" component={Service1} />
+      </Switch>
       <Footer />
 
-      {/* <HeroImage /> */}
+      {/* </div> */}
 
-      {/* <Router> */}
-      {/* <Navbar /> */}
-      {/* <Landing /> */}
-      {/* </Router> */}
-      {/* <Service1 /> */}
-      {/* <Guarantee /> */}
-      {/* <EnquiryForm /> */}
-      {/* <Card1 /> */}
-      {/* <Services /> */}
+  
 
     </React.Fragment>
   );

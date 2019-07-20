@@ -1,22 +1,32 @@
-import React from 'react'
-import heroimg from '../images/blob-shape.svg'
-import test from '../images/test.png'
+import React from 'react';
+import heroimg from '../images/blob-shape.svg';
+import test from '../images/test.png';
+import { Link } from 'react-router-dom';
+import Service2 from './Service2';
+import HowWeHelp from './HowWeHelp';
+import WhyUs from './WhyUs';
+import BookingForm from './BookingForm';
 
 export default function Home() {
     return (
         <div className="nav-cont">
-            <div className="nav">
+            {/* <div className="nav"> */}
                 {/* <div className="back-img">
                 <img src={test} alt=""/>
                 </div> */}
-                <h2 className="logo">WotNot Media</h2>
+
+
+                {/* <h2 className="logo">WotNot Media</h2>
                 <ul className="nav-items">
-                    <li><a className="hov" href="default.asp">Projects</a></li>
+                    <Link to="/services">
+                    <li>Projects</li>
+                    </Link>
                     <li><a className="hov" href="#serv-comp">Services</a></li>
                     <li><a className="hov" href="about.asp">FAQ</a></li>
                     <li><a className="hov" href="contact.asp">Contact</a></li>
                 </ul>
-            </div>
+            </div> */}
+
 
             <div className="hero-image">
                 <div className="hero-text">
@@ -29,7 +39,10 @@ export default function Home() {
                 <img src={heroimg} className="blob" alt="hoohaa" />
             </div>
 
-
+            <Service2 />
+            <HowWeHelp />
+            <WhyUs />
+            {/* <BookingForm /> */}
         </div>
     )
 }
