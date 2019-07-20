@@ -25,7 +25,7 @@ export default class App extends Component {
       <ShowEnquiries />
       <RegisterForm />
       <LoginForm />
-  <div>{this.state.user ? <h1>Logged in as {this.state.user._id} </h1> : <h1>Not Logged In</h1>}</div>
+      <div>{this.state.user ? <h1>Logged in as {this.state.user.name} </h1> : <h1>Not Logged In</h1>}</div>
     </React.Fragment>
   );
 }

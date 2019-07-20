@@ -6,17 +6,16 @@ const config = require('config')
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true,
-        unique: true
+        required: true
     },
     password: {
         type: String,
-        require: true,
-    },
+        required: true
+    }
 })
 
 userSchema.methods.generateAuthToken = function() {
-    const token = jwt.sign({ _id: this._id }, config.get('jwtPrivateKey'))
+    const token = jwt.sign({ _id: this._id, name: this.name, password: this.password }, config.get('jwtPrivateKey'))
     return token
 }
 

@@ -2,7 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const app = express()
-const db = require('./config/keys').mongoURI
+// const db = require('./config/keys').mongoURI
 const enquiries = require('./routes/api/enquiries')
 const users = require('./routes/api/users')
 const cors = require('cors')
@@ -11,8 +11,7 @@ const config = require('config')
 
 
 if (!config.get('jwtPrivateKey')){
-    console.error('FATAL ERROR: jwtPrivateKey is not defined')
-    process.exit(1);
+    throw new Error('FATAL ERROR: jwtPrivateKey is not defined.');
 }
 
 app.use(cors())
