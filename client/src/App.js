@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import EnquiryForm from './components/EnquiryForm';
 import ShowEnquiries from './components/ShowEnquiries';
-import RegisterForm from './components/RegisterForm';
-import LoginForm from './components/LoginForm';
+import StaffPortal from './components/StaffPortal';
 import jwtDecode from 'jwt-decode'
 
 export default class App extends Component {
@@ -23,9 +22,9 @@ export default class App extends Component {
     <React.Fragment>
       <EnquiryForm />
       <ShowEnquiries />
-      <RegisterForm />
-      <LoginForm />
-      <div>{this.state.user ? <h1>Logged in as {this.state.user.name} </h1> : <h1>Not Logged In</h1>}</div>
+      <StaffPortal user={this.state.user} />
+      <React.Fragment>
+      </React.Fragment>
     </React.Fragment>
   );
 }
