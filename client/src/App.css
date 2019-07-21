@@ -447,14 +447,121 @@
   background: #eee;
 }
 
-.serv-offered {
-  border: 2px solid red;
+.servp-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  color: #7d7ebe;
+  padding: 20px;
+}
+
+.serv-offered {
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.serv-offered .serv-1 {
+  width: 20%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.serv-offered .serv-1:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.serv-offered .serv-1 .serv1-img {
+  border: 1px solid grey;
+  border-radius: 5px 5px 0 0;
+}
+
+.serv-offered .serv-1 .serv1-img img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.serv-offered .serv-1 .serv1-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 0 0 5px 5px;
+}
+
+.serv-offered .serv-1 .serv1-text h4 {
+  text-align: center;
+  padding: 5px;
+  color: #d98d91;
+}
+
+.serv-offered .serv-1 .serv1-text p {
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.serv-offered .serv-2 {
+  width: 20%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.serv-offered .serv-2 .serv2-img {
+  border: 2px solid green;
+}
+
+.serv-offered .serv-2 .serv2-img img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.serv-offered .serv-3 {
+  width: 20%;
+  border: 2px solid red;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.serv-offered .serv-3 .serv3-img {
+  border: 2px solid green;
+}
+
+.serv-offered .serv-3 .serv3-img img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
 }
 
 * {
