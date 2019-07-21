@@ -56,6 +56,7 @@ function App() {
         <Route path="/FAQ" component={Faq} />
         <Route path="/contact" component={Contact} />
         <Route path="/enquiries" component={EnquiryForm} />
+        <Route path="/bookings" component={BookingForm} />
       </Switch>
       <Footer />
 

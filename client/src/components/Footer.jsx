@@ -36,8 +36,8 @@ export default function Footer() {
                         <h3>Get Started</h3>
                     </div>
                     <div className="footer-links3">
-                        <li><Link to="/enquiry">Enquiry</Link></li>
-                        <li>Booking</li>
+                        <li><Link to="/enquiries">Enquiry</Link></li>
+                        <li><Link to="/bookings">Booking</Link></li>
                     </div>
                 </div>
 
