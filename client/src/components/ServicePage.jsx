@@ -24,7 +24,7 @@ export default function ServicePage() {
                 <img src={map} alt=""/>
                 </div>
                 <div className="serv2-text">
-                    <h4>Photography</h4>
+                    <h4>Video</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, corporis.</p>
                 </div>
             </div>
@@ -34,7 +34,7 @@ export default function ServicePage() {
                 <img src={map} alt=""/>
                 </div>
                 <div className="serv3-text">
-                    <h4>Photography</h4>
+                    <h4>Web Design</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, corporis.</p>
                 </div>
             </div>
