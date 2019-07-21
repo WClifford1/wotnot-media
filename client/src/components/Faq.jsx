@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Faq() {
     return (
-        <div>
+        <div className="question-cont">
             <div className="question1">
             <h1>Frequently Asked Questions</h1>
             <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, possimus?`</h2>

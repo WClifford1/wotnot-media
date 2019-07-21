@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import map from '../images/map.jpg'
 
 export default class Contact extends Component {
     constructor(props) {
@@ -68,11 +69,13 @@ export default class Contact extends Component {
                     <h1>Contact Us</h1>
                     <h2>We'd love to hear from you!</h2>
                 </div>
-                <div className="contact-title">
-                    <h3>Contact Form</h3>
-                </div>
+              
 
+                <div className="contact-page">
                 <div className="contact-form">
+                <div className="contact-title">
+                    <h2>Contact Form</h2>
+                </div>
                     <form onSubmit={this.onSubmit}>
                         <div className="contact-text">
                             <label><strong>Name :</strong></label>
@@ -111,18 +114,24 @@ export default class Contact extends Component {
                 </div>
 
             <div className="contact-details">
+                <div className="contact-card">
+                <img src={map} alt=""/>
+                <div className="admin-details">
                 <div className="cont-name">
-                    <h3>Name: Steve Worby</h3>
+                    <h5>Name: Steve Worby</h5>
                 </div>
                 <div className="cont-email">
-                    <h3>Email: wotnotmedia@gmail.com</h3>
+                    <h5>Email: wotnotmedia@gmail.com</h5>
                 </div>
                 <div className="cont-work">
-                    <h3>Work Num: 1300 393 851</h3>
+                    <h5>Work Num: 1300 393 851</h5>
                 </div>
                 <div className="cont-mobil">
-                    <h3>Mobile: +61 404 698 115 </h3>
+                    <h5>Mobile: +61 404 698 115 </h5>
+                    </div>
                 </div>
+                </div>
+            </div>
             </div>
             </div>
         )
