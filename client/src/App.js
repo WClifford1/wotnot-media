@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import EnquiryForm from './components/EnquiryForm';
 import ShowEnquiries from './components/ShowEnquiries';
-import StaffPortal from './components/StaffPortal';
+import Login from './components/Login';
 import jwtDecode from 'jwt-decode'
+import LogOut from './components/LogOut';
 
 export default class App extends Component {
 
+
   state = {}
+
 
   componentDidMount() {
       try {
@@ -22,9 +25,11 @@ export default class App extends Component {
     <React.Fragment>
       <EnquiryForm />
       <ShowEnquiries />
-      <StaffPortal user={this.state.user} />
-      <React.Fragment>
-      </React.Fragment>
+      {!this.state.user && 
+      <Login user={this.state.user} />
+      }
+      {this.state.user &&
+      <LogOut/>}
     </React.Fragment>
   );
 }

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 
 
-export default class StaffPortal extends Component {
+export default class Login extends Component {
 
     constructor(props) {
         super(props)
@@ -36,12 +36,15 @@ export default class StaffPortal extends Component {
         axios.post('http://localhost:4000/api/auth', newUser)
             .then(res => 
             localStorage.setItem('token', res.data))
+            .then(res => 
+                window.location.reload())
         this.setState({
             account: {
             name: '',
             password: ''
             }
         })
+        
     }
 
 
@@ -50,8 +53,6 @@ export default class StaffPortal extends Component {
 
         return (
             <div>
-                {!this.props.user &&
-                <React.Fragment >
                 <h1>Login</h1>    
                 <form onSubmit={this.onSubmit}>
                     <label>Name</label>
@@ -61,12 +62,6 @@ export default class StaffPortal extends Component {
                     <input value={this.state.account.password} onChange={this.onChange} name="password" type="password" />
                 <input type="submit" value="Submit" />
                 </form>
-                </React.Fragment>}
-                {this.props.user &&
-                <React.Fragment>
-                    <h2>LOGGED IN</h2>
-                </React.Fragment>
-                }
             </div>
         )
     }
