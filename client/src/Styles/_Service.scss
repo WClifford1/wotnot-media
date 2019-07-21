@@ -16,7 +16,6 @@ $off-black: #322645;
 }
 
 .serv-offered {
-    border: 2px solid red;
     display: flex;
     justify-content: space-around;
 
@@ -24,6 +23,7 @@ $off-black: #322645;
         width: 20%;
         flex-direction: column;
         display: flex;
+        padding: 40px;
 
         &:hover {
             transform: scale(1.05);
@@ -57,7 +57,7 @@ $off-black: #322645;
 
             p {
                 text-align: center; 
-                line-height: 1.5em;
+                line-height: 1.3em;
             }
         }
     }
@@ -66,9 +66,15 @@ $off-black: #322645;
         width: 20%;
         flex-direction: column;
         display: flex;
+        padding: 40px;
 
+        &:hover {
+            transform: scale(1.05);
+        }
+        
         .serv2-img {
-            border: 2px solid green;
+            border: 1px solid grey;
+            border-radius: 5px 5px 0 0;
 
             img {
                 display: flex;
@@ -76,21 +82,66 @@ $off-black: #322645;
 
             }
         }
+
+        .serv2-text {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border: 1px solid grey;
+            border-radius: 0 0 5px 5px;
+
+
+            h4 {
+                text-align: center;
+                padding: 5px;
+                color: $material-pink;
+            }
+
+            p {
+                text-align: center; 
+                line-height: 1.3em;
+            }
+        }
     }
 
     .serv-3 {
         width: 20%;
-        border: 2px solid red;
         flex-direction: column;
         display: flex;
+        padding: 40px;
+
+        &:hover {
+            transform: scale(1.05);
+        }
 
         .serv3-img {
-            border: 2px solid green;
+            border: 1px solid grey;
+            border-radius: 5px 5px 0 0;
 
             img {
                 display: flex;
                 width: 100%;
 
+            }
+        }
+
+        .serv3-text {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border: 1px solid grey;
+            border-radius: 0 0 5px 5px;
+
+
+            h4 {
+                text-align: center;
+                padding: 5px;
+                color: $material-pink;
+            }
+
+            p {
+                text-align: center; 
+                line-height: 1.3em;
             }
         }
     }

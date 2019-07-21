@@ -459,7 +459,6 @@
 }
 
 .serv-offered {
-  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,6 +475,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 40px;
 }
 
 .serv-offered .serv-1:hover {
@@ -516,7 +516,7 @@
 
 .serv-offered .serv-1 .serv1-text p {
   text-align: center;
-  line-height: 1.5em;
+  line-height: 1.3em;
 }
 
 .serv-offered .serv-2 {
@@ -528,10 +528,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 40px;
+}
+
+.serv-offered .serv-2:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .serv-offered .serv-2 .serv2-img {
-  border: 2px solid green;
+  border: 1px solid grey;
+  border-radius: 5px 5px 0 0;
 }
 
 .serv-offered .serv-2 .serv2-img img {
@@ -541,9 +548,32 @@
   width: 100%;
 }
 
+.serv-offered .serv-2 .serv2-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 0 0 5px 5px;
+}
+
+.serv-offered .serv-2 .serv2-text h4 {
+  text-align: center;
+  padding: 5px;
+  color: #d98d91;
+}
+
+.serv-offered .serv-2 .serv2-text p {
+  text-align: center;
+  line-height: 1.3em;
+}
+
 .serv-offered .serv-3 {
   width: 20%;
-  border: 2px solid red;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -551,10 +581,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 40px;
+}
+
+.serv-offered .serv-3:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .serv-offered .serv-3 .serv3-img {
-  border: 2px solid green;
+  border: 1px solid grey;
+  border-radius: 5px 5px 0 0;
 }
 
 .serv-offered .serv-3 .serv3-img img {
@@ -562,6 +599,30 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+}
+
+.serv-offered .serv-3 .serv3-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 0 0 5px 5px;
+}
+
+.serv-offered .serv-3 .serv3-text h4 {
+  text-align: center;
+  padding: 5px;
+  color: #d98d91;
+}
+
+.serv-offered .serv-3 .serv3-text p {
+  text-align: center;
+  line-height: 1.3em;
 }
 
 * {
