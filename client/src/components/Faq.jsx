@@ -1,14 +1,20 @@
 import React, { Component } from 'react'
 
 export default class Faq extends Component {
+       constructor(props) {
+           super(props)
+       
+        
+            this.onClick = this.onClick.bind(this);
+        
+       }
        
 
     onClick (button) {
-        document.querySelector('accordion__button').forEach(button => {
-            button.classList.toggle('accordion__button--active')    
-        })
-    }
-
+            button.addEventListener('click', () => {
+                button.classList.toggle('accordion__button--active')     
+            })
+        }
 
     render() {
     return (
