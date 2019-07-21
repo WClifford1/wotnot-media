@@ -25,6 +25,8 @@ import Faq from './components/Faq';
 import Contact from './components/Contact';
 import Service4 from './components/ServicePage';
 import ServicePage from './components/ServicePage';
+import Terms from './components/Terms';
+import Privacy from './components/Privacy';
 
 // class App extends Component {
 //   render() {
@@ -57,6 +59,8 @@ function App() {
         <Route path="/contact" component={Contact} />
         <Route path="/enquiries" component={EnquiryForm} />
         <Route path="/bookings" component={BookingForm} />
+        <Route path="/termsandconditions" component={Terms} />
+        <Route path="/privacy" component={Privacy} />
       </Switch>
       <Footer />
 
