@@ -28,6 +28,22 @@ $off-black: #322645;
         content: '\25be';
         float: right;
         transform: scale(1.5);
-        
+    }
+
+    .accordion__button--active {
+        background: #555555;
+    }
+
+    .accordion__button--active::after {
+        content: '\25b4';
+    }
+
+    .accordion__content {
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.2s;
+
+        padding: 0 15px;
+        background: #eee;   
     }
 }

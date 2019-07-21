@@ -430,6 +430,23 @@
           transform: scale(1.5);
 }
 
+.question-cont .accordion__button--active {
+  background: #555555;
+}
+
+.question-cont .accordion__button--active::after {
+  content: '\25b4';
+}
+
+.question-cont .accordion__content {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.2s;
+  transition: max-height 0.2s;
+  padding: 0 15px;
+  background: #eee;
+}
+
 * {
   font-family: 'Montserrat', sans-serif;
   margin: 0px;
