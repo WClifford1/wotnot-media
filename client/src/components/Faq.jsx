@@ -4,7 +4,9 @@ export default class Faq extends Component {
        
 
     onClick (button) {
-        button.classList.toggle('accordion__button--active')
+        document.querySelector('accordion__button').forEach(button => {
+            button.classList.toggle('accordion__button--active')    
+        })
     }
 
 

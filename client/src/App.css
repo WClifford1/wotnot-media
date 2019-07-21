@@ -394,14 +394,14 @@
 .contact-cont .contact-details img {
   height: 200px;
   border-radius: 5px 5px 0 0;
-  border: 1px solid black;
+  border: 1px solid #bdbbbb;
 }
 
 .contact-cont .contact-details .admin-details {
   text-align: center;
   padding: 20px 0 20px 0;
   line-height: 1.5em;
-  border: 1px solid black;
+  border: 1px solid #bdbbbb;
   border-radius: 0 0 5px 5px;
 }
 
