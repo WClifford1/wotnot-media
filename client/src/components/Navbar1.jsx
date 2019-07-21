@@ -14,7 +14,7 @@ export default function Navbar1() {
                     <li><Link to="/services">
                     Projects
                     </Link></li>
-                    <li><a className="hov" href="sad"><Link to="/projects">Services</Link></a></li>
+                    <li><a className="hov" href="sad"><Link to="/services">Services</Link></a></li>
                     <li><a className="hov" href="sad"><Link to="/faq">FAQ</Link></a></li>
                     <li><a className="hov" href="sad"><Link to="/contact">Contact</Link></a></li>
                 </ul>

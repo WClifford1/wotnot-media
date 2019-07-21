@@ -115,7 +115,7 @@ export default class Contact extends Component {
 
             <div className="contact-details">
                 <div className="contact-card">
-                <img src={map} alt=""/>
+                <img src={map} alt="Map location"/>
                 <div className="admin-details">
                 <div className="cont-name">
                     <h5>Name: Steve Worby</h5>

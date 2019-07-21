@@ -447,6 +447,16 @@
   background: #eee;
 }
 
+.serv-offered {
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 * {
   font-family: 'Montserrat', sans-serif;
   margin: 0px;

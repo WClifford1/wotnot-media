@@ -23,6 +23,8 @@ import Navbar1 from './components/Navbar1';
 import { Switch, Route } from 'react-router-dom';
 import Faq from './components/Faq';
 import Contact from './components/Contact';
+import Service4 from './components/ServicePage';
+import ServicePage from './components/ServicePage';
 
 // class App extends Component {
 //   render() {
@@ -49,7 +51,7 @@ function App() {
       {/* <Home /> */}
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/services" component={Service1} />
+        <Route path="/services" component={ServicePage} />
         <Route path="/projects" component={Card1} />
         <Route path="/FAQ" component={Faq} />
         <Route path="/contact" component={Contact} />
