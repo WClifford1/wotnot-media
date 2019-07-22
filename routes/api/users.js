@@ -5,8 +5,6 @@ const bcrypt = require('bcrypt')
 
 
 router.get('/', async (req, res) => {
-    
-
     const users = await User.find()
     res.send(users)
 });

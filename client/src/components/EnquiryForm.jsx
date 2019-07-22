@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Recaptcha from 'react-recaptcha'
 
 export default class EnquiryForm extends Component {
 
@@ -18,7 +19,8 @@ export default class EnquiryForm extends Component {
             email: '',
             phoneNumber: '',
             enquiry: '',
-            errors : ''
+            errors : '',
+            isVerified: false
         }
     }
 
@@ -64,6 +66,12 @@ export default class EnquiryForm extends Component {
 
     onSubmit(e) {
         e.preventDefault()
+
+        if (this.state.isVerified) {
+            alert('You have sent your enquiry')
+        } else {
+            alert('Please verify that you are human')
+        }
 
         const errors = this.validate()
         console.log(errors)
@@ -140,10 +148,14 @@ export default class EnquiryForm extends Component {
                         value="Send Enquiry" 
                         className="btn btn-primary" />
                     </div>
+                    {/* <Recaptcha
+                        sitekey="xxxxxxxxxxxxxxxxxxxx"
+                        render="explicit"
+                        onloadCallback={callback}
+                    /> */}
                 </form>
             </div>
         )
     }
 }
-
 
