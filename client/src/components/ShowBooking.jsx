@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import api from '../utils/api'
+import axios from 'axios'
 
 export default class ShowBooking extends Component {
     state = {
@@ -7,7 +7,7 @@ export default class ShowBooking extends Component {
     }
 
     componentDidMount() {
-        api.get('/bookings')
+        axios.get('http://localhost:4000/api/bookings')
         .then(res => {
             
             this.setState({ bookings: res.data})

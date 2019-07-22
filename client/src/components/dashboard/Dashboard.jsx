@@ -14,7 +14,7 @@ export default class Dashboard extends Component {
     render(){
         return (
             <div>
-                <table style="width: 100%">
+                <table>
                     <tr>
                         <th>Name:</th>
                         <th>Email:</th>
@@ -22,10 +22,10 @@ export default class Dashboard extends Component {
                         <th>Time of Booking:</th>
                     </tr>
                     <tr>
-                        <td>{this.state.bookings.map(booking => {booking.name})}</td>
-                        <td>{this.state.bookings.map(booking => {booking.email})}</td>
-                        <td>{this.state.bookings.map(booking => {booking.phoneNumber})}</td>
-                        <td>{this.state.bookings.map(booking => {booking.timOfBooking})}</td>
+                        {this.state.bookings.map(booking => <td>{booking.name}</td>)}
+                        {this.state.bookings.map(booking => <td>{booking.email}</td>)}
+                        {this.state.bookings.map(booking => <td>{booking.phoneNumber}</td>)}
+                        {this.state.bookings.map(booking => <td>{booking.timeOfBooking}</td>)}
                     </tr>
                 </table>
                 

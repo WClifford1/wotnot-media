@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import api from '../utils/api'
+import axios from 'axios'
 
 export default class BookingForm extends Component {
     constructor(props) {
@@ -34,13 +34,11 @@ export default class BookingForm extends Component {
     }
 
     onChangePhoneNumber(e) {
-        if (!isNaN(e.target.value)){
         this.setState({
-
             phoneNumber: e.target.value
         })
     }
-    }
+    
 
     onChangetimeOfBooking(e) {
         this.setState({
@@ -64,8 +62,8 @@ export default class BookingForm extends Component {
             timeOfBooking: this.state.timeOfBooking
 
         }
-        api
-        .post('/bookings', newBooking)
+        
+        axios.post('http://localhost:4000/api/bookings', newBooking)
         .then(res => console.log(res.data))
 
         this.setState({
@@ -109,8 +107,8 @@ export default class BookingForm extends Component {
                         </div>
                         <div className="book-input">
                             <input type="text" className="book-control"
-                                value={this.state.phone}
-                                onChange={this.onChangePhone} />
+                                value={this.state.phoneNumber}
+                                onChange={this.onChangePhoneNumber} />
                         </div>
 
                         <div className="book-text">
@@ -119,10 +117,11 @@ export default class BookingForm extends Component {
                         <div className="book-select">
                             <select>
                                 <option value="time" className="book-control"
-                                    value={this.state.time}
-                                    onChange={this.onChangeTime}>12:45</option>
+                                    value={this.state.timeOfBooking}
+                                    onChange={this.onChangetimeOfBooking}>12:45</option>
                             </select>
                         </div>
+                        
 
                         <div className="book-btn">
                             <input type="submit"

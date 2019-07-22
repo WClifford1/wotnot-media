@@ -1,25 +1,30 @@
 import React, { Component, Fragment } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import './App.css'
-
-// import BookingForm from './components/BookingForm';
+// import ShowBooking from './components/ShowBooking'
+import Dashboard from './components/dashboard/Dashboard'
+import BookingForm from './components/BookingForm';
+// import ShowEnquiries from './components/ShowEnquiries';
 // import EnquiryForm from './components/EnquiryForm';
-import Home from './components/Home';
-import HeroImage from './components/HeroImage';
+// import ShowEnquirires from './components/ShowEnquiries'
+// import EnquiryForm from './components/EnquiryForm';
+// import Home from './components/Home';
+// import HeroImage from './components/HeroImage';
 // import Guarantee from './components/Guarantee';
 // import Services from './components/Services';
 // import Service1 from './components/Service1';
 // import Card1 from './components/Card1'; 
-import EnquiryForm from './components/EnquiryForm';
+// import EnquiryForm from './components/EnquiryForm';
 // import Navbar from './components/layout/Navbar'
 // import Landing from './components/layout/Landing'
 // import Register from './components/auth/Register'
 // import Login from './components/auth/Login'
 // import BookingForm from './components/BookingForm';
-import Service2 from './components/Service2';
+// import Service2 from './components/Service2';
 // import HowWeHelp from './components/HowWeHelp';
 // import WhyUs from './components/WhyUs';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
+// import ShowBooking from './components/ShowBooking';
 
 // class App extends Component {
 //   render() {
@@ -39,24 +44,16 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <React.Fragment>
-      {/* <Router> */}
+    
         <div>
-        {/* <Route path="/service2" component={Service2} />
-        <Route path="/enquiryform" component={EnquiryForm} /> */}
-      <Home />
-      <Service2 />
-      {/* <HowWeHelp /> */}
-      {/* <WhyUs />  */}
-      {/* <BookingForm /> */}
-      <Footer />
+    <BookingForm />
+        <Dashboard />
+    
       </div>
-      {/* </Router> */}
-      </React.Fragment>
+  )     
+ }
+  
 
-    // </React.Fragment>
-  );
-}
 
 
 export default App;
