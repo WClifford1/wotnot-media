@@ -7,10 +7,6 @@ const enquiries = require('./routes/api/enquiries')
 <<<<<<< HEAD
 const bookings = require('./routes/api/bookings')
 const cors = require('cors')
-const passport = require('passport')
-
-const users = require('./routes/api/users')
-
 
 =======
 const users = require('./routes/api/users')
@@ -19,6 +15,7 @@ const auth = require('./routes/api/auth')
 const config = require('config')
 >>>>>>> react-recaptcha
 
+// const users = require('./routes/api/users')
 
 if (!config.get('jwtPrivateKey')){
     throw new Error('FATAL ERROR: jwtPrivateKey is not defined.');
@@ -26,6 +23,7 @@ if (!config.get('jwtPrivateKey')){
 
 app.use(cors())
 app.use(bodyParser.json())
+<<<<<<< HEAD
 app.use(bodyParser.urlencoded({extended: false}))
 app.use('/api/enquiries', enquiries)
 <<<<<<< HEAD
@@ -36,6 +34,9 @@ app.use('/api/users', users)
 app.use('/api/users', users)
 app.use('/api/auth', auth)
 >>>>>>> react-recaptcha
+=======
+// app.use(bodyParser.urlencoded({extended: false}))
+>>>>>>> dashboard
 
 
 // mongoose.connect(db)
@@ -43,12 +44,13 @@ mongoose.connect('mongodb://localhost/wotnotmedia')
 .then(() => console.log('Connected to Localhost'))
 .catch(err => console.log(err))
 
-//passport middleware
-app.use(passport.initialize())
 
-//passport config
-require('./config/passport')(passport)
 
+
+app.use('/api/enquiries', enquiries)
+app.use('/api/bookings', bookings)
+//routes
+// app.use('/api/users', users)
 
 
 const PORT = process.env.PORT || 4000
