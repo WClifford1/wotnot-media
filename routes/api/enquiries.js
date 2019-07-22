@@ -1,9 +1,10 @@
+const auth = require('../../middleware/auth')
 const express = require('express')
-const { Enquiry, validateEnquiry } = require('../../models/Enquiry')
+const { Enquiry } = require('../../models/Enquiry')
 const router = express.Router()
 
 
-router.get('/', async (req, res) => {
+router.get('/', auth, async (req, res) => {
     const enquiries = await Enquiry.find()
     res.send(enquiries)
 });
@@ -12,7 +13,7 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res) => {
     // const { error } = validateEnquiry(req.body)
     // if (error) return res.status(400).send(error.details[0].message)
-    
+
     let enquiry = new Enquiry({
         name: req.body.name,
         email: req.body.email,
