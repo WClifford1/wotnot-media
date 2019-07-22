@@ -16,7 +16,7 @@ const Booking = mongoose.model('Booking', new mongoose.Schema({
     }, 
     timeOfBooking:{
         type: String
-       
+
     
     },
     booking: {
