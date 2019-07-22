@@ -1,5 +1,6 @@
 import React from 'react'
-import heroimg from '../images/heroimg.svg'
+import heroimg from '../images/blob-shape.svg'
+
 
 export default function HeroImage() {
     return (

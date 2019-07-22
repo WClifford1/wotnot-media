@@ -1,0 +1,124 @@
+$off-white: #fcf7f8;
+$dark-blue: #211c4f;
+$material-grey: #bab0ba;
+$material-pink: #d98d91;
+$material-purple: #7d7ebe;
+$material-red: #eb561a;
+$material-yellow: #f0ac39;
+$off-black: #322645;
+
+.contact-cont {
+    // border: 2px solid red;
+
+    .contact-header {
+        // border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        
+
+        h1 {
+            padding: 10px;
+            color: $material-purple;
+        }
+
+        h2 {
+            padding: 10px;
+            color: $material-yellow;
+        }
+    }
+
+    .contact-page {
+        // border: 2px solid turquoise;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-form {
+        // border: 2px solid blue;
+        display: flex; 
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+
+        h2 {
+            padding: 20px;
+            font-weight: 100;
+            color: $dark-blue;
+        }
+        // text-align: center;
+        .contact-text {
+            display: flex;
+            
+            label {
+                width: 50%;
+                padding: 5px 0 5px 0;
+            }
+        }
+
+        .contact-input {
+            // border: 2px solid saddlebrown;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 5px;  
+
+            .contact-control {
+                width: 60%;
+                padding: 5px;
+                border-radius: 5px;
+                border: 1px solid grey;
+            }
+        }
+
+        
+        .contact-btn {
+            padding: 20px;
+
+            .contact-sub {
+                border: 1px solid $material-yellow;
+                padding: 10px;
+                border-radius: 5px;
+                font-size: 14px;
+                background-color: $material-yellow;
+                color: white;
+            }
+        }
+
+    }
+    
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        // border: 2px solid red;
+        
+
+        .contact-card {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            width: 45%;
+
+            // border: 2px solid red;
+        }
+
+        img {
+            height: 200px;
+            border-radius: 5px 5px 0 0;
+            border: 1px solid rgb(189, 187, 187);
+
+        }
+
+
+        .admin-details {
+            text-align: center;
+            padding: 20px 0 20px 0;
+            line-height: 1.5em; 
+            border: 1px solid rgb(189, 187, 187);
+            border-radius: 0 0 5px 5px;
+        }
+    }
+}

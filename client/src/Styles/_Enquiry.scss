@@ -1,0 +1,146 @@
+
+$off-white: #fcf7f8;
+$dark-blue: #211c4f;
+$material-grey: #bab0ba;
+$material-pink: #d98d91;
+$material-purple: #7d7ebe;
+$material-red: #eb561a;
+$material-yellow: #f0ac39;
+$off-black: #322645;
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+
+    // background: #001D4A;
+}
+
+@mixin form-title {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: #001D4A;
+}
+
+@mixin input-form {
+    padding: 10px;
+    width: 100%;
+}
+
+@mixin input-box-size {
+    border-radius: 5px;
+    height: 35px;
+    border: 1px solid rgb(153, 153, 153);
+    width: 80vw;
+}
+
+@mixin btn-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+}
+
+@mixin inner-btn {
+    border-radius: 5px;
+    border: none;
+    height: 2.5em;
+    font-weight: bold;
+    width: 80vw;
+    text-align: center;
+    background-color: #001D4A;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.enq-cont {
+    padding: 40px;
+  }
+  
+  .enq-cont .enq-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 30px;
+    color: #001D4A;
+  }
+  
+  .enq-cont .enq-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .enq-cont .enq-form .form-text {
+    padding-left: 10px;
+  }
+  
+  .enq-cont .enq-form .form-control {
+    border-radius: 5px;
+    height: 35px;
+    border: 1px solid #999999;
+    width: 80vw;
+  }
+  
+  .enq-cont .enq-form .form-control::-webkit-input-placeholder {
+    color: #525253;
+    font-size: 1.0em;
+    line-height: 1em;
+    padding: 10px;
+  }
+  
+  .enq-cont .enq-form .form-control:-ms-input-placeholder {
+    color: #525253;
+    font-size: 1.0em;
+    line-height: 1em;
+    padding: 10px;
+  }
+  
+  .enq-cont .enq-form .form-control::-ms-input-placeholder {
+    color: #525253;
+    font-size: 1.0em;
+    line-height: 1em;
+    padding: 10px;
+  }
+  
+  .enq-cont .enq-form .form-control::placeholder {
+    color: #525253;
+    font-size: 1.0em;
+    line-height: 1em;
+    padding: 10px;
+  }
+  
+  .enq-cont .form-input {
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .enq-cont .form-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 20px;
+  }
+  
+  .enq-cont .form-btn .enq-btn {
+    border-radius: 5px;
+    border: none;
+    height: 2.5em;
+    font-weight: bold;
+    width: 80vw;
+    text-align: center;
+    background-color: #001D4A;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  

@@ -12,7 +12,7 @@ export default class EnquiryForm extends Component {
         this.onChangeEnquiry = this.onChangeEnquiry.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
 
-        
+
         this.state = {
             name: '',
             email: '',
@@ -22,7 +22,7 @@ export default class EnquiryForm extends Component {
     }
 
     onChangeName(e) {
-        
+
         this.setState({
             name: e.target.value
         })
@@ -61,7 +61,7 @@ export default class EnquiryForm extends Component {
             phone: this.state.phone,
             enquiry: this.state.enquiry
         }
-        
+
         axios.post('http://localhost:4000/api/enquiries', newEnquiry)
             .then(res => console.log(res.data))
 
@@ -78,45 +78,52 @@ export default class EnquiryForm extends Component {
         return (
             <div className="enq-cont">
                 <div className="enq-title">
-                <h3>Enquiry Form</h3>
+                    <h3>Enquiry Form</h3>
                 </div>
-                
+
                 <div className="enq-form">
-                <form onSubmit={this.onSubmit}>
-                    <div className="form-group">
-                        {/* <label><strong>Name: </strong></label> */}
-                        <input type="text" className="form-control" placeholder="Name"
-                        value={this.state.name} 
-                        onChange={this.onChangeName} />
-                    </div>
+                    <form onSubmit={this.onSubmit}>
+                        <div className="form-text">
+                            <label><strong>Name <span style={{ color: "red" }}>*</span> : </strong></label>
+                        </div>
+                        <div className="form-input">
+                            <input type="text" className="form-control" placeholder="Insert your name here"
+                                value={this.state.name}
+                                onChange={this.onChangeName} />
+                        </div>
 
-                    <div className="form-group">
-                        {/* <label><strong>Email: </strong></label> */}
-                        <input type="text" className="form-control" placeholder="Email"
-                        value={this.state.email} 
-                        onChange={this.onChangeEmail} />
-                    </div>
+                        <div className="form-text">
+                            <label><strong>Email <span style={{ color: "red" }}>*</span> : </strong></label>
+                        </div>
+                        <div className="form-input">
+                            <input type="text" className="form-control" placeholder="Insert your email here"
+                                value={this.state.email}
+                                onChange={this.onChangeEmail} />
+                        </div>
 
-                    <div className="form-group">
-                        {/* <label><strong>Phone: </strong></label> */}
-                        <input type="text" className="form-control" placeholder="Phone"
-                        value={this.state.phone} 
-                        onChange={this.onChangePhone} />
-                    </div>
+                        <div className="form-text">
+                            <label><strong>Phone : </strong></label>
+                        </div>
+                        <div className="form-input">
+                            <input type="text" className="form-control" placeholder="Insert your phone number here"
+                                value={this.state.phone}
+                                onChange={this.onChangePhone} />
+                        </div>
+                        <div className="form-text">
+                            <label><strong>Enquiry <span style={{ color: "red" }}>*</span> : </strong></label>
+                        </div>
+                        <div className="form-input">
+                            <textarea type="text" className="form-control" placeholder="Insert your query here"
+                                value={this.state.enquiry}
+                                onChange={this.onChangeEnquiry} />
+                        </div>
 
-                    <div className="form-group">
-                        {/* <label><strong>Enquiry: </strong></label> */}
-                        <textarea type="text" className="form-control" placeholder="Enquiry"
-                        value={this.state.enquiry} 
-                        onChange={this.onChangeEnquiry} />
-                    </div>
-
-                    <div className="form-group">
-                        <input type="submit" 
-                        value="Send Enquiry" 
-                        className="btn btn-primary" />
-                    </div>
-                </form>
+                        <div className="form-btn">
+                            <input type="submit"
+                                value="Submit"
+                                className="enq-btn" />
+                        </div>
+                    </form>
                 </div>
             </div>
         )
