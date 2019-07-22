@@ -33,11 +33,17 @@
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.8.0",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
 
 
-    "validator": "^11.1.0"
+    "validator": "^11.1.0",
 
     "react-scroll": "^1.7.12"
   }
