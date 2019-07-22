@@ -11,6 +11,7 @@ $off-black: #322645;
     display: flex;
     // border: 2px solid green;
     width: 60%;
+<<<<<<< HEAD
     padding-top: 20px;
 
     .back-img {
@@ -24,6 +25,9 @@ $off-black: #322645;
             height: 100vh;  
         }
     }
+=======
+    padding-top: 10px;
+>>>>>>> dashboard
 
     .logo {
         color: $material-purple ;
@@ -31,7 +35,10 @@ $off-black: #322645;
         padding-top: 11px;
         width: 50%;
         padding-right: 100px;    
+<<<<<<< HEAD
         z-index: 2;
+=======
+>>>>>>> dashboard
     }
 
     .nav-items {
@@ -45,7 +52,10 @@ $off-black: #322645;
         padding-top: 1rem;
         padding-bottom: 1rem;
         // border: 2px solid black; 
+<<<<<<< HEAD
         z-index: 2;
+=======
+>>>>>>> dashboard
     
         li {
             display: flex;

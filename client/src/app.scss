@@ -1,9 +1,12 @@
 @import './Styles/Enquiry';
 @import './Styles/Booking';
 @import './Styles/Home';
+<<<<<<< HEAD
 @import './Styles/Contact';
 @import './Styles/Faq';
 @import './Styles/Service';
+=======
+>>>>>>> dashboard
 
 $off-white: #fcf7f8;
 $dark-blue: #211c4f;
@@ -59,6 +62,7 @@ $title-pad: 40px;
     font-size: 20px;
     cursor: pointer;
 }
+<<<<<<< HEAD
 
 html {
     scroll-behavior: smooth;
@@ -70,6 +74,19 @@ html {
     background-color: #fff;
     // border: 2px solid red;
 
+=======
+
+html {
+    scroll-behavior: smooth;
+}
+
+// Part of home 
+.nav-cont {
+    height: 100vh;
+    background-color: #fff;
+    // border: 2px solid red;
+
+>>>>>>> dashboard
     .hero-image {
         display: flex;
         // border: 2px solid red;
@@ -89,7 +106,10 @@ html {
         justify-content: center;
         align-items: center;
         padding-bottom: 80px;
+<<<<<<< HEAD
         z-index: 2;
+=======
+>>>>>>> dashboard
 
         h1 {
             display: flex;
@@ -139,6 +159,7 @@ html {
 // Services Container 
 
 .serves-title {
+<<<<<<< HEAD
     display: flex;
     // border:2px solid blue;
     justify-content: center;
@@ -153,6 +174,22 @@ html {
 
 .serves-cont {
     display: flex;
+=======
+    display: flex;
+    // border:2px solid blue;
+    justify-content: center;
+    align-content: center;
+    padding: $title-pad;
+    color: $material-purple;
+    font-weight: 100;
+    padding: 60px;
+    background-color: #fff;
+
+}
+
+.serves-cont {
+    display: flex;
+>>>>>>> dashboard
     justify-content: space-evenly;
     // border: 2px solid red;
     background-color: #fff;
@@ -177,6 +214,7 @@ html {
             padding: 15px;
             color: $material-purple;
         }
+<<<<<<< HEAD
 
         &:hover {
             transform: scale(1.1);
@@ -198,10 +236,43 @@ html {
             padding: 15px;
             color: $material-purple;
         }
+=======
+>>>>>>> dashboard
 
         &:hover {
             transform: scale(1.1);
             cursor: pointer;
+        }
+    }
+
+<<<<<<< HEAD
+    .serves3 {
+=======
+    .serves2 {
+>>>>>>> dashboard
+        color: $material-yellow;
+        // border: 2px solid red;
+        text-align: center;
+        padding: 10px;
+
+        .blob {
+            height: 100px;
+        }
+
+<<<<<<< HEAD
+        .serves3-text {
+=======
+        .serves2-text {
+>>>>>>> dashboard
+            padding: 15px;
+            color: $material-purple;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+<<<<<<< HEAD
+=======
         }
     }
 
@@ -223,6 +294,7 @@ html {
         &:hover {
             transform: scale(1.1);
             cursor: pointer;
+>>>>>>> dashboard
         }
     }
 
@@ -236,12 +308,21 @@ html {
     display: flex;
     background-color: #fff;
     padding-bottom: 30px;
+<<<<<<< HEAD
 
     .help-blob {
         position: relative;
         left: -200px;
     }
 
+=======
+
+    .help-blob {
+        position: relative;
+        left: -200px;
+    }
+
+>>>>>>> dashboard
     .help-text {
         // border:2px solid red;
         display: flex;
@@ -337,6 +418,46 @@ html {
     // align-content: center;
     // justify-content: center;
     // margin-top: 30px;
+<<<<<<< HEAD
+}
+
+.whyus-cont {
+    // border: 2px solid red;
+    display: flex;
+    // align-content: center;
+    // justify-content: center;
+    padding: 10px;
+    height: 200px;
+
+    .wu-icons {
+        // border: 2px solid green;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-content: center;
+        text-align: center;
+        padding: 20px;
+        color: #000;
+
+        img {
+            height: 100px;
+        }
+    }
+
+    .wu-text {
+        text-align: center;
+        line-height: 1.5rem;
+        padding-top: 20px;
+        color: $material-purple;
+
+
+        h3 {
+            padding: 10px;
+        }
+
+        p {
+            color: $material-grey;
+=======
 }
 
 .whyus-cont {
@@ -379,6 +500,33 @@ html {
     }
 }
 
+.footer-cont {
+    // border: 2px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    height: 250px;
+    background-color: #ECF6FB;
+    // justify-content: flex-end;
+
+
+    .footer-logo {
+        // padding-top: 20px;
+        // border: 2px solid green;
+        // margin-left: -150px;
+        padding-top: 20px;
+        color: $material-purple;
+        padding-left: 20px;
+        width: 40%; 
+
+
+        h2 {
+        font-weight: 200;
+>>>>>>> dashboard
+        }
+    }
+}
+
+<<<<<<< HEAD
 .footer-cont {
     // border: 2px solid red;
     display: flex;
@@ -501,6 +649,105 @@ html {
     }
 }
 
+=======
+.footer-res1 {
+    // border: 2px solid green;
+    list-style: none;
+    // padding: 20px;
+    // color: $material-yellow;
+    width: 20%;
+
+    .footer-title1 {
+        padding: 20px 0 20px 0;
+        // border: 2px solid purple;
+        // text-align: center;
+        color: $material-purple;
+    }
+
+    .footer-links1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        // text-align: center;
+
+        li {
+            color: $material-grey;
+            padding: 5px;
+            cursor: pointer;
+
+            &:hover {
+                color: $material-yellow;
+            }
+        }
+    }
+}
+
+.footer-res2 {
+    // border: 2px solid green;
+    list-style: none;
+    // padding: 20px;
+    width: 20%;
+
+    .footer-title2 {
+        padding: 20px 0 20px 0;
+        // border: 2px solid purple;
+        // text-align: center;
+        color: $material-purple;
+    }
+
+    .footer-links2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        // text-align: center;
+
+        li {
+            color: $material-grey;
+            padding: 5px;
+            cursor: pointer;
+
+            &:hover {
+                color: $material-yellow;
+            }
+        }
+    }
+}
+
+.footer-res3 {
+    // border: 2px solid green;
+    list-style: none;
+    // padding: 20px;
+    width: 20%;
+    // display: flex;
+
+    .footer-title3 {
+        padding: 20px 0 20px 0;
+        // border: 2px solid purple;
+        // text-align: center;
+        color: $material-purple;
+    }
+
+    .footer-links3 {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        // text-align: center;
+        
+
+        li {
+            padding: 5px;
+            color: $material-grey;
+            cursor: pointer;
+
+            &:hover {
+                color: $material-yellow;
+            }
+        }
+
+    }
+}
+
+>>>>>>> dashboard
 
 
 
