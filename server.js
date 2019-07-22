@@ -2,8 +2,9 @@ const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const app = express()
-const db = require('./config/keys').mongoURI
+// const db = require('./config/keys').mongoURI
 const enquiries = require('./routes/api/enquiries')
+<<<<<<< HEAD
 const bookings = require('./routes/api/bookings')
 const cors = require('cors')
 const passport = require('passport')
@@ -11,15 +12,30 @@ const passport = require('passport')
 const users = require('./routes/api/users')
 
 
+=======
+const users = require('./routes/api/users')
+const cors = require('cors')
+const auth = require('./routes/api/auth')
+const config = require('config')
+>>>>>>> react-recaptcha
 
+
+if (!config.get('jwtPrivateKey')){
+    throw new Error('FATAL ERROR: jwtPrivateKey is not defined.');
+}
 
 app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 app.use('/api/enquiries', enquiries)
+<<<<<<< HEAD
 app.use('/api/bookings', bookings)
 //routes
 app.use('/api/users', users)
+=======
+app.use('/api/users', users)
+app.use('/api/auth', auth)
+>>>>>>> react-recaptcha
 
 
 // mongoose.connect(db)

@@ -1,55 +1,37 @@
 import React, { Component } from 'react'
-// import { BrowserRouter as Router, Route } from 'react-router-dom'
-import './App.css'
-
-// import BookingForm from './components/BookingForm';
-// import EnquiryForm from './components/EnquiryForm';
 import Home from './components/Home';
-import HeroImage from './components/HeroImage';
 import Guarantee from './components/Guarantee';
-import Services from './components/Services';
-import Service1 from './components/Service1';
 import Card1 from './components/Card1'; 
 import EnquiryForm from './components/EnquiryForm';
-<<<<<<< HEAD
-import Login from './components/Login'
 import ValidatedLoginForm from './components/ValidatedLoginForm';
-=======
-import Navbar from './components/layout/Navbar'
-import Landing from './components/layout/Landing'
-import Register from './components/auth/Register'
-import Login from './components/auth/Login'
 import BookingForm from './components/BookingForm';
-import HowWeHelp from './components/HowWeHelp';
-import WhyUs from './components/WhyUs';
 import Footer from './components/Footer';
 import Navbar1 from './components/Navbar1';
 import { Switch, Route } from 'react-router-dom';
 import Faq from './components/Faq';
 import Contact from './components/Contact';
-import Service4 from './components/ServicePage';
 import ServicePage from './components/ServicePage';
 import Terms from './components/Terms';
 import Privacy from './components/Privacy';
+import jwtDecode from 'jwt-decode'
 
-// class App extends Component {
-//   render() {
-//     return(
-//       <Router>
-//         <div className="App">
-//           <Navbar />
-//           <Route exact path="/" component={Landing} />
-//           <Route exact path="/register" component={Register} />
-//           <Route exact path="/login" component={Login} />
-//         </div>
-//       </Router>
-//     )
-//   }
-// }
 
->>>>>>> f57430d7bbbf7212b0dfdaf34d15076d20ac608e
+export default class App extends Component {
 
-function App() {
+
+  state = {}
+
+
+  componentDidMount() {
+      try {
+      const jwt = localStorage.getItem("token")
+      const user = jwtDecode(jwt)
+      this.setState( { user })
+      } catch(err) {}
+  }
+
+
+  render() {
   return (
     <React.Fragment>
       {/* <div> */}
@@ -68,6 +50,13 @@ function App() {
         <Route path="/privacy" component={Privacy} />
       </Switch>
       <Footer />
+      <EnquiryForm />
+      <ShowEnquiries />
+      {!this.state.user && 
+      <Login user={this.state.user} />
+      }
+      {this.state.user &&
+      <LogOut/>}
 
       {/* </div> */}
 
@@ -80,5 +69,4 @@ function App() {
     </React.Fragment>
   );
 }
-
-export default App;
+}

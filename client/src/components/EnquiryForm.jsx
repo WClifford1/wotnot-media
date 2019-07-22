@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Recaptcha from 'react-recaptcha'
 
 export default class EnquiryForm extends Component {
 
@@ -8,7 +9,7 @@ export default class EnquiryForm extends Component {
 
         this.onChangeName = this.onChangeName.bind(this)
         this.onChangeEmail = this.onChangeEmail.bind(this)
-        this.onChangePhone = this.onChangePhone.bind(this)
+        this.onChangePhoneNumber = this.onChangePhoneNumber.bind(this)
         this.onChangeEnquiry = this.onChangeEnquiry.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
 
@@ -16,10 +17,25 @@ export default class EnquiryForm extends Component {
         this.state = {
             name: '',
             email: '',
-            phone: '',
-            enquiry: ''
+            phoneNumber: '',
+            enquiry: '',
+            errors : '',
+            isVerified: false
         }
     }
+
+
+
+    validate = () => {
+        const errors = {}
+
+        if (this.state.name.trim() === "")
+        errors.name = "Name is required"
+
+        return Object.keys(errors).length === 0 ? null : errors
+    }
+
+    
 
     onChangeName(e) {
 
@@ -34,10 +50,12 @@ export default class EnquiryForm extends Component {
         })
     }
 
-    onChangePhone(e) {
-        this.setState({
-            phone: e.target.value
-        })
+    onChangePhoneNumber(e) {
+        if (!isNaN(e.target.value)){
+            this.setState({
+                phoneNumber: e.target.value
+            })
+        }
     }
 
     onChangeEnquiry(e) {
@@ -49,16 +67,27 @@ export default class EnquiryForm extends Component {
     onSubmit(e) {
         e.preventDefault()
 
+        if (this.state.isVerified) {
+            alert('You have sent your enquiry')
+        } else {
+            alert('Please verify that you are human')
+        }
+
+        const errors = this.validate()
+        console.log(errors)
+        this.setState( { errors })
+        if (errors) return
+
         console.log(`Form submitted:`)
         console.log(`Name: ${this.state.name}`)
         console.log(`Email: ${this.state.email}`)
-        console.log(`Phone: ${this.state.phone}`)
+        console.log(`Phone: ${this.state.phoneNumber}`)
         console.log(`Enquiry: ${this.state.enquiry}`)
 
         const newEnquiry = {
             name: this.state.name,
             email: this.state.email,
-            phone: this.state.phone,
+            phoneNumber: this.state.phoneNumber,
             enquiry: this.state.enquiry
         }
 
@@ -68,11 +97,10 @@ export default class EnquiryForm extends Component {
         this.setState({
             name: '',
             email: '',
-            phone: '',
+            phoneNumber: '',
             enquiry: ''
         })
     }
-
 
     render() {
         return (
@@ -129,5 +157,4 @@ export default class EnquiryForm extends Component {
         )
     }
 }
-
 
