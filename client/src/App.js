@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import Home from './components/Home';
 import Guarantee from './components/Guarantee';
 import Card1 from './components/Card1'; 
@@ -12,8 +12,8 @@ import Contact from './components/Contact';
 import ServicePage from './components/ServicePage';
 import Terms from './components/Terms';
 import Privacy from './components/Privacy';
-import jwtDecode from 'jwt-decode'
-import './App.css'
+import jwtDecode from 'jwt-decode';
+import './App.css';
 
 
 export default class App extends Component {
