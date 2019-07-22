@@ -2,7 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const app = express()
-// const db = require('./config/keys').mongoURI
+const db = require('./config/keys').mongoURI
 const enquiries = require('./routes/api/enquiries')
 const bookings = require('./routes/api/bookings')
 const cors = require('cors')
@@ -24,8 +24,8 @@ app.use('/api/enquiries', enquiries)
 app.use('/api/users', users)
 app.use('/api/auth', auth)
 
-// mongoose.connect(db)
-mongoose.connect('mongodb://localhost/wotnotmedia')
+mongoose.connect(db)
+// mongoose.connect('mongodb://localhost/wotnotmedia')
 .then(() => console.log('Connected to Localhost'))
 .catch(err => console.log(err))
 

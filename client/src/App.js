@@ -13,7 +13,7 @@ import ServicePage from './components/ServicePage';
 import Terms from './components/Terms';
 import Privacy from './components/Privacy';
 import jwtDecode from 'jwt-decode'
-import '../src/App.css'
+import './/App.css'
 
 
 export default class App extends Component {
