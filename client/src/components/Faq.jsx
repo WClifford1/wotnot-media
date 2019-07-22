@@ -1,34 +1,64 @@
-import React, { Component } from 'react'
+import React from 'react';
 
-export default class Faq extends Component {
-       constructor(props) {
-           super(props)
-       
-        
-            this.onClick = this.onClick.bind(this);
-        
-       }
-       
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemHeading,
+    AccordionItemButton,
+    AccordionItemPanel,
+} from 'react-accessible-accordion';
 
-    onClick (button) {
-            button.addEventListener('click', () => {
-                button.classList.toggle('accordion__button--active')     
-            })
-        }
+// Demo styles, see 'Styles' section below for some notes on use.
+import 'react-accessible-accordion/dist/fancy-example.css';
 
-    render() {
+export default function Example() {
     return (
-        <div className="question-cont">
-            <h1>Frequently Asked Questions</h1>
-            <div className="accordion">
-                <button type="button" className="accordion__button" onClick={this.onClick}>Expand Content</button>
-                <div className="accordion__content">
+        <Accordion className="faq-cont">
+            <AccordionItem style={{ width: "100%", display:"flex", justifyContent:"center", flexDirection:"column", padding: "20px"}}>
+                <AccordionItemHeading style={{ padding: "15px 150px", width: "85%" }}>
+                    <AccordionItemButton>
+                        What harsh truths do you prefer to ignore?
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque, tempora totam obcaecati odit expedita vero sunt nobis placeat? Natus?
+                        Exercitation in fugiat est ut ad ea cupidatat ut in
+                        cupidatat occaecat ut occaecat consequat est minim minim
+                        esse tempor laborum consequat esse adipisicing eu
+                        reprehenderit enim.
                     </p>
-                </div>
-            </div>
-        </div>
-    )
-    } 
+                </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem style={{ width: "100%", display:"flex", justifyContent:"center", flexDirection:"column", padding: "20px"}}>
+                <AccordionItemHeading style={{ padding: "15px 150px", width: "85%" }}>
+                    <AccordionItemButton>
+                        What harsh truths do you prefer to ignore?
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                    <p>
+                        Exercitation in fugiat est ut ad ea cupidatat ut in
+                        cupidatat occaecat ut occaecat consequat est minim minim
+                        esse tempor laborum consequat esse adipisicing eu
+                        reprehenderit enim.
+                    </p>
+                </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem style={{ width: "100%", display:"flex", justifyContent:"center", flexDirection:"column", padding: "20px"}}>
+                <AccordionItemHeading style={{ padding: "15px 150px", width: "85%" }}>
+                    <AccordionItemButton>
+                        What harsh truths do you prefer to ignore?
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel>
+                    <p>
+                        Exercitation in fugiat est ut ad ea cupidatat ut in
+                        cupidatat occaecat ut occaecat consequat est minim minim
+                        esse tempor laborum consequat esse adipisicing eu
+                        reprehenderit enim.
+                    </p>
+                </AccordionItemPanel>
+            </AccordionItem>
+            </Accordion>
+    );
 }
