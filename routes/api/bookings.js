@@ -1,5 +1,5 @@
 const express = require('express')
-const { Booking, ValidateBooking } = require('../../models/Booking')
+const { Booking, validateBooking } = require('../../models/Booking')
 const router = express.Router()
 
 router.get('/', async (req, res) => {
@@ -9,12 +9,14 @@ router.get('/', async (req, res) => {
 
 
 router.post('/', async (req, res) => {
+    // const error = validateBooking(req.body)
 
 
     let booking = new Booking({
         name: req.body.name,
         email: req.body.email,
         phoneNumber: req.body.phoneNumber,
+        timeOfBooking: req.body.timeOfBooking,
         booking: req.body.booking,
     })
 

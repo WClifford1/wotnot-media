@@ -1,5 +1,8 @@
 import React from 'react'
+<<<<<<< HEAD
 import { Link } from 'react-router-dom'
+=======
+>>>>>>> dashboard
 
 export default function Footer() {
     return (
@@ -24,10 +27,17 @@ export default function Footer() {
                         <h3>Information</h3>
                     </div>
                     <div className="footer-links2">
+<<<<<<< HEAD
                         <li><Link to="/Faq">FAQ</Link></li>
                         <li><Link to="termsandconditions">Terms & Conditions</Link></li>
                         <li><Link to="/privacy">Privacy Policy</Link></li>
                         <li><Link to="/contact">Contact Information</Link></li>
+=======
+                        <li>FAQ</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                        <li>Contact Information</li>
+>>>>>>> dashboard
                     </div>
                 </div>
 
@@ -36,8 +46,13 @@ export default function Footer() {
                         <h3>Get Started</h3>
                     </div>
                     <div className="footer-links3">
+<<<<<<< HEAD
                         <li><Link to="/enquiries">Enquiry</Link></li>
                         <li><Link to="/bookings">Booking</Link></li>
+=======
+                        <li>Enquiry</li>
+                        <li>Booking</li>
+>>>>>>> dashboard
                     </div>
                 </div>
 
