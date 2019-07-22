@@ -13,7 +13,7 @@ import ServicePage from './components/ServicePage';
 import Terms from './components/Terms';
 import Privacy from './components/Privacy';
 import jwtDecode from 'jwt-decode'
-import './App.css'
+import '../src/App.css'
 
 
 export default class App extends Component {
@@ -50,7 +50,7 @@ export default class App extends Component {
         <Route path="/privacy" component={Privacy} />
       </Switch>
       <Footer />
-      <EnquiryForm />
+      {/* <EnquiryForm /> */}
       {/* {!this.state.user && 
       <Login user={this.state.user} />
       }
@@ -59,7 +59,7 @@ export default class App extends Component {
 
       </div> */}
 
-      <Guarantee />
+      {/* <Guarantee /> */}
       {/* <Card1 /> */}
       {/* <Services /> */}
 

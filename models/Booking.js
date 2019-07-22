@@ -36,4 +36,4 @@ const Booking = mongoose.model('Booking', new mongoose.Schema({
 // }
 
 exports.Booking = Booking
-exports.validateBooking = validateBooking
+// exports.validateBooking = validateBooking
