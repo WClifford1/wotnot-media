@@ -9,6 +9,9 @@
     "client": "cd client && npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
+  "engines": {
+    "node": "12.1.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WClifford1/wotnot-media.git"
