@@ -50,7 +50,7 @@ export default class App extends Component {
         <Route path="/privacy" component={Privacy} />
       </Switch>
       <Footer />
-      <EnquiryForm />
+      {/* <EnquiryForm /> */}
       {/* {!this.state.user && 
       <Login user={this.state.user} />
       }
@@ -59,7 +59,7 @@ export default class App extends Component {
 
       </div> */}
 
-      <Guarantee />
+      {/* <Guarantee /> */}
       {/* <Card1 /> */}
       {/* <Services /> */}
 
