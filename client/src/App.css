@@ -1,33 +1,448 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  background: #001D4A;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.nav-items li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-items li a {
+  font-size: 18px;
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-banner {
+  background-color: #001D4A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 83vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-banner .heroimg {
+  height: 75vh;
+  width: 60vw;
+  background-color: transparent;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 3;
+  background-clip: padding-box;
 }
+
+.hero-banner .text {
+  z-index: 1;
+  padding-top: 40px;
+}
+
+.hero-banner .text .catch-phrase {
+  color: #ECA400;
+  text-align: center;
+  padding-left: 8%;
+  padding-top: 10%;
+  width: 85%;
+}
+
+.hero-banner .text .catch-para {
+  color: #ffffff;
+  text-align: center;
+  padding-left: 8%;
+  width: 85%;
+  padding-top: 20px;
+}
+
+.logo {
+  color: #ECA400;
+  text-align: center;
+  background-color: #001D4A;
+  padding-top: 20px;
+}
+
+.hov:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ECA400;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}
+
+.hov:hover::after {
+  width: 100%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.guar-container {
+  background-color: #f4f5f6;
+}
+
+.guar-container h2 {
+  text-align: center;
+  padding: 3%;
+  color: #636363;
+}
+
+.guar-container .guar-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-bottom: 3%;
+}
+
+.guar-container .guar-icons .icon1 {
+  text-align: center;
+  max-width: 150px;
+}
+
+.guar-container .guar-icons .icon2 {
+  text-align: center;
+  max-width: 150px;
+}
+
+.guar-container .guar-icons .icon3 {
+  text-align: center;
+  max-width: 150px;
+}
+
+.guar-container .guar-icons .icon4 {
+  text-align: center;
+  max-width: 150px;
+}
+
+.guar-container .guar-icons .fas {
+  color: #a7a7a7;
+  padding: 20px;
+}
+
+.card-title {
+  text-align: center;
+  background-color: #ECA400;
+  padding: 20px;
+}
+
+.card-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #ECA400;
+  padding: 40px;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 24%;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+  overflow: hidden;
+  border-radius: 50px;
+  border: none;
+  -webkit-box-shadow: 5px 5px 10px;
+          box-shadow: 5px 5px 10px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.services-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+.services-cont .service {
+  padding: 20px;
+}
+
+.services-cont .service h2 {
+  padding: 10px;
+  color: #001D4A;
+}
+
+.services-cont .service p {
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.services-cont .service a {
+  padding: 10px;
+  text-decoration: none;
+  color: #ECA400;
+}
+
+.services-cont .service .fa-grip-lines-vertical {
+  color: blue;
+}
+
+.service-title {
+  text-align: center;
+  padding-top: 20px;
+  color: #001D4A;
+}
+
+.serv-comp {
+  padding-bottom: 40px;
+  background-color: #f4f5f6;
+  height: 100vh;
+}
+
+.serv-comp h1 {
+  text-align: center;
+  padding: 40px;
+}
+
+.serv-cont .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.serv-cont .serv-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.serv-cont .card {
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding: 30px;
+  text-align: center;
+}
+
+.serv-cont .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.serv-cont .card:nth-child(1),
+.serv-cont .card:nth-child(1) .fa-file-upload .fa-copy .fa-book-open {
+  background: linear-gradient(-45deg, #f403d1, #645bf6);
+}
+
+.serv-cont .card:nth-child(2),
+.serv-cont .card:nth-child(2) .fa-file-upload .fa-copy .fa-book-open {
+  background: linear-gradient(-45deg, #ffec61, #f321d7);
+}
+
+.serv-cont .card:nth-child(3),
+.serv-cont .card:nth-child(3) .fa-file-upload .fa-copy .fa-book-open {
+  background: linear-gradient(-45deg, #24ff72, #9a4eff);
+}
+
+.serv-cont .card:before {
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.serv-cont .serv-title,
+.serv-cont .fa-file-upload,
+.serv-cont .fa-copy,
+.serv-cont .fa-book-open {
+  color: #fff;
+  font-size: 60px;
+  width: 100px;
+  text-align: center;
+  height: 100px;
+  border-radius: 50%;
+  line-height: 100px;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.serv-cont .serv-title h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid red;
+  margin: 10px 0 0;
+  color: #fff;
+  font-size: 28px;
+  z-index: 2;
+}
+
+.serv-cont .price {
+  z-index: 2;
+  border: 2px solid green;
+}
+
+.serv-cont .price h4 {
+  margin: 0;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 60px;
+}
+
+.serv-cont .option {
+  position: relative;
+  z-index: 2;
+}
+
+.serv-cont .option ul {
+  margin: 0;
+  padding: 0;
+}
+
+.serv-cont .option ul li {
+  margin: 0 0 10px;
+  padding: 0;
+  list-style: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.serv-cont .card a {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+  color: #262426;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 40px;
+  display: block;
+  text-align: center;
+  margin: 20px auto 0;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.serv-cont .card a:hover {
+  text-decoration: none;
+  background: linear-gradient(-45deg, #5F4BB6, #EF2917);
+  color: white;
+}
+
+.enq-cont {
+  padding: 40px;
+  border: 2px solid red;
+}
+
+.enq-cont .enq-title {
+  border: 2px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  color: #001D4A;
+}
+
+.enq-cont .enq-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid red;
+}
+
+.enq-cont .enq-form .form-control {
+  border-radius: 5px;
+  height: 35px;
+  border: 1px solid #999999;
+  width: 80vw;
+}
+
+.enq-cont .form-group {
+  padding: 10px;
+  width: 100%;
+}
+/*# sourceMappingURL=app.css.map */

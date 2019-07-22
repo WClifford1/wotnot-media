@@ -23,6 +23,7 @@ export default class App extends Component {
   render() {
   return (
     <React.Fragment>
+<<<<<<< HEAD
       <EnquiryForm />
       <ShowEnquiries />
       {!this.state.user && 
@@ -30,6 +31,21 @@ export default class App extends Component {
       }
       {this.state.user &&
       <LogOut/>}
+=======
+
+      <BookingForm />
+
+      <Home />
+      <HeroImage />
+      <Service1 />
+
+      <Guarantee />
+      <EnquiryForm />
+      <ValidatedLoginForm />
+      {/* <Card1 /> */}
+      {/* <Services /> */}
+
+>>>>>>> master
     </React.Fragment>
   );
 }
