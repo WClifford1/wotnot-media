@@ -91,9 +91,12 @@ $off-black: #322645;
     
     .contact-details {
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         width: 100%;
         // border: 2px solid red;
+        // text-align: center;
+        justify-content: center;
+        padding: 40px 0 40px 0;
         
 
         .contact-card {

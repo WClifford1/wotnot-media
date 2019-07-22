@@ -27,7 +27,7 @@ export default class Faq extends Component {
             <div className="question-cont">
                 <h1>Frequently Asked Questions</h1>
                 <div className="accordion">
-                    <button type="button" className={ this.state.toggle ? "accordion__button" : "accordion__button--active"} onClick={this.onClick}>Expand Content</button>
+                    <button type="button" className={ this.state.toggle ? "accordion__button" : "accordion__button--active"} onClick={this.onClick}>Does Will belong in a jungle</button>
                     <div className="accordion__content">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum neque, tempora totam obcaecati odit expedita vero sunt nobis placeat? Natus?

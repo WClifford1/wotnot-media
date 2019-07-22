@@ -30,6 +30,8 @@ $off-black: #322645;
         transform: scale(1.5);
     }
 
+    .accordion__button + .accordion__content { display: block }
+
     .accordion__button--active {
         background: #555555;
         display: block;
@@ -51,11 +53,14 @@ $off-black: #322645;
     }
 
     .accordion__content {
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.2s;
+        // overflow: hidden;
+        // max-height: 0;
+        // transition: max-height 0.2s;
 
         padding: 0 15px;
-        background: #eee;   
+        background: #eee;  
+        
+        display: none;
+        overflow: auto;
     }
 }
