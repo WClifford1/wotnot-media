@@ -15,7 +15,8 @@ if (!process.env.jwtPrivateKey){
 }
 
 
-app.use(cors("https://festive-cori-46ce58.netlify.com"))
+// app.use(cors({origin: "https://festive-cori-46ce58.netlify.com"}))
+app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
 app.use('/api/enquiries', enquiries)
@@ -24,9 +25,8 @@ app.use('/api/auth', auth)
 app.use('/api/bookings', bookings)
 
 
-mongoose.connect(process.env.DB_PATH, { useNewUrlParser: true }, (err) => {
-// mongoose.connect('mongodb://localhost/bookmarks', (err) => {
-
+// mongoose.connect(process.env.DB_PATH, { useNewUrlParser: true }, (err) => {
+mongoose.connect('mongodb://localhost/enquiries', (err) => {
     if (err) {
         console.log('Error connecting to database', err)
     } else {
