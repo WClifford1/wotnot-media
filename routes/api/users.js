@@ -4,15 +4,16 @@ const router = express.Router()
 const bcrypt = require('bcrypt')
 
 
+// View current users in the database
 router.get('/', async (req, res) => {
     const users = await User.find()
     res.send(users)
 });
 
+
+// Create a new user
+// Username must be unique
 router.post('/', async (req, res) => {
-    // const { error } = validateUser(req.body)
-    // if (error) return res.status(400).send(error.details[0].message)
-    
     let user = await User.findOne({ name: req.body.name })
     if (user) return res.status(400).send('User already registered')
 
