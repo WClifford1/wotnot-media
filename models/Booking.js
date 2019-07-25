@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const Joi = require('joi')
+
 
 const Booking = mongoose.model('Booking', new mongoose.Schema({
     name: {
