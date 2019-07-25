@@ -55,6 +55,7 @@ Terms and Conditions
 ![picture](/images/TermsandConditions/2.png)
 Dashboard
 ![picture](/images/dashboard.png)
+ello
 #Tech Stack:
 The tech stack we are using is for the majority a MERN stack. MongoDB, Express, ReactJs, NodeJs. We've also use html and css using hard-coded css. The reason we are not using a css framework is because we felt as a team that we have a lot more freedom in which we can do things, whereas if we were to use a framework we are limited to that framework. For deployment platform we are using 3 platforms MongoDB Atlas, Heroku and Netlify. For MongoDB Atlas we will be deploying our database to and hosting, For Heroku we will be deploying our backend(server) to as this seems to a very stable platform and for Netlify we will be deploying our frontend(client). One of the upsides of netlify is it can pull the repository straight from github.
 
