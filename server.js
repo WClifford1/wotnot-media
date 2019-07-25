@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 app.use(cors({origin: "https://festive-cori-46ce58.netlify.com"}))
+// app.use(cors())
 require('./startup/routes')(app)
 require('dotenv').config()
 

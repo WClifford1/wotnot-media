@@ -17,22 +17,29 @@ https://festive-cori-46ce58.netlify.com
 #Description of project:
 #Problem definition / purpose
 
-The purpose of the problem is to showcase the WotNot Media portfolio which will also show previous and current work. Users of the website will be able to contact Admin via a enquiries form. The website will show a variety of services which includes Print/Web Design and Video Content. The website will also display FAQ's which will answer questions if of customers but if the customer still has question the enquiry form is readily available.
+The purpose of the problem is to showcase the WotNot Media portfolio which will also show previous and current work. Users of the website will be able to contact Admin via an enquiriy form. The website will show a variety of services which includes Print/Web Design and Video Content. The website will also display FAQ's which will answer questions of customers but if the customer still has question the enquiry form is readily available.
 
 #Functionality/Features
+Enquiry Form for guests
+Admin dashboard
+CRUD functionality
+
 
 #instructions
-programs needed to download
--nodejs
--mongoose
--npm or yarn
--mongoose
--mongodb
--expressjs
-Firstly will need to clone both repos of the server and the client. They will need to be in seperate folders
-use the terminal and git clone command to pull down both the server and client in their own seperate folders.
-once both repos have been pulled cd into server and run the command npm i or npm install. This should be done in both folders.
-once that is done will be able to run server. type npm start in the console. this also needs to be done on the client. open another terminal window and run the command mongod. this will open a connection to the database. by doing this all services should be running.
+Visit festive-cori-46ce58.netlify.com to see deployment.
+To view admin dashboard click 'Staff Portal' on the bottom right of the footer.
+Username: "admin"
+Password: "admin"
+Reload the URL
+"DASHBOARD" and "LOGOUT" will appear on the footer
+Click on dashboard to see all enquiries which have been sent through.
+Mark enquiries as read or delete on the dashboard.
+Send your own enquiries from the enquiry form or contact form.
+
+
+To view and run source code clone both repos of the server and the client. They will need to be in seperate folders. For both repos run npm i or yarn install.
+
+If running client on localhost, line "app.use(cors({origin: "https://festive-cori-46ce58.netlify.com"}))" will need to be modified on server.js in server folder to accept all addresses by changing it to "app.cors()".
 
 #Screenshots
 Home Screen
