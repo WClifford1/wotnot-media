@@ -21,3 +21,14 @@ The tech stack we are using is for the majority a MERN stack. MongoDB, Express, 
 
 #Instructions on how to Setup:
 
+#Instructions on how to Setup:
+
+#Design Documentation
+
+#Design Process
+
+#User Stories
+
+#WorkFlow Diagram
+
+#DataFlow Diagram 
