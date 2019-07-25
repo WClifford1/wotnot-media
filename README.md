@@ -4,6 +4,9 @@ An application to show off a portfolio website
 Featuring Farhaan, Will I Am, Joe
 
 
+#Github repo link
+
+
 #Link to published app
 https://festive-cori-46ce58.netlify.com
 
@@ -37,4 +40,22 @@ The tech stack we are using is for the majority a MERN stack. MongoDB, Express, 
 
 #DataFlow Diagram
 ![picture](/images/data-flow-chart.png)
+
+#Database Entity Relationship Diagram
+![picture](/images/erd-diagram.png)
+
+#OO Design Documentation
+
+#Project Management and Planning Process
+
+#Project plan & timeline
+
+#Client Communication
+
+#Trello Screenshots
+
+#Answers to Short Questions
+![picture](/images/questions1.png)
+![picture](/images/questions2.png)
+![picture](/images/questions3.png)
 
