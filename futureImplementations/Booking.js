@@ -1,5 +1,6 @@
+// A booking model can be implemented in future versions
+
 const mongoose = require('mongoose')
-const Joi = require('joi')
 
 const Booking = mongoose.model('Booking', new mongoose.Schema({
     name: {

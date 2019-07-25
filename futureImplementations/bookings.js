@@ -1,8 +1,10 @@
+// Routes for booking model
+
 const express = require('express')
 const { Booking } = require('../../models/Booking')
 const router = express.Router()
 
-router.get('/', auth, async (req, res) => {
+router.get('/', async (req, res) => {
     const bookings = await Booking.find()
     res.send(bookings)
 })

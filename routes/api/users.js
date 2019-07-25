@@ -7,7 +7,7 @@ const bcrypt = require('bcrypt')
 // View current users in the database
 router.get('/', async (req, res) => {
     const users = await User.find()
-    res.send(users)
+    res.status(200).send(users)
 });
 
 

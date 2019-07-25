@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
+    "test": "jest --verbose",
     "client": "cd client && npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
@@ -42,7 +43,8 @@
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "supertest": "^4.0.2"
   },
   "devDependencies": {
     "enzyme": "^3.10.0",
@@ -50,7 +52,7 @@
     "jest": "^24.8.0",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
-    "validator": "^11.1.0",
-    "react-scroll": "^1.7.12"
+    "react-scroll": "^1.7.12",
+    "validator": "^11.1.0"
   }
 }
