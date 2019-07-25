@@ -5,6 +5,10 @@ Featuring Farhaan, Will I Am, Joe
 
 
 #Github repo link
+server side repo
+https://github.com/WClifford1/wotnot-media
+client side repo
+https://github.com/WClifford1/wotnot-media-client
 
 
 #Link to published app
@@ -17,6 +21,18 @@ The purpose of the problem is to showcase the WotNot Media portfolio which will 
 
 #Functionality/Features
 
+#instructions
+programs needed to download
+-nodejs
+-mongoose
+-npm or yarn
+-mongoose
+-mongodb
+-expressjs
+Firstly will need to clone both repos of the server and the client. They will need to be in seperate folders
+use the terminal and git clone command to pull down both the server and client in their own seperate folders.
+once both repos have been pulled cd into server and run the command npm i or npm install. This should be done in both folders.
+once that is done will be able to run server. type npm start in the console. this also needs to be done on the client. open another terminal window and run the command mongod. this will open a connection to the database. by doing this all services should be running.
 
 #Screenshots
 Home Screen
@@ -59,10 +75,6 @@ Dashboard
 
 #Tech Stack:
 The tech stack we are using is for the majority a MERN stack. MongoDB, Express, ReactJs, NodeJs. We've also use html and css using hard-coded css. The reason we are not using a css framework is because we felt as a team that we have a lot more freedom in which we can do things, whereas if we were to use a framework we are limited to that framework. For deployment platform we are using 3 platforms MongoDB Atlas, Heroku and Netlify. For MongoDB Atlas we will be deploying our database to and hosting, For Heroku we will be deploying our backend(server) to as this seems to a very stable platform and for Netlify we will be deploying our frontend(client). One of the upsides of netlify is it can pull the repository straight from github.
-
-
-
-#Instructions on how to Setup:
 
 
 #Design Documentation
