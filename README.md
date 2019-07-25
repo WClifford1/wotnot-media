@@ -32,7 +32,8 @@ The tech stack we are using is for the majority a MERN stack. MongoDB, Express, 
 #User Stories
 
 #WorkFlow Diagram
-
+![picture](/images/workflow1.png)
+![picture](/images/workflow2.png)
 
 #DataFlow Diagram
 ![picture](/images/data-flow-chart.png)
