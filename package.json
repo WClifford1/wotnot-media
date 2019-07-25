@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
+    "test": "jest --verbose",
     "client": "cd client && npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
@@ -42,7 +43,8 @@
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "supertest": "^4.0.2"
   },
   "devDependencies": {
     "enzyme": "^3.10.0",
